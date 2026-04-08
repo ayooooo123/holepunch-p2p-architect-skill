@@ -16,19 +16,25 @@ Every generated app should try to provide these scripts in package.json:
 
 If a target platform needs custom scripts, keep the same script names and swap only the implementation.
 
+## Default runtime contract
+- Do not make `pear run` the architectural center of a generated app.
+- Treat the pear-runtime library or an equivalent bootstrap entrypoint as the way to launch the worker host.
+- Keep the worker host launch deterministic and repeatable.
+- Separate shell startup from worker startup so they can be tested independently.
+
 ## Desktop playbook
 Use when the app ships as a Pear desktop app.
 
 Recommended flow:
 1. Install dependencies.
-2. Start the local dev shell.
-3. Run unit tests against shared core logic.
+2. Start the local shell bootstrap.
+3. Run unit tests against shared core logic and worker host behavior.
 4. Package the app.
 5. Verify update / restart behavior if the app uses it.
 
 Suggested script mapping:
-- `dev`: start the Pear desktop app shell
-- `test`: run shared-core tests and adapter smoke tests
+- `dev`: start the shell bootstrap that loads the worker host
+- `test`: run shared-core tests and host smoke tests
 - `build`: bundle or prepare desktop assets
 - `package`: produce distributable desktop artifact
 - `release`: perform final validation and release tagging
@@ -38,13 +44,13 @@ Use when the app should be validated quickly from the command line.
 
 Recommended flow:
 1. Install dependencies.
-2. Run the terminal entrypoint.
+2. Run the terminal bootstrap.
 3. Run shared-core tests.
 4. Confirm peer discovery / replication behavior.
 5. Package if the app produces a distributable CLI or bundle.
 
 Suggested script mapping:
-- `dev`: run the terminal entrypoint in watch or interactive mode
+- `dev`: run the terminal bootstrap in watch or interactive mode
 - `test`: run core and protocol tests
 - `build`: prepare the terminal bundle
 - `package`: emit the runnable terminal artifact
@@ -61,7 +67,7 @@ Recommended flow:
 5. Package the native build.
 
 Suggested script mapping:
-- `dev`: run the Bare/BareKit entrypoint or simulator/dev build
+- `dev`: run the mobile bootstrap or simulator/dev build
 - `test`: run shared-core tests and adapter-level smoke checks
 - `build`: prepare native bundles / runtime assets
 - `package`: produce native package artifacts
@@ -81,13 +87,13 @@ If a repository uses different tooling, the generated app must still present the
 - Keep the app runnable before packaging.
 - Keep packaging separate from development startup.
 - Use tests that can run without a full UI session when possible.
-- Include at least one command that proves the app starts successfully.
+- Include at least one command that proves the worker host starts successfully.
 - Include at least one command that proves the app can be packaged or prepared for deployment.
 
 ## Release checklist
 - Version is set
 - Scripts run successfully
 - Tests pass
-- Entry point exists for each target platform
+- Worker host entry point exists for each target platform
 - Config files exist for each target platform
 - Update behavior is documented if the app ships with updates
