@@ -125,6 +125,8 @@ Starter app matrix (map problem to template):
 - `scripts/fetch_pears_docs.sh` -> Mirror https://docs.pears.com for offline reference.
 - `scripts/pear_dump_app.sh` -> Dump Pear apps for real-world pattern analysis.
 - `references/stack-map.md` -> Data model, networking decision matrix, and problem-first repo index.
+- `references/hypercore.md` -> Hypercore API surface, replication patterns, and worker-host usage.
+- `references/hyperswarm.md` -> Hyperswarm API surface, discovery patterns, and worker-host lifecycle usage.
 - `references/ipc-runtime.md` -> IPC envelopes, backpressure, and reconnection patterns for shell/worker systems.
 - `references/ipc-repos.md` -> Expanded repo index and rg patterns for all ecosystem areas.
 - `references/app-scaffold.md` -> Canonical Bare worker-first app structure and per-target file trees.
