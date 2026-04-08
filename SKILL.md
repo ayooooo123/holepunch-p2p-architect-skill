@@ -1,12 +1,12 @@
 ---
 name: holepunch-p2p-architect
-description: Design, implement, debug, and test production-ready P2P apps using the Holepunch stack (Hypercore/Hyperdrive/Hyperbee/Hyperdb/Autobase, Hyperswarm/HyperDHT/Protomux) plus Pear Runtime, the pear-runtime library, and Bare JS/BareKit worker architectures. Use for architecture design, feature implementation (e.g., comments/feeds), performance and reliability tuning, sync failures, and unit/integration test enablement; also when building multi-platform Pear/BareKit apps with IPC/concurrency (pear-ipc, bare-ipc, bare-atomics, bare-workers, bare-thread) or mining Holepunch/Pear/Bare repos, docs, or pear:// app dumps.
+description: Design, implement, debug, and test production-ready P2P apps using the Holepunch stack with a default Bare worker-first architecture, the module guides, and an auto-updating Holepunch org index. Use for architecture design, one-shot app generation, feature implementation (e.g., comments/feeds), performance and reliability tuning, sync failures, and unit/integration test enablement; also when building multi-platform Pear/BareKit apps with IPC/concurrency (pear-ipc, bare-ipc, bare-atomics, bare-workers, bare-thread) or mining Holepunch/Pear/Bare repos, docs, or pear:// app dumps.
 ---
 
 # Holepunch P2P Architect
 
 ## Overview
-Design and deliver P2P features and systems on the Holepunch stack end-to-end, using local mirrors of upstream repos/docs and pear:// app dumps to stay current.
+Design and deliver P2P features and systems on the Holepunch stack end-to-end, using local mirrors of upstream repos/docs, the module guides, and the generated Holepunch org index to stay current.
 
 ## Default architecture direction
 - New work should default to a Bare worker-based architecture.
@@ -14,6 +14,7 @@ Design and deliver P2P features and systems on the Holepunch stack end-to-end, u
 - Prefer the pear-runtime library or equivalent runtime host bootstrap over direct `pear run`-style app launching.
 - Use Pear desktop, terminal, or BareKit/mobile layers as shells around the worker host, not as the place where business logic lives.
 - Keep shared logic portable across Pear and Bare by isolating platform code behind adapters.
+- When the request is to build a complete app, one-shot the full repo shape instead of returning a partial plan.
 
 ## IPC and Runtime Concurrency
 - Use when designing IPC between Pear shells, Bare workers, and BareKit worklets.
@@ -42,13 +43,14 @@ Required output order:
 1. Pick the target platform(s) and runtime(s). State tradeoffs if defaulting.
 2. Choose the primary P2P primitive(s).
 3. Default to a Bare worker-based architecture: shared core first, worker host second, shell adapters third.
-4. Emit a concrete file tree based on `assets/templates/bare-worker.md` and the platform templates.
-5. Generate the shared core module(s) first. No direct dependence on platform globals (no `Pear`, `Bare`, `process.env`, DOM, or React Native globals in core).
-6. Generate the worker host, then platform bootstrap files for each target runtime.
-7. Add platform-specific config and package scripts using the script contract in `references/build-deploy.md`.
-8. Add build, test, and run commands. See `references/build-deploy.md` for the canonical command matrix.
-9. Add a short acceptance checklist covering: shell starts, worker starts, peer discovery fires, replication completes, data persists across restart, update check runs, app packages cleanly.
-10. Call out assumptions and missing product decisions explicitly at the end.
+4. Consult the relevant module guides and the Holepunch org index before drafting the file tree.
+5. Emit a concrete file tree based on `assets/templates/bare-worker.md` and the platform templates.
+6. Generate the shared core module(s) first. No direct dependence on platform globals (no `Pear`, `Bare`, `process.env`, DOM, or React Native globals in core).
+7. Generate the worker host, then platform bootstrap files for each target runtime.
+8. Add platform-specific config and package scripts using the script contract in `references/build-deploy.md`.
+9. Add build, test, and run commands. See `references/build-deploy.md` for the canonical command matrix.
+10. Add a short acceptance checklist covering: shell starts, worker starts, peer discovery fires, replication completes, data persists across restart, update check runs, app packages cleanly.
+11. Call out assumptions and missing product decisions explicitly at the end.
 
 Hard rules:
 - Never stop at architecture alone when the request is to build an app.
@@ -72,7 +74,7 @@ Starter app matrix (map problem to template):
 
 ## Knowledge Sync Workflow
 1. Sync upstream repos for source-of-truth patterns and tests.
-   - Run `scripts/sync_holepunch_repos.py` to mirror orgs locally (e.g., `--org holepunchto --org tetherto --org pearopen`).
+   - Run `scripts/sync_holepunch_repos.py` to mirror orgs locally and refresh `references/holepunch-org-index.md`.
    - Repos are stored under `~/.codex/skills-cache/holepunch-p2p-architect/repos/<org>/<repo>`.
    - Use `--shallow` or `--repo-list` to limit clone size when needed.
    - Start with `pearopen/*` examples for best-practice patterns; pull `holepunchto/*` or `tetherto/*` only to fill API gaps.
@@ -121,7 +123,7 @@ Starter app matrix (map problem to template):
 4. Use `references/testing.md` for patterns and coverage checklist.
 
 ## Local Knowledge Sources
-- `scripts/sync_holepunch_repos.py` -> Mirror `holepunchto/*` and `tetherto/*` repos to a local cache.
+- `scripts/sync_holepunch_repos.py` -> Mirror `holepunchto/*` and `tetherto/*` repos to a local cache and refresh the org index.
 - `scripts/fetch_pears_docs.sh` -> Mirror https://docs.pears.com for offline reference.
 - `scripts/pear_dump_app.sh` -> Dump Pear apps for real-world pattern analysis.
 - `references/stack-map.md` -> Data model, networking decision matrix, and problem-first repo index.
@@ -145,6 +147,7 @@ Starter app matrix (map problem to template):
 - `references/build-deploy.md` -> Build, test, package, and release command matrix per target.
 - `references/debug-playbook.md` -> Sync and discovery troubleshooting checklist.
 - `references/testing.md` -> Test strategy and patterns.
+- `references/holepunch-org-index.md` -> Auto-updating Holepunch org repository index.
 - `assets/templates/bare-worker.md` -> Canonical default scaffold.
 - `assets/templates/shared-core.md` -> Shared domain logic scaffold.
 - `assets/templates/desktop.md` -> Pear desktop shell scaffold around a worker host.

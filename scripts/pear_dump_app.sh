@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Dump a Pear app for one-shot architecture analysis, module-guide extraction,
+# and repo-shape references.
+
 if [[ $# -lt 1 ]]; then
   echo "Usage: pear_dump_app.sh <appkey|pear://appkey> [--dest PATH] [--dry-run]" >&2
   exit 1
@@ -45,7 +48,7 @@ fi
 mkdir -p "$DEST"
 
 if [[ "$DRY_RUN" -eq 1 ]]; then
-  echo "+ (cd "$DEST" && pear dumps "$APP")"
+  echo "+ (cd \"$DEST\" && pear dumps \"$APP\")"
   exit 0
 fi
 

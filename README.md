@@ -4,17 +4,48 @@ An AI skill for designing, implementing, debugging, and testing production-ready
 
 ## Overview
 
-This skill provides structured workflows and reference materials for building peer-to-peer applications with:
+This skill is built for one-shotting: when you ask for a complete P2P app or feature, it should produce the full repo shape, the right runtime boundary, the worker host, the shell adapters, and the build/test/run commands in one pass.
 
-- **Hypercore** - Append-only logs
-- **Hyperdrive** - File system abstraction
-- **Hyperbee** - Key-value store
-- **Autobase** - Multi-writer consensus
-- **Hyperswarm** - Peer discovery and networking
-- **HyperDHT** - Distributed hash table
-- **Protomux** - Protocol multiplexing
-- **Pear Runtime** - Desktop P2P apps
-- **Bare Runtime** - Lightweight JS runtime for mobile
+Default architecture: Bare worker-first. Keep the worker as the application core host, keep shells thin, and move platform-specific code behind adapters.
+
+The skill provides structured workflows and reference materials for building peer-to-peer applications with:
+
+- Hypercore - append-only logs
+- Hyperdrive - file system abstraction
+- Hyperbee - key-value store
+- Hyperdb - legacy compatibility, when validated first
+- Autobase - multi-writer consensus
+- Hyperswarm - peer discovery and networking
+- HyperDHT - distributed hash table
+- Protomux - protocol multiplexing
+- Pear Runtime - desktop P2P apps
+- Bare Runtime - lightweight JS runtime and worker host
+
+## Module guides and references
+
+Use the module guides below as the source of truth when choosing primitives or planning the repo shape:
+
+- references/stack-map.md - decision matrix for data model and networking choices
+- references/app-scaffold.md - canonical Bare worker-first app structure
+- references/runtime-abstraction.md - shared-core, worker-host, and shell-adapter boundaries
+- references/autobase.md - Autobase API surface and materialization patterns
+- references/hypercore.md - Hypercore replication and storage patterns
+- references/hyperdrive.md - Hyperdrive file-tree patterns
+- references/hyperblob.md - Hyperblob/blob handling patterns
+- references/hyperdht.md - HyperDHT announce and lookup patterns
+- references/hyperswarm.md - Hyperswarm discovery and lifecycle patterns
+- references/bare-runtime.md - Bare runtime bootstrapping and process discovery
+- references/pear-runtime.md - Pear runtime metadata and shell/bootstrap boundaries
+- references/bare-build.md - Bare packaging and release workflows
+- references/bare-addon.md - Bare native addon workflows
+- references/bare-link.md - Bare linker workflows
+- references/udx-native.md - transport and worker-host patterns
+- references/ipc-runtime.md - shell/worker IPC envelopes and reconnect guidance
+- references/ipc-repos.md - repo index and grep patterns for upstream examples
+- references/build-deploy.md - build, test, package, and release command matrix
+- references/debug-playbook.md - sync and discovery troubleshooting
+- references/testing.md - test strategy patterns
+- references/holepunch-org-index.md - auto-updating Holepunch org repository index
 
 ## Installation
 
@@ -37,28 +68,60 @@ cp -r holepunch-p2p-architect-skill ~/.opencode/skills/holepunch-p2p-architect
 
 Reference `SKILL.md` as a system prompt or context file.
 
-## Skill Structure
+## Skill structure
 
 ```
 holepunch-p2p-architect/
   SKILL.md                      # Main skill definition
   references/
-    stack-map.md                 # Data model decision matrix
-    ipc-runtime.md               # IPC patterns and guidance
-    ipc-repos.md                 # Repository grep patterns
-    debug-playbook.md            # Sync/discovery troubleshooting
-    testing.md                   # Test strategy patterns
+    app-scaffold.md             # Canonical Bare worker-first scaffold
+    autobase.md                 # Autobase guide
+    bare-addon.md               # Bare addon guide
+    bare-build.md               # Bare packaging guide
+    bare-link.md                # Bare linker guide
+    bare-runtime.md             # Bare runtime guide
+    build-deploy.md             # Build / test / release commands
+    debug-playbook.md           # Sync / discovery troubleshooting
+    holepunch-org-index.md      # Auto-updating Holepunch org index
+    hyperblob.md                # Hyperblob guide
+    hypercore-storage.md        # Hypercore storage guide
+    hypercore.md                # Hypercore guide
+    hyperdht.md                 # HyperDHT guide
+    hyperdrive.md               # Hyperdrive guide
+    hyperswarm.md               # Hyperswarm guide
+    ipc-repos.md                # IPC repo index and grep patterns
+    ipc-runtime.md              # IPC runtime guide
+    pear-runtime.md             # Pear runtime guide
+    runtime-abstraction.md      # Runtime boundary guide
+    stack-map.md                # Primitive decision matrix
+    testing.md                  # Testing guide
+    udx-native.md               # UDX transport guide
   scripts/
-    sync_holepunch_repos.py      # Mirror Holepunch repos locally
-    fetch_pears_docs.sh          # Mirror Pear documentation
+    sync_holepunch_repos.py     # Mirror org repos and refresh the org index
+    fetch_pears_docs.sh         # Mirror Pear documentation
     pear_dump_app.sh             # Dump Pear apps for analysis
   assets/
-    ipc-scaffold/                # Minimal IPC starter code
+    ipc-scaffold/               # Minimal IPC starter code
       shared/protocol.js
       shared/router.js
       pear/transport-adapter.js
       bare/transport-adapter.js
 ```
+
+## One-shotting goal
+
+When asked to generate a working app, aim for a complete, runnable repo in one response:
+
+1. Pick the target platform(s) and runtime(s).
+2. Choose the primary P2P primitive(s).
+3. Default to a Bare worker-first architecture: shared core first, worker host second, shell adapters third.
+4. Emit a concrete file tree based on the canonical scaffold and platform guides.
+5. Generate the shared core modules first, with no direct dependence on platform globals.
+6. Generate the worker host, then platform bootstrap files.
+7. Add platform-specific config and package scripts using the build/deploy guide.
+8. Add build, test, and run commands.
+9. Add a short acceptance checklist covering shell start, worker start, discovery, replication, persistence, and update checks.
+10. Call out assumptions and missing product decisions explicitly at the end.
 
 ## Workflows
 
@@ -73,16 +136,19 @@ The skill provides decision-tree workflows for common tasks:
 | Add tests | Testing Workflow |
 | Learn the ecosystem | Knowledge Sync Workflow |
 
-## Usage Examples
+## Usage examples
 
-### Architecture Design
-> "Design a multi-platform P2P app architecture that works on Pear desktop and BareKit mobile with shared IPC code."
+### Architecture design
+> "Design a multi-platform P2P app architecture that works on a Pear desktop shell and a Bare worker host with shared IPC code."
 
-### Feature Implementation
+### Feature implementation
 > "Implement a comments feature using Autobase with multi-writer support and moderation."
 
-### IPC Setup
-> "Set up IPC between Pear renderer and a Bare worker with typed messages and reconnect logic."
+### IPC setup
+> "Set up IPC between a Pear shell and a Bare worker with typed messages and reconnect logic."
+
+### One-shot app generation
+> "Generate a complete Bare worker-first chat app with discovery, persistence, tests, and build scripts."
 
 ### Debugging
 > "Debug why peers aren't discovering each other and replication keeps failing."
@@ -90,13 +156,13 @@ The skill provides decision-tree workflows for common tasks:
 ### Performance
 > "Optimize replication throughput when syncing large Hyperdrive archives."
 
-## Knowledge Sync
+## Knowledge sync
 
-Before using the skill, sync local copies of upstream repos and docs:
+Before using the skill, sync local copies of upstream repos and docs, then refresh the Holepunch org index:
 
 ```bash
-# Sync Holepunch repositories
-python scripts/sync_holepunch_repos.py --org holepunchto --org pearopen --org tetherto
+# Sync Holepunch-adjacent repositories and refresh references/holepunch-org-index.md
+python scripts/sync_holepunch_repos.py --org holepunchto --org pearopen --org tetherto --index-org holepunch
 
 # Mirror Pear documentation
 ./scripts/fetch_pears_docs.sh
@@ -107,7 +173,7 @@ python scripts/sync_holepunch_repos.py --org holepunchto --org pearopen --org te
 
 Local mirrors are stored in `~/.codex/skills-cache/holepunch-p2p-architect/`.
 
-## Key Decision Matrix
+## Key decision matrix
 
 | Need | Primitive |
 |------|-----------|

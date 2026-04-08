@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Mirror Pear docs for offline reference and module-guide lookups.
+# This is a support script for the one-shot Holepunch knowledge sync flow.
+
 DEST="$HOME/.codex/skills-cache/holepunch-p2p-architect/docs/pears"
 DRY_RUN=0
 
