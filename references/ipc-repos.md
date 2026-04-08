@@ -19,6 +19,15 @@ Local cache:
 
 ## Problem-first repo index
 
+### Runtime bootstrap and worker hosts
+- `holepunchto/pear-runtime`
+- `holepunchto/pear`
+- `holepunchto/bare-worker`
+- `holepunchto/bare-thread`
+- `holepunchto/bare-kit`
+
+Use these when the problem is launching an app through the runtime host, replacing `pear run`-style thinking, wiring worker startup, or building the shell/worker boundary.
+
 ### Discovery, networking, and relays
 - `holepunchto/hyperswarm`
 - `holepunchto/hyperdht`
@@ -85,8 +94,10 @@ Use these when the problem is encrypted pipes, multiplexing, message framing, or
 ## Key repos to inspect first
 - pearopen/*: up-to-date cross-platform examples for desktop, mobile, and CLI
 - tetherto/*: Pear/Bare examples and adjacent tooling
+- holepunchto/pear-runtime
 - holepunchto/pear
 - holepunchto/bare-kit
+- holepunchto/bare-worker
 - holepunchto/hyperswarm
 - holepunchto/hypercore
 - holepunchto/hyperdrive
@@ -101,9 +112,9 @@ Use these when the problem is encrypted pipes, multiplexing, message framing, or
 Run in the local cache:
 - `rg "ipc|rpc|request|response|message" holepunchto/pear-ipc holepunchto/bare-ipc`
 - `rg "SharedArrayBuffer|Atomics" holepunchto/bare-atomics`
-- `rg "worker|thread|join|resume|suspend" holepunchto/bare-worker holepunchto/bare-thread`
+- `rg "worker|thread|join|resume|suspend|bootstrap" holepunchto/bare-worker holepunchto/bare-thread holepunchto/pear-runtime`
 - `rg "BareKit|react-native-bare-kit|IPC" holepunchto/bare-kit holepunchto/react-native-bare-kit`
-- `rg "update|auto.?update|runtime updater|bundle|pack|unpack" holepunchto/pear holepunchto/pear-updates holepunchto/pear-runtime-updater holepunchto/bare-build holepunchto/bare-pack holepunchto/bare-unpack`
+- `rg "update|auto.?update|runtime updater|bundle|pack|unpack|pear-runtime" holepunchto/pear holepunchto/pear-updates holepunchto/pear-runtime-updater holepunchto/bare-build holepunchto/bare-pack holepunchto/bare-unpack`
 - `rg "blind-peer|blind-peering|relay" holepunchto/blind-peer holepunchto/blind-peering holepunchto/blind-peer-muxer holepunchto/blind-relay-service`
 
 ## Docs
