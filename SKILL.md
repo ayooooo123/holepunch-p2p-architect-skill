@@ -125,6 +125,17 @@ Starter app matrix (map problem to template):
 - `scripts/fetch_pears_docs.sh` -> Mirror https://docs.pears.com for offline reference.
 - `scripts/pear_dump_app.sh` -> Dump Pear apps for real-world pattern analysis.
 - `references/stack-map.md` -> Data model, networking decision matrix, and problem-first repo index.
+- `references/autobase.md` -> Autobase API surface, materialization patterns, and worker-host usage.
+- `references/hyperdrive.md` -> Hyperdrive API surface, file-tree patterns, and worker-host usage.
+- `references/hyperblob.md` -> Hyperblobs API surface, blob patterns, and worker-host usage.
+- `references/hypercore-storage.md` -> Hypercore storage batches, atomization, and low-level persistence.
+- `references/bare-runtime.md` -> Bare runtime binary lookup and spawn helpers.
+- `references/pear-runtime.md` -> Pear runtime metadata, shell/bootstrap boundaries, and worker-host usage.
+- `references/hyperdht.md` -> HyperDHT API surface, announce/lookup patterns, and worker-host usage.
+- `references/udx-native.md` -> UDX transport API surface and worker-host transport patterns.
+- `references/bare-build.md` -> Bare packaging, runtime targets, and release artifact workflows.
+- `references/bare-addon.md` -> Bare native addon template, prebuild, and loading workflows.
+- `references/bare-link.md` -> Bare addon linker and ahead-of-time linking workflows.
 - `references/hypercore.md` -> Hypercore API surface, replication patterns, and worker-host usage.
 - `references/hyperswarm.md` -> Hyperswarm API surface, discovery patterns, and worker-host lifecycle usage.
 - `references/ipc-runtime.md` -> IPC envelopes, backpressure, and reconnection patterns for shell/worker systems.
