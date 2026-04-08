@@ -1,6 +1,6 @@
 ---
 name: holepunch-p2p-architect
-description: Design, implement, debug, and test production-ready P2P apps using the Holepunch stack (Hypercore/Hyperdrive/Hyperbee/Hyperdb/Autobase, Hyperswarm/HyperDHT/Protomux) plus Pear Runtime and Bare JS Runtime. Use for architecture design, feature implementation (e.g., comments/feeds), performance and reliability tuning, sync failures, and unit/integration test enablement; also when building multi-platform Pear/BareKit apps with IPC/concurrency (pear-ipc, bare-ipc, bare-atomics, bare-workers, bare-thread) or mining Holepunch/Pear/Bare repos, docs, or pear:// app dumps.
+description: Design, implement, debug, and test production-ready P2P apps using the Holepunch stack (Hypercore/Hyperdrive/Hyperbee/Hyperdb/Autobase, Hyperswarm/HyperDHT/Protomux) plus Pear Runtime, the pear-runtime library, and Bare JS/BareKit worker architectures. Use for architecture design, feature implementation (e.g., comments/feeds), performance and reliability tuning, sync failures, and unit/integration test enablement; also when building multi-platform Pear/BareKit apps with IPC/concurrency (pear-ipc, bare-ipc, bare-atomics, bare-workers, bare-thread) or mining Holepunch/Pear/Bare repos, docs, or pear:// app dumps.
 ---
 
 # Holepunch P2P Architect
@@ -8,14 +8,21 @@ description: Design, implement, debug, and test production-ready P2P apps using 
 ## Overview
 Design and deliver P2P features and systems on the Holepunch stack end-to-end, using local mirrors of upstream repos/docs and pear:// app dumps to stay current.
 
+## Default architecture direction
+- New work should default to a Bare worker-based architecture.
+- Treat the worker as the application core host and keep shell code thin.
+- Prefer the pear-runtime library or equivalent runtime host bootstrap over direct `pear run`-style app launching.
+- Use Pear desktop, terminal, or BareKit/mobile layers as shells around the worker host, not as the place where business logic lives.
+- Keep shared logic portable across Pear and Bare by isolating platform code behind adapters.
+
 ## IPC and Runtime Concurrency
-- Use when designing IPC between Pear renderer, Pear workers, and BareKit worklets.
+- Use when designing IPC between Pear shells, Bare workers, and BareKit worklets.
 - Prefer pear-ipc (Pear apps) or bare-ipc + bare-pipe (Bare apps) for transport, bare-atomics for shared state, and bare-workers/bare-thread for isolation.
 - Community guidance: wrap worker IPC in HRPC, and reference `holepunchto/bare-worker` examples first for thread/pipe usage.
 - Validate message schemas, backpressure, and reconnect behavior.
 - Use `references/ipc-runtime.md` for envelope, backpressure, and reconnect guidance.
 - Use `references/ipc-repos.md` to locate IPC/concurrency examples in upstream repos.
-- Use `assets/ipc-scaffold/` for a minimal protocol/router + transport adapter starter.
+- Use `assets/templates/` for canonical worker-first scaffolds.
 - Prefer pearopen examples first; only dive into tool repos for missing low-level details.
 
 ## Workflow Decision Tree
@@ -33,20 +40,21 @@ When asked to generate a complete working P2P app, always produce a fully runnab
 
 Required output order:
 1. Pick the target platform(s) and runtime(s). State tradeoffs if defaulting.
-2. Choose the primary P2P primitive(s). Explain the split between shared core and platform adapters using `references/runtime-abstraction.md`.
-3. Emit a concrete file tree. Use the canonical shapes in `assets/templates/` and `references/app-scaffold.md` as the base.
-4. Generate the shared core module(s) first. No direct dependence on platform globals (no `Pear`, `Bare`, `process.env`, DOM, or React Native globals in core).
-5. Generate platform adapters for each target runtime (storage adapter, transport adapter, UI/IPC adapter).
-6. Add platform-specific config and package scripts (package.json, pear.config.js or package.json#pear, build scripts).
-7. Add build, test, and run commands. See `references/build-deploy.md` for the canonical command matrix.
-8. Add a short acceptance checklist covering: app starts, peer discovery fires, replication completes, data persists across restart, update check runs, app packages cleanly.
-9. Call out assumptions and missing product decisions explicitly at the end.
+2. Choose the primary P2P primitive(s).
+3. Default to a Bare worker-based architecture: shared core first, worker host second, shell adapters third.
+4. Emit a concrete file tree based on `assets/templates/bare-worker.md` and the platform templates.
+5. Generate the shared core module(s) first. No direct dependence on platform globals (no `Pear`, `Bare`, `process.env`, DOM, or React Native globals in core).
+6. Generate the worker host, then platform bootstrap files for each target runtime.
+7. Add platform-specific config and package scripts using the script contract in `references/build-deploy.md`.
+8. Add build, test, and run commands. See `references/build-deploy.md` for the canonical command matrix.
+9. Add a short acceptance checklist covering: shell starts, worker starts, peer discovery fires, replication completes, data persists across restart, update check runs, app packages cleanly.
+10. Call out assumptions and missing product decisions explicitly at the end.
 
 Hard rules:
 - Never stop at architecture alone when the request is to build an app.
 - Never mix transport, UI, storage, and packaging concerns in the shared core.
 - Prefer the smallest fully working app over a broad but incomplete design.
-- If a platform is not specified, default to Pear terminal (fastest to validate) and state the tradeoff.
+- If a platform is not specified, default to the Bare worker-first template and explain the shell choice.
 - If a target needs native runtime behavior, prefer Bare/BareKit guidance over browser or Node assumptions.
 - Always include a package.json with all required dependencies listed by name.
 - Always include a working test entry point, even if minimal.
@@ -55,12 +63,12 @@ Starter app matrix (map problem to template):
 
 | App type | Template | Primary primitive |
 | --- | --- | --- |
-| Feed / activity log | `assets/templates/shared-core/` + terminal or desktop | Hypercore + Hyperbee |
-| Collaborative document / comments | `assets/templates/shared-core/` + terminal or desktop | Autobase |
-| File sync / archive | `assets/templates/desktop/` | Hyperdrive + Localdrive |
-| Encrypted one-to-one pipe | `assets/templates/terminal/` | Hyperbeam |
-| Mobile companion app | `assets/templates/mobile/` | Bare + BareKit + Hyperswarm |
-| Multi-platform (desktop + mobile) | `assets/templates/shared-core/` + desktop + mobile | Choose per data need |
+| Feed / activity log | `assets/templates/bare-worker.md` + desktop or terminal shell | Hypercore + Hyperbee |
+| Collaborative document / comments | `assets/templates/bare-worker.md` + desktop or terminal shell | Autobase |
+| File sync / archive | `assets/templates/bare-worker.md` + desktop shell | Hyperdrive + Localdrive |
+| Encrypted one-to-one pipe | `assets/templates/bare-worker.md` + terminal shell | Hyperbeam |
+| Mobile companion app | `assets/templates/bare-worker.md` + mobile shell | Bare + BareKit + Hyperswarm |
+| Multi-platform (desktop + mobile) | `assets/templates/bare-worker.md` + platform shells | Choose per data need |
 
 ## Knowledge Sync Workflow
 1. Sync upstream repos for source-of-truth patterns and tests.
@@ -117,25 +125,25 @@ Starter app matrix (map problem to template):
 - `scripts/fetch_pears_docs.sh` -> Mirror https://docs.pears.com for offline reference.
 - `scripts/pear_dump_app.sh` -> Dump Pear apps for real-world pattern analysis.
 - `references/stack-map.md` -> Data model, networking decision matrix, and problem-first repo index.
-- `references/ipc-runtime.md` -> IPC envelopes, backpressure, and reconnection patterns.
+- `references/ipc-runtime.md` -> IPC envelopes, backpressure, and reconnection patterns for shell/worker systems.
 - `references/ipc-repos.md` -> Expanded repo index and rg patterns for all ecosystem areas.
-- `references/app-scaffold.md` -> Canonical one-shot app structure and per-target file trees.
-- `references/runtime-abstraction.md` -> Shared-core and platform-adapter boundaries with code shapes.
+- `references/app-scaffold.md` -> Canonical Bare worker-first app structure and per-target file trees.
+- `references/runtime-abstraction.md` -> Shared-core, worker-host, and shell-adapter boundaries with code shapes.
 - `references/build-deploy.md` -> Build, test, package, and release command matrix per target.
 - `references/debug-playbook.md` -> Sync and discovery troubleshooting checklist.
 - `references/testing.md` -> Test strategy and patterns.
-- `assets/templates/shared-core/` -> Shared domain logic scaffold.
-- `assets/templates/desktop/` -> Pear desktop app scaffold.
-- `assets/templates/terminal/` -> Pear terminal app scaffold.
-- `assets/templates/mobile/` -> Bare/BareKit mobile app scaffold.
-- `assets/ipc-scaffold/` -> Minimal IPC scaffold (protocol + router + adapters).
+- `assets/templates/bare-worker.md` -> Canonical default scaffold.
+- `assets/templates/shared-core.md` -> Shared domain logic scaffold.
+- `assets/templates/desktop.md` -> Pear desktop shell scaffold around a worker host.
+- `assets/templates/terminal.md` -> Pear terminal shell scaffold around a worker host.
+- `assets/templates/mobile.md` -> Bare/BareKit mobile shell scaffold around a worker host.
 - `.github/workflows/` -> CI validate and release workflow templates.
 
 ## Example Requests
 - "Build a minimal P2P chat app for Pear desktop."
 - "Generate a complete Bare mobile app that syncs a feed with a desktop peer."
-- "Set up IPC between Pear renderer and a Bare worker with typed messages and reconnect logic."
-- "Show a safe pattern for spinning up a Bare worker and bare-thread and coordinating with bare-atomics."
+- "Set up IPC between a Pear shell and a Bare worker with typed messages and reconnect logic."
+- "Show a safe pattern for spinning up a Bare worker and coordinating with bare-atomics."
 - "Debug a deadlock in bare-ipc or pear-ipc and propose a fix with instrumentation."
 - "Design a multi-platform app architecture that shares IPC code between Pear and BareKit."
 - "Create a minimal example that streams data between a Bare worker and the UI with backpressure."
