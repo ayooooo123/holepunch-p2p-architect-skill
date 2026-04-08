@@ -2,6 +2,9 @@
 
 Use this when the app has reusable domain logic that must stay portable across Pear and Bare runtimes.
 
+## Role in the worker-first architecture
+The shared core is the pure logic layer that the worker host uses. It does not boot the runtime, create the shell, or manage platform lifecycle events.
+
 ## File tree
 
 ```text
@@ -11,13 +14,13 @@ src/
     protocol.js
     state.js
     reducers.js
-  transport/
-    discovery.js
-    replication.js
-  storage/
-    index.js
+  worker/
+    host.js
+    lifecycle.js
   adapters/
     runtime.js
+    storage.js
+    transport.js
 
 test/
   app.test.js
@@ -31,7 +34,7 @@ test/
   "private": true,
   "scripts": {
     "test": "node --test",
-    "dev": "node src/index.js",
+    "dev": "node src/bootstrap/terminal.js",
     "build": "node scripts/build.js",
     "package": "node scripts/package.js",
     "release": "node scripts/release.js"
@@ -42,7 +45,7 @@ test/
 ## core/app.js
 
 ```js
-export function createAppCore ({ storage, transport, clock, log }) {
+export function createAppCore ({ storage, transport, log }) {
   const state = storage.readState?.() ?? { items: [] }
 
   return {
@@ -53,6 +56,9 @@ export function createAppCore ({ storage, transport, clock, log }) {
       state.items.push(event)
       storage.writeState?.(state)
       transport.broadcast?.(event)
+    },
+    stop () {
+      storage.writeState?.(state)
     },
     getState () {
       return state
@@ -86,3 +92,4 @@ export function reduceState (state, event) {
 - direct use of `Bare`
 - direct UI code
 - direct process/env checks in the core
+- bootstrapping or lifecycle code in the shared core
