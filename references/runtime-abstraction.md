@@ -1,6 +1,6 @@
 # Runtime Abstraction Guide
 
-Use this guide to keep one codebase portable across Pear desktop, Pear terminal, and Bare/BareKit mobile targets.
+Use this guide to keep one codebase portable across Pear desktop, Electron desktop, Pear terminal, and Bare/BareKit mobile targets.
 
 Last reviewed: Wednesday, April 8, 2026.
 
@@ -80,17 +80,17 @@ export function createShellAdapter ({ workerHost, log }) {
 
 ## Runtime-specific guidance
 
-### Pear desktop
-- Treat the desktop shell as the place for UI orchestration and app updates.
-- Keep IPC on the adapter side, not inside the core.
-- Route hot reload and inspect/debug behavior through Pear-specific modules.
-- Use the pear-runtime library or equivalent host bootstrap to start the worker.
+### Electron desktop v2
+- Treat Electron main as the shell coordinator.
+- Keep preload as a narrow bridge.
+- Keep renderer UI-only.
+- Use PearRuntime to launch the worker and manage updates.
+- Forward worker stdio and IPC through the bridge rather than importing runtime APIs in the renderer.
 
-### Pear terminal
-- Keep startup fast and stateful behavior explicit.
-- Prefer deterministic startup paths and small CLI entrypoints.
-- Use the terminal scaffold when the goal is to validate behavior quickly before adding UI.
-- Keep the terminal shell as a thin wrapper around the worker host.
+### Pear desktop / Pear terminal
+- Treat the shell as the place for startup and user interaction.
+- Use pear-runtime or Pear runtime metadata for launch and update state.
+- Keep the worker host shared across desktop shells.
 
 ### Bare mobile / BareKit
 - Assume stricter lifecycle constraints.
@@ -128,4 +128,4 @@ Use the detected runtime only in the outer adapter layer.
 - The platform shell should own the download/apply/restart path.
 
 ## Rule of thumb
-If a function needs to know whether it is running in Pear, Bare, terminal, or mobile, it probably belongs in a shell or host adapter rather than in shared core.
+If a function needs to know whether it is running in Pear, Electron, Bare, terminal, or mobile, it probably belongs in a shell or host adapter rather than in shared core.

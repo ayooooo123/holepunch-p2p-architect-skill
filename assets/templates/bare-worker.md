@@ -3,7 +3,7 @@
 Use this as the default shape for one-shot P2P app generation.
 
 ## Core principle
-The worker host owns application behavior. The shell only boots the worker, routes platform-specific events, and renders UI or CLI output.
+The worker host owns application behavior. The shell only boots the worker, routes platform-specific events, and renders UI or CLI output. For desktop v2 apps, the shell is usually an Electron main/preload/renderer wrapper around this worker host.
 
 ## File tree
 
@@ -92,9 +92,9 @@ host.start()
 ```
 
 ## Runtime guidance
-- Prefer the pear-runtime library or equivalent runtime bootstrap for Pear shells.
+- Prefer the pear-runtime library or equivalent runtime bootstrap for Pear and Electron desktop shells.
 - Keep the same worker host across desktop, terminal, and mobile.
-- Put only the shell-specific setup in `bootstrap/*.js`.
+- Put only the shell-specific setup in `bootstrap/*.js` or in the Electron main/preload/renderer layer.
 - If an app needs platform behavior, wrap it in an adapter instead of branching in core.
 
 ## What to avoid

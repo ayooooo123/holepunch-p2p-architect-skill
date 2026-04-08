@@ -27,6 +27,7 @@ test/
 - The worker host owns peer discovery, storage, and replication.
 - Keep BareKit and native bridge code outside shared core.
 - Keep discovery handles alive across suspend/resume cycles.
+- If the app also has a desktop shell, keep the worker host compatible with the Electron v2 pattern.
 
 ## package.json shape
 

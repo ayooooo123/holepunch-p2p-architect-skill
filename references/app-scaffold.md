@@ -35,6 +35,14 @@ my-p2p-app/
       storage.js
       transport.js
       shell.js
+  electron/
+    main.js
+    preload.js
+  renderer/
+    index.html
+    app.js
+  workers/
+    main.js
   config/
     pear.config.js
     mobile.config.js
@@ -74,26 +82,37 @@ Responsibilities:
 - handle reconnect and resume logic
 - isolate shared app state from shell code
 
-## Platform scaffold variants
-
-### Pear desktop
-Use when the app needs a native desktop shell or peer-to-peer UI.
+## Electron v2 desktop scaffold
+Use this shape when the user wants a desktop app that follows the current pear-runtime standard.
 
 ```text
+package.json
+electron/
+  main.js
+  preload.js
+renderer/
+  index.html
+  app.js
+workers/
+  main.js
 src/
-  bootstrap/
-    desktop.js
+  core/
+    app.js
+    protocol.js
+    state.js
   adapters/
-    pear-shell.js
+    storage.js
+    transport.js
 ```
 
 Use for:
 - app shell startup
-- IPC between UI and worker host
+- preload bridge exposure
+- worker launch through pear-runtime
 - update integration
-- desktop-specific permissions and paths
+- desktop-specific permissions, paths, and single-instance handling
 
-### Pear terminal
+## Pear terminal scaffold
 Use when the app should be easiest to validate quickly and can run in a terminal.
 
 ```text
@@ -109,7 +128,7 @@ Use for:
 - text-first workflows
 - direct peer connection and replication checks
 
-### Bare mobile / BareKit
+## Bare mobile / BareKit scaffold
 Use when the app needs on-device JS runtime behavior on iOS or Android.
 
 ```text
@@ -132,17 +151,17 @@ Use for:
 ## Required file categories for a complete app
 
 1. Entry point
-   - `src/bootstrap/desktop.js`, `src/bootstrap/terminal.js`, or `src/bootstrap/mobile.js`
+   - `electron/main.js`, `src/bootstrap/desktop.js`, `src/bootstrap/terminal.js`, or `src/bootstrap/mobile.js`
 2. Shared core
    - pure logic under `src/core/`
 3. Worker host
-   - runtime orchestration and lifecycle in `src/worker/`
+   - runtime orchestration and lifecycle in `workers/` or `src/worker/`
 4. Transport/discovery
    - join topics, connect peers, reconnect after lifecycle changes
 5. Storage
    - persistent local state and replication source
 6. Platform adapter(s)
-   - Pear, Bare, terminal, or mobile-specific wrappers
+   - Pear, Electron, Bare, terminal, or mobile-specific wrappers
 7. Configuration
    - package scripts and platform config
 8. Tests
@@ -172,7 +191,7 @@ Use for:
 - Packaging or release command exists
 
 ## When to use which scaffold
-- If the user asks for "desktop app", start from the Pear desktop scaffold.
+- If the user asks for "desktop app", use the Electron v2 scaffold when the app needs Pear Runtime updates or Electron shell integration.
 - If the user asks for "mobile app", start from the Bare/BareKit scaffold.
 - If the user asks for "terminal app", start from the Pear terminal scaffold.
 - If the user asks for "all platforms", create the shared core and worker host first, then add each platform bootstrap and shell adapter.

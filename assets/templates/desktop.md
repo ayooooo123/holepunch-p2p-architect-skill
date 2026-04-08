@@ -1,30 +1,35 @@
 # Pear Desktop Scaffold
 
-Use this for desktop apps that need a Pear shell, UI layer, and worker-hosted runtime.
+Use this for desktop apps that need an Electron shell, pear-runtime update handling, and a worker-hosted runtime.
 
 ## File tree
 
 ```text
 package.json
+electron/
+  main.js
+  preload.js
+renderer/
+  index.html
+  app.js
+workers/
+  main.js
 src/
-  bootstrap/
-    desktop.js
-  worker/
-    host.js
   core/
     app.js
+    protocol.js
+    state.js
   adapters/
-    pear-shell.js
-config/
-  pear.config.js
-test/
-  app.test.js
+    storage.js
+    transport.js
 ```
 
 ## Architecture note
-- The shell is thin and only launches the worker host.
+- The Electron main process is the shell coordinator.
+- The preload script exposes a narrow bridge.
+- The renderer is UI only.
 - The worker host owns peer discovery, storage orchestration, and replication lifecycle.
-- Use the pear-runtime library or equivalent bootstrap instead of modeling the app around `pear run`.
+- Use the pear-runtime library for the runtime host and updater flow.
 
 ## package.json shape
 
@@ -32,43 +37,21 @@ test/
 {
   "name": "my-p2p-desktop-app",
   "private": true,
+  "type": "commonjs",
+  "main": "electron/main.js",
   "scripts": {
-    "dev": "node src/bootstrap/desktop.js",
+    "dev": "electron-forge start -- --no-updates",
     "test": "node --test",
     "build": "node scripts/build.js",
-    "package": "node scripts/package.js",
+    "package": "electron-forge package",
     "release": "node scripts/release.js"
   }
 }
 ```
 
-## src/bootstrap/desktop.js
-
-```js
-import { createWorkerHost } from '../worker/host.js'
-
-const host = createWorkerHost({
-  storage: {},
-  transport: {},
-  log: console.log
-})
-
-host.start()
-```
-
-## config/pear.config.js
-Use this file for app metadata and update behavior.
-
-```js
-export default {
-  name: 'my-p2p-desktop-app',
-  version: '0.1.0',
-  main: 'src/bootstrap/desktop.js'
-}
-```
-
-## Desktop-specific rules
+## Electron shell rules
 - keep shell code outside shared core
-- keep IPC in the adapter layer
+- keep IPC in the preload bridge
 - route UI events to the worker host
-- add hot reload or inspect hooks only if the app needs them
+- handle `updating` / `updated` in the main process and restart after `applyUpdate()`
+- pass the packaged app path and storage dir into pear-runtime

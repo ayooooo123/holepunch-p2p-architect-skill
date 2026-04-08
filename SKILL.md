@@ -12,13 +12,15 @@ Design and deliver P2P features and systems on the Holepunch stack end-to-end, u
 - New work should default to a Bare worker-based architecture.
 - Treat the worker as the application core host and keep shell code thin.
 - Prefer the pear-runtime library or equivalent runtime host bootstrap over direct `pear run`-style app launching.
+- For Electron desktop apps, use the v2 shell pattern: Electron main process + preload bridge + renderer UI + Bare worker host.
 - Use Pear desktop, terminal, or BareKit/mobile layers as shells around the worker host, not as the place where business logic lives.
 - Keep shared logic portable across Pear and Bare by isolating platform code behind adapters.
 - When the request is to build a complete app, one-shot the full repo shape instead of returning a partial plan.
 
 ## IPC and Runtime Concurrency
-- Use when designing IPC between Pear shells, Bare workers, and BareKit worklets.
+- Use when designing IPC between Pear shells, Electron shells, Bare workers, and BareKit worklets.
 - Prefer pear-ipc (Pear apps) or bare-ipc + bare-pipe (Bare apps) for transport, bare-atomics for shared state, and bare-workers/bare-thread for isolation.
+- For Electron desktop v2, keep the preload bridge minimal and let the worker host own the runtime state.
 - Community guidance: wrap worker IPC in HRPC, and reference `holepunchto/bare-worker` examples first for thread/pipe usage.
 - Validate message schemas, backpressure, and reconnect behavior.
 - Use `references/ipc-runtime.md` for envelope, backpressure, and reconnect guidance.
@@ -44,13 +46,14 @@ Required output order:
 2. Choose the primary P2P primitive(s).
 3. Default to a Bare worker-based architecture: shared core first, worker host second, shell adapters third.
 4. Consult the relevant module guides and the Holepunch org index before drafting the file tree.
-5. Emit a concrete file tree based on `assets/templates/bare-worker.md` and the platform templates.
-6. Generate the shared core module(s) first. No direct dependence on platform globals (no `Pear`, `Bare`, `process.env`, DOM, or React Native globals in core).
-7. Generate the worker host, then platform bootstrap files for each target runtime.
-8. Add platform-specific config and package scripts using the script contract in `references/build-deploy.md`.
-9. Add build, test, and run commands. See `references/build-deploy.md` for the canonical command matrix.
-10. Add a short acceptance checklist covering: shell starts, worker starts, peer discovery fires, replication completes, data persists across restart, update check runs, app packages cleanly.
-11. Call out assumptions and missing product decisions explicitly at the end.
+5. For desktop targets, align the file tree to `references/pear-v2-architecture.md` and the electron-v2 template.
+6. Emit a concrete file tree based on `assets/templates/bare-worker.md` and the platform templates.
+7. Generate the shared core module(s) first. No direct dependence on platform globals (no `Pear`, `Bare`, `process.env`, DOM, or React Native globals in core).
+8. Generate the worker host, then platform bootstrap files for each target runtime.
+9. Add platform-specific config and package scripts using the script contract in `references/build-deploy.md`.
+10. Add build, test, and run commands. See `references/build-deploy.md` for the canonical command matrix.
+11. Add a short acceptance checklist covering: shell starts, worker starts, peer discovery fires, replication completes, data persists across restart, update check runs, app packages cleanly.
+12. Call out assumptions and missing product decisions explicitly at the end.
 
 Hard rules:
 - Never stop at architecture alone when the request is to build an app.
@@ -68,6 +71,7 @@ Starter app matrix (map problem to template):
 | Feed / activity log | `assets/templates/bare-worker.md` + desktop or terminal shell | Hypercore + Hyperbee |
 | Collaborative document / comments | `assets/templates/bare-worker.md` + desktop or terminal shell | Autobase |
 | File sync / archive | `assets/templates/bare-worker.md` + desktop shell | Hyperdrive + Localdrive |
+| Electron desktop shell app | `assets/templates/electron-v2.md` | PearRuntime + Bare worker |
 | Encrypted one-to-one pipe | `assets/templates/bare-worker.md` + terminal shell | Hyperbeam |
 | Mobile companion app | `assets/templates/bare-worker.md` + mobile shell | Bare + BareKit + Hyperswarm |
 | Multi-platform (desktop + mobile) | `assets/templates/bare-worker.md` + platform shells | Choose per data need |
@@ -77,7 +81,8 @@ Starter app matrix (map problem to template):
    - Run `scripts/sync_holepunch_repos.py` to mirror orgs locally and refresh `references/holepunch-org-index.md`.
    - Repos are stored under `~/.codex/skills-cache/holepunch-p2p-architect/repos/<org>/<repo>`.
    - Use `--shallow` or `--repo-list` to limit clone size when needed.
-   - Start with `pearopen/*` examples for best-practice patterns; pull `holepunchto/*` or `tetherto/*` only to fill API gaps.
+   - Start with `holepunchto/hello-pear-electron` and `holepunchto/pear-runtime` for the v2 desktop shell pattern, then use `pearopen/*` examples for broader IPC and runtime references.
+   - Pull `holepunchto/*` or `tetherto/*` only to fill API gaps.
 2. Mirror Pear docs for offline reference.
    - Run `scripts/fetch_pears_docs.sh`.
 3. Dump reference Pear apps for real-world patterns.
@@ -85,7 +90,7 @@ Starter app matrix (map problem to template):
 4. Use `rg` against the local mirrors for examples, tests, and API usage.
 
 ## Architecture Workflow
-1. Identify runtime targets (Pear desktop, Bare mobile, Node) and constraints (storage, backgrounding, NAT/firewalls, offline requirements).
+1. Identify runtime targets (Pear desktop, Electron desktop, Bare mobile, Node) and constraints (storage, backgrounding, NAT/firewalls, offline requirements).
 2. Choose data model primitives using `references/stack-map.md`.
 3. Define discovery and replication surfaces (topics, protocols, membership, access control).
 4. Specify sync strategy (eventual vs real-time, public vs private data, caching/prefetching, migrations).
@@ -133,6 +138,7 @@ Starter app matrix (map problem to template):
 - `references/hypercore-storage.md` -> Hypercore storage batches, atomization, and low-level persistence.
 - `references/bare-runtime.md` -> Bare runtime binary lookup and spawn helpers.
 - `references/pear-runtime.md` -> Pear runtime metadata, shell/bootstrap boundaries, and worker-host usage.
+- `references/pear-v2-architecture.md` -> Electron + pear-runtime v2 shell pattern and update flow.
 - `references/hyperdht.md` -> HyperDHT API surface, announce/lookup patterns, and worker-host usage.
 - `references/udx-native.md` -> UDX transport API surface and worker-host transport patterns.
 - `references/bare-build.md` -> Bare packaging, runtime targets, and release artifact workflows.
@@ -142,7 +148,7 @@ Starter app matrix (map problem to template):
 - `references/hyperswarm.md` -> Hyperswarm API surface, discovery patterns, and worker-host lifecycle usage.
 - `references/ipc-runtime.md` -> IPC envelopes, backpressure, and reconnection patterns for shell/worker systems.
 - `references/ipc-repos.md` -> Expanded repo index and rg patterns for all ecosystem areas.
-- `references/app-scaffold.md` -> Canonical Bare worker-first app structure and per-target file trees.
+- `references/app-scaffold.md` -> Canonical Bare worker-first app structure and v2 desktop shell shape.
 - `references/runtime-abstraction.md` -> Shared-core, worker-host, and shell-adapter boundaries with code shapes.
 - `references/build-deploy.md` -> Build, test, package, and release command matrix per target.
 - `references/debug-playbook.md` -> Sync and discovery troubleshooting checklist.
@@ -150,15 +156,16 @@ Starter app matrix (map problem to template):
 - `references/holepunch-org-index.md` -> Auto-updating Holepunch org repository index.
 - `assets/templates/bare-worker.md` -> Canonical default scaffold.
 - `assets/templates/shared-core.md` -> Shared domain logic scaffold.
-- `assets/templates/desktop.md` -> Pear desktop shell scaffold around a worker host.
-- `assets/templates/terminal.md` -> Pear terminal shell scaffold around a worker host.
-- `assets/templates/mobile.md` -> Bare/BareKit mobile shell scaffold around a worker host.
+- `assets/templates/desktop.md` -> Pear desktop scaffold.
+- `assets/templates/electron-v2.md` -> Canonical Electron + pear-runtime v2 scaffold.
+- `assets/templates/terminal.md` -> Pear terminal scaffold.
+- `assets/templates/mobile.md` -> Bare/BareKit mobile shell scaffold.
 - `.github/workflows/` -> CI validate and release workflow templates.
 
 ## Example Requests
 - "Build a minimal P2P chat app for Pear desktop."
 - "Generate a complete Bare mobile app that syncs a feed with a desktop peer."
-- "Set up IPC between a Pear shell and a Bare worker with typed messages and reconnect logic."
+- "Set up IPC between an Electron shell and a Bare worker with typed messages and reconnect logic."
 - "Show a safe pattern for spinning up a Bare worker and coordinating with bare-atomics."
 - "Debug a deadlock in bare-ipc or pear-ipc and propose a fix with instrumentation."
 - "Design a multi-platform app architecture that shares IPC code between Pear and BareKit."

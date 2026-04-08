@@ -22,7 +22,7 @@ test/
 ## Architecture note
 - The terminal shell is only a launcher and inspector.
 - The worker host owns state, transport, and replication.
-- Prefer the pear-runtime library or equivalent bootstrap layer instead of `pear run` as the mental model.
+- Prefer the pear-runtime library or equivalent bootstrap layer instead of `pear run` as the mental model when the app is launched through Pear tooling.
 
 ## package.json shape
 

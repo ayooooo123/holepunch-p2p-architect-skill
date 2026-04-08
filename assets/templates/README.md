@@ -8,7 +8,8 @@ Start with `bare-worker.md` unless the request clearly requires a different shel
 ## Shared first, then platform adapters
 - `bare-worker.md` for the default worker-first app shape
 - `shared-core.md` for the domain layer and protocol model
-- `desktop.md` for Pear desktop shell apps
+- `electron-v2.md` for the modern Electron + pear-runtime desktop shell shape
+- `desktop.md` for a shorter Pear desktop reference
 - `terminal.md` for Pear terminal shell apps
 - `mobile.md` for Bare / BareKit mobile shell apps
 
