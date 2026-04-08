@@ -7,18 +7,26 @@ Use this for apps that need to run on-device with Bare or BareKit on iOS or Andr
 ```text
 package.json
 src/
-  app.js
-  runtime.js
+  bootstrap/
+    mobile.js
+  worker/
+    host.js
   core/
     app.js
   adapters/
-    mobile.js
-  native-bridge.js
+    mobile-shell.js
+    native-bridge.js
 config/
   mobile.config.js
 test/
   app.test.js
 ```
+
+## Architecture note
+- The mobile shell handles lifecycle and native wiring.
+- The worker host owns peer discovery, storage, and replication.
+- Keep BareKit and native bridge code outside shared core.
+- Keep discovery handles alive across suspend/resume cycles.
 
 ## package.json shape
 
@@ -27,7 +35,7 @@ test/
   "name": "my-p2p-mobile-app",
   "private": true,
   "scripts": {
-    "dev": "bare src/app.js",
+    "dev": "node src/bootstrap/mobile.js",
     "test": "node --test",
     "build": "node scripts/build.js",
     "package": "node scripts/package.js",
@@ -36,28 +44,18 @@ test/
 }
 ```
 
-## src/app.js
+## src/bootstrap/mobile.js
 
 ```js
-import { createAppCore } from './core/app.js'
+import { createWorkerHost } from '../worker/host.js'
 
-const app = createAppCore({
+const host = createWorkerHost({
   storage: {},
   transport: {},
-  clock: () => Date.now(),
   log: console.log
 })
 
-app.start()
-```
-
-## src/runtime.js
-Use this for runtime-specific wiring and lifecycle handling.
-
-```js
-export function getRuntimeName () {
-  return globalThis.Bare ? 'bare' : 'unknown'
-}
+host.start()
 ```
 
 ## config/mobile.config.js
