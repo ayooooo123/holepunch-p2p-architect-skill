@@ -14,12 +14,14 @@ Use this as a quick decision matrix for data model, replication, runtime choices
 - HyperDHT: Underlying DHT used by Hyperswarm for discovery and holepunching.
 - Protomux: Multiplex custom protocols over a single connection.
 - worker IPC: Use when the app runtime is split between a shell and a Bare worker host.
+- udx-native: Raw UDP transport for custom streams and low-level protocol work.
 
 ## Runtime Considerations
-- Pear Runtime (desktop): Shell + worker orchestration belongs in the pear-runtime bootstrap layer; do not build the app around `pear run`.
+- Pear Runtime (desktop): Shell + worker orchestration belongs in the Pear runtime/bootstrap layer; do not build the app around `pear run`.
 - Bare Runtime (mobile/native): Restricted environment; avoid blocking joins, retain discovery handles, and expect stricter lifecycle constraints.
 - BareKit / react-native-bare-kit: Use for native mobile work when you need Bare semantics inside Android or iOS apps.
 - Bare worker host: Default architecture for one-shot app generation; keep business logic and replication state here instead of in the shell.
+- bare-runtime: Use as the launcher/locator for the correct Bare binary on each target.
 
 ## Decision Prompts
 - Need multi-writer data? Choose Autobase.
@@ -44,9 +46,11 @@ Use this as a quick decision matrix for data model, replication, runtime choices
 | Native/Bare mobile app | `bare`, `bare-kit` | `react-native-bare-kit`, `bare-ipc`, `bare-atomics`, `bare-worker`, `bare-thread` |
 | Bare worker host / worker lifecycle | `bare-worker`, `bare-thread` | `bare-ipc`, `bare-atomics`, `bare-kit` |
 | Bare standard-library behavior | `bare-fs`, `bare-http1`, `bare-fetch`, `bare-zlib` | `bare-stream`, `bare-console`, `bare-readline`, `bare-repl` |
-| Packaging / bundling / app delivery | `bare-bundle`, `bare-pack`, `bare-unpack`, `bare-build` | `pear-runtime`, `pear-updates`, `pear-runtime-updater` |
+| Packaging / bundling / app delivery | `bare-bundle`, `bare-pack`, `bare-unpack`, `bare-build`, `bare-link` | `pear-runtime`, `pear-updates`, `pear-runtime-updater` |
 | Terminal / CLI UX | `pear-terminal`, `bare-readline` | `bare-repl`, `bare-console` |
 | Debugging / inspection | `pear-inspect`, `bare-inspector` | `bare-repl`, `bare-readline`, `pear-hotmods` |
+| Native addon development | `bare-addon`, `bare-link` | `bare-make`, `cmake-fetch`, `bare-pack` |
+| Raw UDP transport | `udx-native` | `hyperdht`, `hyperswarm`, `protomux` |
 
 ## Common Patterns
 - Public feed: Gossip discovery via Hyperswarm topic + read-only public index, often Hyperbee.
