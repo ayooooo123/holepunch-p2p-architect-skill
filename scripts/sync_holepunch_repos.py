@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Sync one or more GitHub orgs into a local cache and refresh the Holepunch org index.
 
-Defaults to the Holepunch-adjacent knowledge set under ~/.codex/skills-cache.
+Defaults to the Holepunch-adjacent knowledge set under ~/.codex/skills-cache, including holepunchto, pearopen, and tetherto.
 The generated Holepunch org index is written to references/holepunch-org-index.md
 unless --no-index is supplied.
 Supports --dry-run, --offline, and --shallow.
@@ -16,7 +16,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-DEFAULT_ORGS = ["holepunchto"]
+DEFAULT_ORGS = ["holepunchto", "pearopen", "tetherto"]
 DEFAULT_DEST = os.path.expanduser("~/.codex/skills-cache/holepunch-p2p-architect/repos")
 DEFAULT_INDEX_ORG = "holepunch"
 DEFAULT_INDEX_OUT = "references/holepunch-org-index.md"

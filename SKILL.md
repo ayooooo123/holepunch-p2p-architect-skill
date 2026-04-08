@@ -123,7 +123,7 @@ Starter app matrix (map problem to template):
 4. Use `references/testing.md` for patterns and coverage checklist.
 
 ## Local Knowledge Sources
-- `scripts/sync_holepunch_repos.py` -> Mirror `holepunchto/*` and `tetherto/*` repos to a local cache and refresh the org index.
+- `scripts/sync_holepunch_repos.py` -> Mirror `holepunchto/*`, `pearopen/*`, and `tetherto/*` repos to a local cache and refresh the org index.
 - `scripts/fetch_pears_docs.sh` -> Mirror https://docs.pears.com for offline reference.
 - `scripts/pear_dump_app.sh` -> Dump Pear apps for real-world pattern analysis.
 - `references/stack-map.md` -> Data model, networking decision matrix, and problem-first repo index.
