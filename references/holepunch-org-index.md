@@ -1,19 +1,626 @@
-# Holepunch organization repository index
+# Holepunch Organization Repository Index
 
-Generated at: 2026-04-08T17:38:00Z
+Generated at: 2026-04-09T09:00:00Z
 
-Source: GitHub org `holepunch`
+Source: GitHub org `holepunchto`
 
-Total repositories found: 2
+Total repositories found: 587
 
-Note: this file is auto-updated by `scripts/sync_holepunch_repos.py`.
+Note: this file is auto-updated by a scheduled Poke automation.
 
-## Repositories
+## Core P2P / DHT
 
-- [holepunch/datascience](https://github.com/holepunch/datascience)
-  - Description: No description set.
-  - Created: 2014-12-03 | Updated: 2014-12-03 | Last pushed: 2014-12-03
+- [blind-peer](https://github.com/holepunchto/blind-peer) — Peer that is blind *(updated: 2026-04-08)*
+- [blind-peer-cli](https://github.com/holepunchto/blind-peer-cli) — CLI for running a blind peer *(updated: 2026-04-07)*
+- [blind-peer-encodings](https://github.com/holepunchto/blind-peer-encodings) — Blind Peer encodings *(updated: 2026-03-10)*
+- [blind-peer-muxer](https://github.com/holepunchto/blind-peer-muxer) — Protomux channel muxer for blind peers *(updated: 2026-02-16)*
+- [blind-peer-router](https://github.com/holepunchto/blind-peer-router) — No description. *(updated: 2026-03-17)*
+- [blind-peering](https://github.com/holepunchto/blind-peering) — Peer side mirror manager *(updated: 2026-04-02)*
+- [blind-peering-cli](https://github.com/holepunchto/blind-peering-cli) — CLI for blind-peering *(updated: 2026-01-12)*
+- [dht-rpc](https://github.com/holepunchto/dht-rpc) — Make RPC calls over a Kademlia based DHT. *(updated: 2026-03-27)*
+- [http-dht-proxy](https://github.com/holepunchto/http-dht-proxy) — No description. *(updated: 2026-03-30)*
+- [hyperdht](https://github.com/holepunchto/hyperdht) — The DHT powering Hyperswarm *(updated: 2026-04-09)*
+- [hyperdht-address](https://github.com/holepunchto/hyperdht-address) — HyperDHT key parsing with optional DHT node addresses *(updated: 2026-03-31)*
+- [hyperdht-stats](https://github.com/holepunchto/hyperdht-stats) — HyperDHT stats, with Prometheus support *(updated: 2025-10-08)*
+- [hyperswarm](https://github.com/holepunchto/hyperswarm) — A distributed networking stack for connecting peers. *(updated: 2026-04-08)*
+- [hyperswarm-capability](https://github.com/holepunchto/hyperswarm-capability) — Produce a stream coupled capability for a key *(updated: 2026-03-27)*
+- [hyperswarm-dht-relay](https://github.com/holepunchto/hyperswarm-dht-relay) — Relaying the Hyperswarm DHT over other transport protocols to bring decentralized networking to everyone *(updated: 2026-04-08)*
+- [hyperswarm-doctor](https://github.com/holepunchto/hyperswarm-doctor) — Debugging tool for the swarm *(updated: 2026-02-13)*
+- [hyperswarm-e2e-tests](https://github.com/holepunchto/hyperswarm-e2e-tests) — Hyperdht end-to-end tests *(updated: 2025-09-01)*
+- [hyperswarm-secret-stream](https://github.com/holepunchto/hyperswarm-secret-stream) — Secret stream backed by Noise and libsodium's secretstream *(updated: 2026-03-20)*
+- [hyperswarm-seeders](https://github.com/holepunchto/hyperswarm-seeders) — A seeders only swarm *(updated: 2026-02-13)*
+- [hyperswarm-stats](https://github.com/holepunchto/hyperswarm-stats) — Stats for Hyperswarm and the connections it swarms, with Prometheus support *(updated: 2025-09-01)*
+- [hyperswarm-testnet](https://github.com/holepunchto/hyperswarm-testnet) — Small module to help you spin up a local Hyperswarm testnet *(updated: 2026-02-13)*
+- [instrumented-dht-node](https://github.com/holepunchto/instrumented-dht-node) — A DHT node exposing Prometheus metrics *(updated: 2025-09-01)*
 
-- [holepunch/datasciencecoursera](https://github.com/holepunch/datasciencecoursera)
-  - Description: No description set.
-  - Created: 2014-12-03 | Updated: 2014-12-03 | Last pushed: 2014-12-03
+## Hypercore Protocol
+
+- [autobase](https://github.com/holepunchto/autobase) — Autobase lets you write concise multiwriter data structures with Hypercore *(updated: 2026-04-08)*
+- [autobase-discovery](https://github.com/holepunchto/autobase-discovery) — Discover RPC services using autobase and protomux-rpc *(updated: 2026-02-09)*
+- [autobase-discovery-cli](https://github.com/holepunchto/autobase-discovery-cli) — CLI for autobase-discovery *(updated: 2025-12-19)*
+- [autobase-example](https://github.com/holepunchto/autobase-example) — Just a runnable E2E autobase example *(updated: 2025-06-08)*
+- [autobase-light-writer](https://github.com/holepunchto/autobase-light-writer) — Detached autobase writer that is just a single core with no causal info" *(updated: 2025-01-21)*
+- [autobase-test-helpers](https://github.com/holepunchto/autobase-test-helpers) — Helpers when writing tests for an Autobased application *(updated: 2025-09-01)*
+- [corestore](https://github.com/holepunchto/corestore) — A simple corestore that wraps a random-access-storage module *(updated: 2026-03-21)*
+- [corestore-snapshot](https://github.com/holepunchto/corestore-snapshot) — Make a corestore snapshot for ci *(updated: 2026-04-09)*
+- [Grafana-hypercore-stats](https://github.com/holepunchto/Grafana-hypercore-stats) — Grafana dashboard for Hypercore, Hyperswarm, Hyperdht and UDX stats exported over Prometheus *(updated: 2025-01-20)*
+- [hyperbee](https://github.com/holepunchto/hyperbee) — An append-only B-tree running on a Hypercore *(updated: 2026-04-08)*
+- [hyperbee-diff-stream](https://github.com/holepunchto/hyperbee-diff-stream) — No description. *(updated: 2025-11-05)*
+- [hyperbee2](https://github.com/holepunchto/hyperbee2) — No description. *(updated: 2026-04-01)*
+- [hypercore](https://github.com/holepunchto/hypercore) — Hypercore is a secure, distributed append-only log. *(updated: 2026-04-09)*
+- [hypercore-audit](https://github.com/holepunchto/hypercore-audit) — Audit hypercore storage *(updated: 2026-02-09)*
+- [hypercore-blob-server](https://github.com/holepunchto/hypercore-blob-server) — HTTP server for streaming hypercore blobs *(updated: 2026-02-10)*
+- [hypercore-byte-stream](https://github.com/holepunchto/hypercore-byte-stream) — A Readable stream around a Hypercore that supports reading byte ranges *(updated: 2025-05-05)*
+- [hypercore-crypto](https://github.com/holepunchto/hypercore-crypto) — The crypto primitives used in hypercore, extracted into a separate module *(updated: 2026-02-09)*
+- [hypercore-detector](https://github.com/holepunchto/hypercore-detector) — Detect the type of your hypercore *(updated: 2023-06-12)*
+- [hypercore-e2e-tests](https://github.com/holepunchto/hypercore-e2e-tests) — End-to-end tests for Hypercore replication *(updated: 2025-09-01)*
+- [hypercore-encryption](https://github.com/holepunchto/hypercore-encryption) — Configurable block encryption for Hypercore *(updated: 2025-11-18)*
+- [hypercore-errors](https://github.com/holepunchto/hypercore-errors) — Hypercore errors *(updated: 2026-02-09)*
+- [hypercore-id-encoding](https://github.com/holepunchto/hypercore-id-encoding) — Convert Hypercore keys to/from z-base32 or hex *(updated: 2026-02-09)*
+- [hypercore-logger](https://github.com/holepunchto/hypercore-logger) — Distributed logger *(updated: 2025-06-03)*
+- [hypercore-messages](https://github.com/holepunchto/hypercore-messages) — The binary messages that Hypercore uses *(updated: 2023-11-23)*
+- [hypercore-proof-queue](https://github.com/holepunchto/hypercore-proof-queue) — Store a bunch of Hypercore proofs to a file and consume them later *(updated: 2025-03-04)*
+- [hypercore-scale-tests](https://github.com/holepunchto/hypercore-scale-tests) — No description. *(updated: 2025-09-01)*
+- [hypercore-sign](https://github.com/holepunchto/hypercore-sign) — Sign and verify Hypercores *(updated: 2026-03-31)*
+- [hypercore-signing-request](https://github.com/holepunchto/hypercore-signing-request) — Generate shareable signing requests for Hypercore *(updated: 2026-04-02)*
+- [hypercore-stats](https://github.com/holepunchto/hypercore-stats) — Stats for Hypercores, with Prometheus support *(updated: 2025-09-01)*
+- [hypercore-storage](https://github.com/holepunchto/hypercore-storage) — RocksDB storage driver for Hypercore *(updated: 2026-03-27)*
+- [hypercoreify](https://github.com/holepunchto/hypercoreify) — Turn static blocks into a static hypercore *(updated: 2025-02-17)*
+- [hyperdb-autobase-workshop](https://github.com/holepunchto/hyperdb-autobase-workshop) — Using hyperdb with autobase for multiple writers *(updated: 2025-09-08)*
+
+## Hyperdrive / File Systems
+
+- [drives](https://github.com/holepunchto/drives) — CLI to download, seed, and mirror a Hyperdrive or Localdrive *(updated: 2026-03-06)*
+- [hyperdrive](https://github.com/holepunchto/hyperdrive) — Hyperdrive is a secure, real time distributed file system *(updated: 2026-04-09)*
+- [hyperdrive-next](https://github.com/holepunchto/hyperdrive-next) — Hyperdrive is a secure, real-time distributed file system *(updated: 2026-02-13)*
+- [hyperdrive-profiler](https://github.com/holepunchto/hyperdrive-profiler) — Profile hyperdrive download performancce *(updated: 2026-01-26)*
+- [hyperdrive-swarm-test](https://github.com/holepunchto/hyperdrive-swarm-test) — No description. *(updated: 2025-03-17)*
+- [localdrive](https://github.com/holepunchto/localdrive) — File system API that is similar to Hyperdrive *(updated: 2026-03-06)*
+
+## Bare Runtime
+
+- [bare](https://github.com/holepunchto/bare) — Small and modular JavaScript runtime for desktop and mobile *(updated: 2026-04-09)*
+- [bare-abort](https://github.com/holepunchto/bare-abort) — Cause abnormal program termination and generate a crash report *(updated: 2026-04-08)*
+- [bare-abort-controller](https://github.com/holepunchto/bare-abort-controller) — Abort controller support for Bare *(updated: 2026-04-08)*
+- [bare-addon](https://github.com/holepunchto/bare-addon) — Template repository for creating Bare native addons *(updated: 2026-04-08)*
+- [bare-addon-java](https://github.com/holepunchto/bare-addon-java) — Template repository for creating Bare native addons using Java via https://github.com/holepunchto/libjnitl *(updated: 2026-04-08)*
+- [bare-addon-jstl](https://github.com/holepunchto/bare-addon-jstl) — Template repository for creating Bare native addons using C++ via https://github.com/holepunchto/libjstl *(updated: 2026-04-08)*
+- [bare-addon-resolve](https://github.com/holepunchto/bare-addon-resolve) — Low-level addon resolution algorithm for Bare *(updated: 2026-04-08)*
+- [bare-addon-rust](https://github.com/holepunchto/bare-addon-rust) — Template repository for creating Bare native addons using https://github.com/holepunchto/bare-rust *(updated: 2026-04-08)*
+- [bare-android](https://github.com/holepunchto/bare-android) — Example of embedding Bare in an Android application using https://github.com/holepunchto/bare-kit *(updated: 2026-04-08)*
+- [bare-ansi-escapes](https://github.com/holepunchto/bare-ansi-escapes) — Parse and produce ANSI escape sequences *(updated: 2026-04-08)*
+- [bare-apk](https://github.com/holepunchto/bare-apk) — APK packaging tools for Bare *(updated: 2026-04-08)*
+- [bare-app-image](https://github.com/holepunchto/bare-app-image) — AppImage packaging tools for Bare *(updated: 2026-04-08)*
+- [bare-app-kit](https://github.com/holepunchto/bare-app-kit) — AppKit bindings and runtime for Bare *(updated: 2026-04-08)*
+- [bare-assert](https://github.com/holepunchto/bare-assert) — Assertion library for JavaScript *(updated: 2026-04-08)*
+- [bare-async-hooks](https://github.com/holepunchto/bare-async-hooks) — `async_hooks` shim for Bare *(updated: 2026-04-08)*
+- [bare-atomics](https://github.com/holepunchto/bare-atomics) — Native synchronization primitives for JavaScript *(updated: 2026-04-08)*
+- [bare-bluetooth-apple](https://github.com/holepunchto/bare-bluetooth-apple) — CoreBluetooth bindings for Bare *(updated: 2026-04-09)*
+- [bare-bmp](https://github.com/holepunchto/bare-bmp) — Native BMP codec for Bare *(updated: 2026-01-15)*
+- [bare-boot](https://github.com/holepunchto/bare-boot) — Boot drives in Bare *(updated: 2026-04-08)*
+- [bare-buffer](https://github.com/holepunchto/bare-buffer) — Native buffers for JavaScript *(updated: 2026-04-08)*
+- [bare-build](https://github.com/holepunchto/bare-build) — Application builder for Bare *(updated: 2026-04-08)*
+- [bare-bundle](https://github.com/holepunchto/bare-bundle) — Application bundle format for JavaScript, inspired by https://github.com/electron/asar *(updated: 2026-04-08)*
+- [bare-bundle-compile](https://github.com/holepunchto/bare-bundle-compile) — Compile a bundle of CommonJS modules to a single module *(updated: 2026-04-08)*
+- [bare-bundle-evaluate](https://github.com/holepunchto/bare-bundle-evaluate) — Evaluate a bundle of CommonJS modules across JavaScript runtimes *(updated: 2026-04-08)*
+- [bare-bundle-id](https://github.com/holepunchto/bare-bundle-id) — Construct a unique ID for a bundle *(updated: 2026-04-08)*
+- [bare-channel](https://github.com/holepunchto/bare-channel) — Inter-thread messaging for JavaScript *(updated: 2026-04-08)*
+- [bare-compat-napi](https://github.com/holepunchto/bare-compat-napi) — Bare compatibility headers for Node-API *(updated: 2026-04-08)*
+- [bare-console](https://github.com/holepunchto/bare-console) — WHATWG debugging console for JavaScript *(updated: 2026-04-08)*
+- [bare-cov](https://github.com/holepunchto/bare-cov) — No description. *(updated: 2025-11-21)*
+- [bare-crypto](https://github.com/holepunchto/bare-crypto) — Cryptographic primitives for JavaScript *(updated: 2026-04-08)*
+- [bare-daemon](https://github.com/holepunchto/bare-daemon) — Create and manage daemon processes in JavaScript *(updated: 2026-04-08)*
+- [bare-debug-log](https://github.com/holepunchto/bare-debug-log) — Simple debug log for JavaScript *(updated: 2026-04-08)*
+- [bare-delta](https://github.com/holepunchto/bare-delta) — Binary patch handling for Bare *(updated: 2025-09-06)*
+- [bare-dgram](https://github.com/holepunchto/bare-dgram) — Native UDP for JavaScript *(updated: 2026-04-08)*
+- [bare-diagnostics-channel](https://github.com/holepunchto/bare-diagnostics-channel) — Create and publish data to named channels for diagnostics purposes *(updated: 2026-04-08)*
+- [bare-distributable](https://github.com/holepunchto/bare-distributable) — Template repository for creating custom Bare distributables *(updated: 2026-04-08)*
+- [bare-dns](https://github.com/holepunchto/bare-dns) — Domain name resolution for JavaScript *(updated: 2026-04-08)*
+- [bare-encoding](https://github.com/holepunchto/bare-encoding) — WHATWG text encoding interfaces for JavaScript *(updated: 2026-04-08)*
+- [bare-env](https://github.com/holepunchto/bare-env) — Environment variable support for JavaScript *(updated: 2026-04-08)*
+- [bare-events](https://github.com/holepunchto/bare-events) — Event emitters for JavaScript *(updated: 2026-04-08)*
+- [bare-exif](https://github.com/holepunchto/bare-exif) — EXIF support for Bare *(updated: 2026-04-08)*
+- [bare-expo](https://github.com/holepunchto/bare-expo) — Example of embedding Bare in an Expo application using https://github.com/holepunchto/react-native-bare-kit *(updated: 2026-04-08)*
+- [bare-expo-hrpc-demo](https://github.com/holepunchto/bare-expo-hrpc-demo) — No description. *(updated: 2026-02-18)*
+- [bare-fetch](https://github.com/holepunchto/bare-fetch) — WHATWG Fetch implementation for Bare *(updated: 2026-04-08)*
+- [bare-ffmpeg](https://github.com/holepunchto/bare-ffmpeg) — Low-level FFmpeg bindings for Bare *(updated: 2026-04-08)*
+- [bare-ffmpeg-encodings](https://github.com/holepunchto/bare-ffmpeg-encodings) — hyperschema for bare-ffmpeg types *(updated: 2025-09-26)*
+- [bare-file-logger](https://github.com/holepunchto/bare-file-logger) — File system logger for Bare *(updated: 2026-04-08)*
+- [bare-form-data](https://github.com/holepunchto/bare-form-data) — Form data support for Bare *(updated: 2026-04-08)*
+- [bare-format](https://github.com/holepunchto/bare-format) — String formatting for JavaScript *(updated: 2026-04-08)*
+- [bare-fs](https://github.com/holepunchto/bare-fs) — Native file system operations for Bare *(updated: 2026-04-09)*
+- [bare-gif](https://github.com/holepunchto/bare-gif) — GIF support for Bare *(updated: 2026-04-08)*
+- [bare-gtk](https://github.com/holepunchto/bare-gtk) — GTK bindings and runtime for Bare *(updated: 2026-04-08)*
+- [bare-headers](https://github.com/holepunchto/bare-headers) — Development headers for Bare *(updated: 2026-04-08)*
+- [bare-heif](https://github.com/holepunchto/bare-heif) — HEIF support for Bare *(updated: 2026-04-08)*
+- [bare-hrtime](https://github.com/holepunchto/bare-hrtime) — High-resolution timers for JavaScript *(updated: 2026-04-08)*
+- [bare-http-parser](https://github.com/holepunchto/bare-http-parser) — Streaming HTTP request and response parser for Bare *(updated: 2026-04-08)*
+- [bare-http1](https://github.com/holepunchto/bare-http1) — HTTP/1 library for JavaScript *(updated: 2026-04-08)*
+- [bare-https](https://github.com/holepunchto/bare-https) — HTTPS library for JavaScript *(updated: 2026-04-08)*
+- [bare-ico](https://github.com/holepunchto/bare-ico) — ICO support for Bare *(updated: 2026-01-28)*
+- [bare-image-resample](https://github.com/holepunchto/bare-image-resample) — Image resampling support for Bare *(updated: 2026-04-08)*
+- [bare-inspect](https://github.com/holepunchto/bare-inspect) — Inspect objects as strings for debugging *(updated: 2026-04-08)*
+- [bare-inspector](https://github.com/holepunchto/bare-inspector) — V8 inspector support for Bare *(updated: 2026-04-08)*
+- [bare-inspector-gc](https://github.com/holepunchto/bare-inspector-gc) — manually trigger garbage collection via inspector protocol *(updated: 2026-01-27)*
+- [bare-intl](https://github.com/holepunchto/bare-intl) — ECMAScript Internationalization API for Bare *(updated: 2026-04-08)*
+- [bare-ios](https://github.com/holepunchto/bare-ios) — Example of embedding Bare in an iOS application using https://github.com/holepunchto/bare-kit *(updated: 2026-04-08)*
+- [bare-ipc](https://github.com/holepunchto/bare-ipc) — Lightweight pipe-based IPC for Bare *(updated: 2026-04-08)*
+- [bare-jpeg](https://github.com/holepunchto/bare-jpeg) — JPEG support for Bare *(updated: 2026-04-08)*
+- [bare-kit](https://github.com/holepunchto/bare-kit) — Bare for native application development *(updated: 2026-04-08)*
+- [bare-kit-swift](https://github.com/holepunchto/bare-kit-swift) — Swift extensions for Bare Kit *(updated: 2026-04-08)*
+- [bare-lief](https://github.com/holepunchto/bare-lief) — LIEF bindings for Bare *(updated: 2026-04-08)*
+- [bare-link](https://github.com/holepunchto/bare-link) — Native addon linker for Bare *(updated: 2026-04-08)*
+- [bare-logger](https://github.com/holepunchto/bare-logger) — Low-level logger for Bare *(updated: 2026-04-08)*
+- [bare-make](https://github.com/holepunchto/bare-make) — Opinionated build system generator based on CMake *(updated: 2026-04-08)*
+- [bare-md4c](https://github.com/holepunchto/bare-md4c) — Fast markdown push parser *(updated: 2026-03-15)*
+- [bare-media](https://github.com/holepunchto/bare-media) — A set of media APIs for Bare *(updated: 2026-04-08)*
+- [bare-module](https://github.com/holepunchto/bare-module) — Module support for JavaScript *(updated: 2026-04-08)*
+- [bare-module-lexer](https://github.com/holepunchto/bare-module-lexer) — Heuristic lexer for detecting imports and exports in JavaScript modules *(updated: 2026-04-08)*
+- [bare-module-resolve](https://github.com/holepunchto/bare-module-resolve) — Low-level module resolution algorithm for Bare *(updated: 2026-04-08)*
+- [bare-module-traverse](https://github.com/holepunchto/bare-module-traverse) — Low-level module graph traversal for Bare *(updated: 2026-04-08)*
+- [bare-native](https://github.com/holepunchto/bare-native) — Native application development framework for Bare *(updated: 2026-04-08)*
+- [bare-ndk](https://github.com/holepunchto/bare-ndk) — Android NDK runtime and bindings for Bare *(updated: 2026-04-08)*
+- [bare-net](https://github.com/holepunchto/bare-net) — TCP and IPC servers and clients for JavaScript *(updated: 2026-04-08)*
+- [bare-node](https://github.com/holepunchto/bare-node) — Compatibility modules for Node.js builtins in Bare *(updated: 2026-04-08)*
+- [bare-node-fetch](https://github.com/holepunchto/bare-node-fetch) — Cross runtime fetch module *(updated: 2025-04-08)*
+- [bare-node-runtime](https://github.com/holepunchto/bare-node-runtime) — Compatibility layer for Node.js builtins and globals in Bare  *(updated: 2026-04-08)*
+- [bare-open](https://github.com/holepunchto/bare-open) — Cross-platform application launcher for Bare *(updated: 2026-04-08)*
+- [bare-os](https://github.com/holepunchto/bare-os) — Operating system utilities for Bare *(updated: 2026-04-08)*
+- [bare-pack](https://github.com/holepunchto/bare-pack) — Bundle packing for Bare *(updated: 2026-04-08)*
+- [bare-pack-drive](https://github.com/holepunchto/bare-pack-drive) — Pack drives to Bare bundles *(updated: 2026-04-08)*
+- [bare-path](https://github.com/holepunchto/bare-path) — Path manipulation library for JavaScript *(updated: 2026-04-08)*
+- [bare-performance](https://github.com/holepunchto/bare-performance) — Performance monitoring for Bare *(updated: 2026-04-08)*
+- [bare-pipe](https://github.com/holepunchto/bare-pipe) — Native I/O pipes for JavaScript *(updated: 2026-04-08)*
+- [bare-png](https://github.com/holepunchto/bare-png) — PNG support for Bare *(updated: 2026-04-08)*
+- [bare-prebuild](https://github.com/holepunchto/bare-prebuild) — Tool for recursively prebuilding installed native addons from source *(updated: 2026-04-08)*
+- [bare-process](https://github.com/holepunchto/bare-process) — Node.js-compatible process control for Bare *(updated: 2026-04-08)*
+- [bare-punycode](https://github.com/holepunchto/bare-punycode) — Punycode support for Bare *(updated: 2026-04-08)*
+- [bare-querystring](https://github.com/holepunchto/bare-querystring) — URL query string utilities *(updated: 2026-04-08)*
+- [bare-queue-microtask](https://github.com/holepunchto/bare-queue-microtask) — Microtask queuing for Bare *(updated: 2026-04-08)*
+- [bare-readline](https://github.com/holepunchto/bare-readline) — Line editing for interactive CLIs with command history *(updated: 2026-04-08)*
+- [bare-realm](https://github.com/holepunchto/bare-realm) — Realm support for Bare *(updated: 2026-04-08)*
+- [bare-repl](https://github.com/holepunchto/bare-repl) — Read-Evaluate-Print-Loop environment for JavaScript *(updated: 2026-04-08)*
+- [bare-rpc](https://github.com/holepunchto/bare-rpc) — https://github.com/holepunchto/librpc ABI compatible RPC for Bare *(updated: 2026-04-08)*
+- [bare-rpc-golang](https://github.com/holepunchto/bare-rpc-golang) — No description. *(updated: 2026-02-15)*
+- [bare-rpc-swift](https://github.com/holepunchto/bare-rpc-swift) — https://github.com/holepunchto/librpc ABI compatible RPC for Swift  *(updated: 2026-04-08)*
+- [bare-run](https://github.com/holepunchto/bare-run) — Cross-platform script runner for Bare *(updated: 2026-04-08)*
+- [bare-runtime](https://github.com/holepunchto/bare-runtime) — Prebuilt Bare binaries for macOS, iOS, Linux, Android, and Windows *(updated: 2026-04-07)*
+- [bare-rust](https://github.com/holepunchto/bare-rust) — Rust and Bare, sitting in a tree *(updated: 2026-04-08)*
+- [bare-sdl](https://github.com/holepunchto/bare-sdl) — SDL bindings for Bare *(updated: 2026-04-08)*
+- [bare-semver](https://github.com/holepunchto/bare-semver) — Minimal semantic versioning library for Bare *(updated: 2026-04-08)*
+- [bare-sidecar](https://github.com/holepunchto/bare-sidecar) — Start and manage Bare sidecar processes from Node.js and Electron *(updated: 2026-04-08)*
+- [bare-sidecar-bundle](https://github.com/holepunchto/bare-sidecar-bundle) — Bare bundler optimised for sidecars to be used in pear-runtime *(updated: 2026-03-12)*
+- [bare-signals](https://github.com/holepunchto/bare-signals) — Native signal handling for JavaScript *(updated: 2026-04-08)*
+- [bare-snippets](https://github.com/holepunchto/bare-snippets) — Examples of how Bare makes running Javascript everywhere easy. *(updated: 2026-01-14)*
+- [bare-stdio](https://github.com/holepunchto/bare-stdio) — Standard input/output streams for Bare *(updated: 2026-04-08)*
+- [bare-storage](https://github.com/holepunchto/bare-storage) — Minimal, cross‑platform directory locator for Bare *(updated: 2026-04-08)*
+- [bare-stream](https://github.com/holepunchto/bare-stream) — Streaming data for JavaScript *(updated: 2026-04-08)*
+- [bare-string-decoder](https://github.com/holepunchto/bare-string-decoder) — `string_decoder` shim for Bare *(updated: 2026-03-06)*
+- [bare-structured-clone](https://github.com/holepunchto/bare-structured-clone) — Structured cloning algorithm for JavaScript *(updated: 2026-04-08)*
+- [bare-subprocess](https://github.com/holepunchto/bare-subprocess) — Native process spawning for JavaScript *(updated: 2026-04-09)*
+- [bare-svg](https://github.com/holepunchto/bare-svg) — SVG support for Bare *(updated: 2026-01-29)*
+- [bare-system-logger](https://github.com/holepunchto/bare-system-logger) — System logger for Bare *(updated: 2026-04-08)*
+- [bare-tap](https://github.com/holepunchto/bare-tap) — Minimal TAP library for Bare *(updated: 2026-04-08)*
+- [bare-tcp](https://github.com/holepunchto/bare-tcp) — Native TCP sockets for JavaScript *(updated: 2026-04-08)*
+- [bare-thread](https://github.com/holepunchto/bare-thread) — Thread support for Bare *(updated: 2026-04-08)*
+- [bare-tiff](https://github.com/holepunchto/bare-tiff) — TIFF support for Bare *(updated: 2026-04-08)*
+- [bare-timers](https://github.com/holepunchto/bare-timers) — Native timers for JavaScript *(updated: 2026-04-08)*
+- [bare-tls](https://github.com/holepunchto/bare-tls) — Transport Layer Security (TLS) streams for JavaScript *(updated: 2026-04-08)*
+- [bare-tpl](https://github.com/holepunchto/bare-tpl) — Simple template string based templating for Bare *(updated: 2026-04-08)*
+- [bare-tty](https://github.com/holepunchto/bare-tty) — Native TTY streams for JavaScript *(updated: 2026-04-08)*
+- [bare-type](https://github.com/holepunchto/bare-type) — Cross-realm type predicates for Bare *(updated: 2026-04-08)*
+- [bare-ui-kit](https://github.com/holepunchto/bare-ui-kit) — UIKit bindings and runtime for Bare *(updated: 2026-04-08)*
+- [bare-union-bundle](https://github.com/holepunchto/bare-union-bundle) — Union bundle *(updated: 2025-11-17)*
+- [bare-unpack](https://github.com/holepunchto/bare-unpack) — Bundle unpacking for Bare *(updated: 2026-04-08)*
+- [bare-url](https://github.com/holepunchto/bare-url) — WHATWG URL implementation for JavaScript *(updated: 2026-04-08)*
+- [bare-utils](https://github.com/holepunchto/bare-utils) — Node.js-compatible utility functions for Bare *(updated: 2026-04-08)*
+- [bare-v8](https://github.com/holepunchto/bare-v8) — V8 utilities for Bare *(updated: 2026-04-08)*
+- [bare-v8-to-istanbul](https://github.com/holepunchto/bare-v8-to-istanbul) — No description. *(updated: 2025-12-17)*
+- [bare-vm](https://github.com/holepunchto/bare-vm) — Isolated JavaScript contexts for Bare *(updated: 2026-04-08)*
+- [bare-walk-handles](https://github.com/holepunchto/bare-walk-handles) — Walk the event loop handles of the Bare process *(updated: 2026-04-08)*
+- [bare-web-kit](https://github.com/holepunchto/bare-web-kit) — WebKit bindings for Bare *(updated: 2026-04-08)*
+- [bare-web-kit-gtk](https://github.com/holepunchto/bare-web-kit-gtk) — WebKitGTK bindings for Bare *(updated: 2026-04-08)*
+- [bare-webp](https://github.com/holepunchto/bare-webp) — WebP support for Bare *(updated: 2026-04-08)*
+- [bare-which](https://github.com/holepunchto/bare-which) — Find a program in $PATH *(updated: 2026-04-08)*
+- [bare-win-ui](https://github.com/holepunchto/bare-win-ui) — WinUI bindings and runtime for Bare *(updated: 2026-04-08)*
+- [bare-worker](https://github.com/holepunchto/bare-worker) — Higher-level worker threads for JavaScript *(updated: 2026-04-08)*
+- [bare-ws](https://github.com/holepunchto/bare-ws) — WebSocket library for JavaScript *(updated: 2026-04-08)*
+- [bare-xdiff](https://github.com/holepunchto/bare-xdiff) — Bare native addon for the xdiff diff/merge algorithms *(updated: 2025-09-09)*
+- [bare-zlib](https://github.com/holepunchto/bare-zlib) — Stream-based zlib bindings for JavaScript *(updated: 2026-04-08)*
+- [bare-zmq](https://github.com/holepunchto/bare-zmq) — Low-level ZeroMQ bindings for JavaScript *(updated: 2026-04-08)*
+
+## Pear Platform
+
+- [keet-appling](https://github.com/holepunchto/keet-appling) — Keet application shell for macOS, Linux, and Windows *(updated: 2026-04-08)*
+- [keet-appling-next](https://github.com/holepunchto/keet-appling-next) — Keet application shell *(updated: 2026-04-08)*
+- [keet-identity-key](https://github.com/holepunchto/keet-identity-key) — Hierarchical deterministic key pairs for use in Keet identity system  *(updated: 2026-03-17)*
+- [keet-mobile-releases](https://github.com/holepunchto/keet-mobile-releases) — Keet mobile releases *(updated: 2026-04-09)*
+- [keet-prefs](https://github.com/holepunchto/keet-prefs) — Keet Preferences *(updated: 2024-02-23)*
+- [pear](https://github.com/holepunchto/pear) — combined Peer-to-Peer (P2P) Runtime, Development & Deployment tool *(updated: 2026-04-09)*
+- [pear-aliases](https://github.com/holepunchto/pear-aliases) — pear://<alias> list *(updated: 2026-01-09)*
+- [pear-api](https://github.com/holepunchto/pear-api) — Pear API Base & Integration Module *(updated: 2025-12-05)*
+- [pear-appdrive](https://github.com/holepunchto/pear-appdrive) — Pear application drive class, minimal hyperdrive compat, read-only *(updated: 2025-12-15)*
+- [pear-appling](https://github.com/holepunchto/pear-appling) — Template repository for creating Pear applings *(updated: 2026-04-08)*
+- [pear-bridge](https://github.com/holepunchto/pear-bridge) — Local HTTP Bridge for Pear Desktop Applications *(updated: 2026-01-13)*
+- [pear-build](https://github.com/holepunchto/pear-build) — Build appling for a Pear application *(updated: 2026-04-02)*
+- [pear-bundle](https://github.com/holepunchto/pear-bundle) — Generate a bare-bundle from a Pear application entrypoint *(updated: 2026-01-16)*
+- [pear-changelog](https://github.com/holepunchto/pear-changelog) — Changelog parser and differ *(updated: 2025-12-17)*
+- [pear-ci-example](https://github.com/holepunchto/pear-ci-example) — how to stage on ci relatively safely *(updated: 2026-03-26)*
+- [pear-ci-multisig](https://github.com/holepunchto/pear-ci-multisig) — Specialized subset of pear multisig CLI for CI pipelines *(updated: 2026-04-07)*
+- [pear-cli](https://github.com/holepunchto/pear-cli) — 🍐 *(updated: 2026-01-21)*
+- [pear-cmd](https://github.com/holepunchto/pear-cmd) — Pear command parser & definitions *(updated: 2025-12-15)*
+- [pear-constants](https://github.com/holepunchto/pear-constants) — Pear constants *(updated: 2025-12-05)*
+- [pear-crasher](https://github.com/holepunchto/pear-crasher) — Pear uncaught crash handler *(updated: 2026-01-08)*
+- [pear-desktop](https://github.com/holepunchto/pear-desktop) — pear://runtime *(updated: 2025-12-10)*
+- [pear-distributable-bootstrap](https://github.com/holepunchto/pear-distributable-bootstrap) — Pear Application Distributable Bootstrapper *(updated: 2025-08-26)*
+- [pear-docs](https://github.com/holepunchto/pear-docs) — No description. *(updated: 2026-04-05)*
+- [pear-doctor](https://github.com/holepunchto/pear-doctor) — The Pear Doctor Application *(updated: 2025-12-18)*
+- [pear-drop](https://github.com/holepunchto/pear-drop) — Drop data, including applicaiton reset *(updated: 2025-09-04)*
+- [pear-dump](https://github.com/holepunchto/pear-dump) — Synchronize files from link to dir peer-to-peer or from-disk *(updated: 2026-01-21)*
+- [pear-electron](https://github.com/holepunchto/pear-electron) — Pear User-Interface Library for Electron *(updated: 2026-03-15)*
+- [pear-errors](https://github.com/holepunchto/pear-errors) — Pear Core Error Types *(updated: 2026-01-07)*
+- [pear-force-update](https://github.com/holepunchto/pear-force-update) — pear force update *(updated: 2025-07-25)*
+- [pear-gracedown](https://github.com/holepunchto/pear-gracedown) — Pear graceful closer *(updated: 2025-12-09)*
+- [pear-gunk](https://github.com/holepunchto/pear-gunk) — Pear builtins, overrides, linker mappings *(updated: 2025-12-09)*
+- [pear-hotmods](https://github.com/holepunchto/pear-hotmods) — Pear Hot Module / Live Reload integration layer *(updated: 2025-12-09)*
+- [pear-hyperdb](https://github.com/holepunchto/pear-hyperdb) — HyperDB model for Pear *(updated: 2026-02-26)*
+- [pear-info](https://github.com/holepunchto/pear-info) — View Pear project information by link *(updated: 2025-12-09)*
+- [pear-init](https://github.com/holepunchto/pear-init) — Create initial Pear project files *(updated: 2026-02-02)*
+- [pear-inspect](https://github.com/holepunchto/pear-inspect) — No description. *(updated: 2026-01-08)*
+- [pear-installer](https://github.com/holepunchto/pear-installer) — Used by Application Installers for Pear Applications *(updated: 2026-01-31)*
+- [pear-interface](https://github.com/holepunchto/pear-interface) — global.Pear API jsdoc type interface *(updated: 2025-12-09)*
+- [pear-ipc](https://github.com/holepunchto/pear-ipc) — IPC for Pear *(updated: 2026-03-21)*
+- [pear-ipc-client](https://github.com/holepunchto/pear-ipc-client) — Helper to create a Pear IPC client *(updated: 2025-12-10)*
+- [pear-link](https://github.com/holepunchto/pear-link) — Pear url parser *(updated: 2026-02-09)*
+- [pear-logger](https://github.com/holepunchto/pear-logger) — Pear logger *(updated: 2026-02-03)*
+- [pear-md](https://github.com/holepunchto/pear-md) — markdown rendering utility for pear *(updated: 2026-02-13)*
+- [pear-message](https://github.com/holepunchto/pear-message) — Send object messages between a Pear application's processes/threads, pattern matching them with pear-messages *(updated: 2025-12-11)*
+- [pear-messages](https://github.com/holepunchto/pear-messages) — Receive object messages from a Pear application's processes/threads using object pattern-matching *(updated: 2025-12-10)*
+- [pear-multisig-link](https://github.com/holepunchto/pear-multisig-link) — Deterministic multisig link per multisig inputs *(updated: 2026-04-03)*
+- [pear-opstream](https://github.com/holepunchto/pear-opstream) — Pear operations stream base class *(updated: 2026-01-30)*
+- [pear-opwait](https://github.com/holepunchto/pear-opwait) — Pear operation stream promise wrapper *(updated: 2025-12-11)*
+- [pear-pack](https://github.com/holepunchto/pear-pack) — Bundle and prebuild generation for Pear. *(updated: 2026-01-31)*
+- [pear-pipe](https://github.com/holepunchto/pear-pipe) — Pear parent app connected bare-pipe *(updated: 2025-12-27)*
+- [pear-prefetcher](https://github.com/holepunchto/pear-prefetcher) — Platform prefetch runner *(updated: 2026-01-31)*
+- [pear-prerelease](https://github.com/holepunchto/pear-prerelease) — Prerelease helper *(updated: 2026-02-09)*
+- [pear-radio](https://github.com/holepunchto/pear-radio) — Pear Music Streamer *(updated: 2026-01-26)*
+- [pear-radio-backend](https://github.com/holepunchto/pear-radio-backend) — Pear radio backend *(updated: 2024-06-24)*
+- [pear-ref](https://github.com/holepunchto/pear-ref) — Pear core ref counter *(updated: 2026-01-08)*
+- [pear-release](https://github.com/holepunchto/pear-release) — Set application production release version length *(updated: 2026-01-08)*
+- [pear-reset](https://github.com/holepunchto/pear-reset) — Reset an application to initial state *(updated: 2025-08-27)*
+- [pear-restart](https://github.com/holepunchto/pear-restart) — Restart Pear application or platform *(updated: 2025-10-01)*
+- [pear-rti](https://github.com/holepunchto/pear-rti) — Pear Core Runtime Information *(updated: 2026-01-05)*
+- [pear-run](https://github.com/holepunchto/pear-run) — Run Pear app from app p2p with pear:// link *(updated: 2026-01-07)*
+- [pear-runtime](https://github.com/holepunchto/pear-runtime) — Embeddable Runtime library for Pear with P2P OTA updates, Bare workers and storage APIs *(updated: 2026-04-08)*
+- [pear-runtime-appling](https://github.com/holepunchto/pear-runtime-appling) — No description. *(updated: 2025-02-24)*
+- [pear-runtime-bare](https://github.com/holepunchto/pear-runtime-bare) — bare binary that bootstraps the platform *(updated: 2026-04-08)*
+- [pear-runtime-bootstrap](https://github.com/holepunchto/pear-runtime-bootstrap) — Simple unix script to bootstrap the pear runtime *(updated: 2024-10-07)*
+- [pear-runtime-legacy-storage](https://github.com/holepunchto/pear-runtime-legacy-storage) — Read app storage from the Pear platform `hyperdb` (read-only). *(updated: 2026-04-08)*
+- [pear-runtime-updater](https://github.com/holepunchto/pear-runtime-updater) — Listens for OTA Pear App updates *(updated: 2026-04-08)*
+- [pear-seed](https://github.com/holepunchto/pear-seed) — Seed or reseed a Pear project by link *(updated: 2025-08-12)*
+- [pear-shake](https://github.com/holepunchto/pear-shake) — Get the dependency tree of a Pear application bundle from a drive and its entrypoints. *(updated: 2026-02-03)*
+- [pear-stage](https://github.com/holepunchto/pear-stage) — Synchronize from-disk to app drive peer-to-peer *(updated: 2025-08-12)*
+- [pear-stamp](https://github.com/holepunchto/pear-stamp) — Pear template transforms *(updated: 2025-12-17)*
+- [pear-state](https://github.com/holepunchto/pear-state) — Pear state *(updated: 2026-02-03)*
+- [pear-templates](https://github.com/holepunchto/pear-templates) — Templates for Pear - pear init pear://templates/<name> *(updated: 2026-02-06)*
+- [pear-terminal](https://github.com/holepunchto/pear-terminal) — Pear Terminal User Interface library *(updated: 2026-04-02)*
+- [pear-tryboot](https://github.com/holepunchto/pear-tryboot) — Pear sidecar tryboot for pear-ipc connect function *(updated: 2026-01-08)*
+- [pear-updater](https://github.com/holepunchto/pear-updater) — Pear Updater *(updated: 2026-02-03)*
+- [pear-updater-bootstrap](https://github.com/holepunchto/pear-updater-bootstrap) — Bootstrap the pear-runtime updater from a key *(updated: 2026-01-27)*
+- [pear-updates](https://github.com/holepunchto/pear-updates) — Pear platform and application update notifications *(updated: 2025-12-18)*
+- [pear-user-dirs](https://github.com/holepunchto/pear-user-dirs) — Get the path of user-specific directories *(updated: 2025-01-07)*
+- [pear-wakeups](https://github.com/holepunchto/pear-wakeups) — Pear platform and application update notifications *(updated: 2025-12-18)*
+- [pear-workshop](https://github.com/holepunchto/pear-workshop) — 🍐 *(updated: 2026-02-06)*
+
+## Build / CI Tooling
+
+- [_pear-build](https://github.com/holepunchto/_pear-build) — Build appling for a Pear application *(updated: 2026-04-07)*
+- [actions](https://github.com/holepunchto/actions) — Shared GitHub actions *(updated: 2026-04-09)*
+- [chromium-prebuilds](https://github.com/holepunchto/chromium-prebuilds) — Build definitions for making prebuilds of Chromium modules *(updated: 2026-04-08)*
+- [cmake-android](https://github.com/holepunchto/cmake-android) — Android utilities for CMake *(updated: 2026-04-08)*
+- [cmake-app-image](https://github.com/holepunchto/cmake-app-image) — AppImage packaging utilities for CMake *(updated: 2026-04-08)*
+- [cmake-bare](https://github.com/holepunchto/cmake-bare) — Bare utilities for CMake *(updated: 2026-04-08)*
+- [cmake-bare-bundle](https://github.com/holepunchto/cmake-bare-bundle) — Bare bundling utilities for CMake *(updated: 2026-04-08)*
+- [cmake-cargo](https://github.com/holepunchto/cmake-cargo) — Cargo bridge for CMake *(updated: 2026-04-08)*
+- [cmake-drive](https://github.com/holepunchto/cmake-drive) — Drive utilities for CMake *(updated: 2026-04-08)*
+- [cmake-fetch](https://github.com/holepunchto/cmake-fetch) — Minimal package manager for CMake based on FetchContent *(updated: 2026-04-08)*
+- [cmake-gn](https://github.com/holepunchto/cmake-gn) — Bridging CMake and GN, the meta-build system from Google *(updated: 2026-04-08)*
+- [cmake-harden](https://github.com/holepunchto/cmake-harden) — Compiler options hardening for CMake based on the OpenSSF guidelines *(updated: 2026-04-08)*
+- [cmake-ios](https://github.com/holepunchto/cmake-ios) — iOS utilities for CMake *(updated: 2026-04-08)*
+- [cmake-java](https://github.com/holepunchto/cmake-java) — Java utilities for CMake *(updated: 2026-04-08)*
+- [cmake-macos](https://github.com/holepunchto/cmake-macos) — macOS utilities for CMake *(updated: 2026-04-08)*
+- [cmake-meson](https://github.com/holepunchto/cmake-meson) — Meson bridge for CMake *(updated: 2026-04-08)*
+- [cmake-msix](https://github.com/holepunchto/cmake-msix) — MSIX packaging utilities for CMake *(updated: 2026-04-08)*
+- [cmake-napi](https://github.com/holepunchto/cmake-napi) — Node-API utilities for CMake *(updated: 2026-04-08)*
+- [cmake-npm](https://github.com/holepunchto/cmake-npm) — npm utilities for CMake *(updated: 2026-04-08)*
+- [cmake-pear](https://github.com/holepunchto/cmake-pear) — Pear utilities for CMake *(updated: 2026-04-08)*
+- [cmake-ports](https://github.com/holepunchto/cmake-ports) — Simple build recipe manager for CMake based on ExternalProject *(updated: 2026-04-08)*
+- [cmake-runtime](https://github.com/holepunchto/cmake-runtime) — Prebuilt CMake binaries for macOS, Linux, and Windows *(updated: 2026-04-08)*
+- [cmake-toolchains](https://github.com/holepunchto/cmake-toolchains) — Clang-based CMake toolchain definitions for easy cross compilation *(updated: 2026-04-08)*
+- [cmake-vcpkg](https://github.com/holepunchto/cmake-vcpkg) — Opinionated vcpkg integration for CMake *(updated: 2026-04-08)*
+- [cmake-windows](https://github.com/holepunchto/cmake-windows) — Windows utilities for CMake *(updated: 2026-04-08)*
+- [cmake-zig](https://github.com/holepunchto/cmake-zig) — Zig bridge for CMake *(updated: 2026-04-08)*
+- [prebuild-containers](https://github.com/holepunchto/prebuild-containers) — Containers for prebuilding native Node.js modules *(updated: 2026-04-08)*
+- [rebuild-git](https://github.com/holepunchto/rebuild-git) — Rebuild git repo from objects *(updated: 2026-03-26)*
+- [slack-build-status](https://github.com/holepunchto/slack-build-status) — GitHub Actions for posting and updating build status messages in Slack. Creates a rich message with grouped build statuses, changelogs, and emoji indicators — then updates individual builds as they complete. *(updated: 2026-04-08)*
+
+## Cryptography
+
+- [blind-encryption-sodium](https://github.com/holepunchto/blind-encryption-sodium) — Implemention of encryption encoding for Autobase blind encryption using sodium easy box *(updated: 2026-03-27)*
+- [safe-sodium-buffer](https://github.com/holepunchto/safe-sodium-buffer) — No description. *(updated: 2026-03-30)*
+- [sodium-hmac](https://github.com/holepunchto/sodium-hmac) — HMAC utility *(updated: 2025-04-12)*
+- [sodium-native](https://github.com/holepunchto/sodium-native) — Low level bindings for libsodium *(updated: 2026-04-09)*
+- [sodium-universal](https://github.com/holepunchto/sodium-universal) — Universal wrapper for sodium-javascript and sodium-native working in Node.js and the Browser *(updated: 2026-02-09)*
+
+## Networking / Sockets
+
+- [blind-relay](https://github.com/holepunchto/blind-relay) — Blind relay for UDX over Protomux channels *(updated: 2026-04-08)*
+- [blind-relay-service](https://github.com/holepunchto/blind-relay-service) — CLI for running blind relays *(updated: 2026-04-08)*
+- [libudx](https://github.com/holepunchto/libudx) — udx is reliable, multiplexed, and congestion-controlled streams over udp *(updated: 2026-04-08)*
+- [udx-native](https://github.com/holepunchto/udx-native) — udx is reliable, multiplexed, and congestion-controlled streams over udp *(updated: 2026-04-08)*
+
+## Utilities / Encoding
+
+- [.github](https://github.com/holepunchto/.github) — No description. *(updated: 2025-12-01)*
+- [activity-queue](https://github.com/holepunchto/activity-queue) — Easily track activity and when that activity flushes *(updated: 2024-05-19)*
+- [adaptive-timeout](https://github.com/holepunchto/adaptive-timeout) — Weighted moving average cache with fallbacks *(updated: 2026-02-15)*
+- [appling-native](https://github.com/holepunchto/appling-native) — https://github.com/holepunchto/libappling bindings for Bare *(updated: 2026-04-08)*
+- [autopass](https://github.com/holepunchto/autopass) — Multiwriter password and note sharing module *(updated: 2026-04-08)*
+- [autopass-mobile-example](https://github.com/holepunchto/autopass-mobile-example) — No description. *(updated: 2026-03-12)*
+- [b4a](https://github.com/holepunchto/b4a) — Bridging the gap between buffers and typed arrays *(updated: 2026-04-08)*
+- [bip39-mnemonic](https://github.com/holepunchto/bip39-mnemonic) — No description. *(updated: 2025-07-10)*
+- [bitarray-native](https://github.com/holepunchto/bitarray-native) — https://github.com/holepunchto/libbitarray bindings for JavaScript *(updated: 2026-04-08)*
+- [bitarray-universal](https://github.com/holepunchto/bitarray-universal) — Universal wrapper for https://github.com/holepunchto/libbitarray with a JavaScript fallback *(updated: 2026-04-08)*
+- [bits-to-bytes](https://github.com/holepunchto/bits-to-bytes) — Functions for doing bit manipulation of typed arrays *(updated: 2026-04-08)*
+- [blind-pairing](https://github.com/holepunchto/blind-pairing) — Blind pairing using HyperDHT *(updated: 2025-10-03)*
+- [blind-pairing-core](https://github.com/holepunchto/blind-pairing-core) — Core module for managing for Keet pairing requests  *(updated: 2026-01-21)*
+- [boot-drive](https://github.com/holepunchto/boot-drive) — Run an app from a Hyperdrive or Localdrive *(updated: 2024-01-29)*
+- [bot-rpc](https://github.com/holepunchto/bot-rpc) — No description. *(updated: 2025-04-17)*
+- [brittle](https://github.com/holepunchto/brittle) — Brittle TAP test framework *(updated: 2026-04-08)*
+- [brittle-snapshot](https://github.com/holepunchto/brittle-snapshot) — Traditional snapshots for brittle *(updated: 2026-03-17)*
+- [broadcast-encryption](https://github.com/holepunchto/broadcast-encryption) — Distribute encryption keys to a dynamic set of receivers *(updated: 2026-02-10)*
+- [bucket-rate-limit](https://github.com/holepunchto/bucket-rate-limit) — A lightweight, bucket-based rate limiter for JavaScript that controls request frequency with minimal overhead. *(updated: 2025-11-27)*
+- [bundlebee](https://github.com/holepunchto/bundlebee) — Bundles powered by Bees *(updated: 2026-03-30)*
+- [bundlebee-cli](https://github.com/holepunchto/bundlebee-cli) — Manage, push, sign and seed your Bundles with Bees! *(updated: 2026-03-25)*
+- [canary-runner](https://github.com/holepunchto/canary-runner) — Run all tests of a list of repositories *(updated: 2025-12-19)*
+- [cellery](https://github.com/holepunchto/cellery) — Experimental rendering for all platforms *(updated: 2026-04-06)*
+- [cellery-html](https://github.com/holepunchto/cellery-html) — No description. *(updated: 2026-03-24)*
+- [check-npm-maintainers](https://github.com/holepunchto/check-npm-maintainers) — No description. *(updated: 2026-03-10)*
+- [compact-encoding](https://github.com/holepunchto/compact-encoding) — A series of compact encoding schemes for building small and fast parsers and serializers *(updated: 2026-03-26)*
+- [compact-encoding-bitfield](https://github.com/holepunchto/compact-encoding-bitfield) — Compact codec for bitfields *(updated: 2026-04-08)*
+- [compact-encoding-golang](https://github.com/holepunchto/compact-encoding-golang) — No description. *(updated: 2026-02-15)*
+- [compact-encoding-net](https://github.com/holepunchto/compact-encoding-net) — Compact codecs for net types *(updated: 2026-04-08)*
+- [compact-encoding-struct](https://github.com/holepunchto/compact-encoding-struct) — Generate compact encodings for defined structs *(updated: 2023-05-04)*
+- [compact-encoding-swift](https://github.com/holepunchto/compact-encoding-swift) — Compact encoding schemes for Swift with the same ABI as https://github.com/holepunchto/compact-encoding *(updated: 2026-04-08)*
+- [compact-encoding-variant](https://github.com/holepunchto/compact-encoding-variant) — Compact codec for variant types *(updated: 2026-04-08)*
+- [core-coupler](https://github.com/holepunchto/core-coupler) — Couple the peers of cores *(updated: 2025-08-28)*
+- [crc-native](https://github.com/holepunchto/crc-native) — https://github.com/holepunchto/libcrc JavaScript bindings for Node.js *(updated: 2026-04-08)*
+- [crc-universal](https://github.com/holepunchto/crc-universal) — Universal wrapper for https://github.com/holepunchto/libcrc with a JavaScript fallback *(updated: 2026-04-08)*
+- [cross-worker](https://github.com/holepunchto/cross-worker) — Cross-runtime worker abstractions *(updated: 2026-04-08)*
+- [db-lock](https://github.com/holepunchto/db-lock) — Simple concurrent lock for DB patterns *(updated: 2026-03-16)*
+- [delay-pacer](https://github.com/holepunchto/delay-pacer) — High precision delay based pacer *(updated: 2025-12-13)*
+- [dependency-stream](https://github.com/holepunchto/dependency-stream) — Analyse and list all dependencies of an entrypoint as a stream *(updated: 2026-02-03)*
+- [deterministic-sealed-box](https://github.com/holepunchto/deterministic-sealed-box) — Deterministically create sealed boxes *(updated: 2025-06-06)*
+- [device-file](https://github.com/holepunchto/device-file) — Device only file *(updated: 2026-01-27)*
+- [distributed-drive](https://github.com/holepunchto/distributed-drive) — No description. *(updated: 2026-04-07)*
+- [drive-analyzer](https://github.com/holepunchto/drive-analyzer) — Static analysis of a Pear app bundle *(updated: 2025-10-24)*
+- [drive-bundler](https://github.com/holepunchto/drive-bundler) — Extract bundles from drives *(updated: 2026-02-02)*
+- [drive-resolve](https://github.com/holepunchto/drive-resolve) — Asynchronous require resolution in Hyperdrive *(updated: 2025-12-15)*
+- [electron-forge-maker-snap](https://github.com/holepunchto/electron-forge-maker-snap) — No description. *(updated: 2026-04-09)*
+- [electron-runtime](https://github.com/holepunchto/electron-runtime) — Build the runtime app *(updated: 2026-01-31)*
+- [emoji-index](https://github.com/holepunchto/emoji-index) — emoji-index *(updated: 2025-10-06)*
+- [events-universal](https://github.com/holepunchto/events-universal) — Universal wrapper for the Node.js events module *(updated: 2026-02-09)*
+- [examples](https://github.com/holepunchto/examples) — Examples of basic flows for modules in the Holepunch ecosystem *(updated: 2026-01-14)*
+- [expo-bare-kit](https://github.com/holepunchto/expo-bare-kit) — https://github.com/holepunchto/bare-kit for Expo *(updated: 2026-04-08)*
+- [expo-file-stream](https://github.com/holepunchto/expo-file-stream) — Stream file to Readable with no temp files *(updated: 2025-12-16)*
+- [extract-bare-bundle](https://github.com/holepunchto/extract-bare-bundle) — Extract a bare bundle to disk *(updated: 2024-07-31)*
+- [fast-meta-tags](https://github.com/holepunchto/fast-meta-tags) — Get the meta tags and title from an url *(updated: 2025-11-18)*
+- [fd-lock](https://github.com/holepunchto/fd-lock) — Stateful file descriptor locks for JavaScript *(updated: 2025-12-15)*
+- [fd-pipe](https://github.com/holepunchto/fd-pipe) — Enviornment based file descriptor Pipe (bare/node) *(updated: 2025-10-13)*
+- [fifofile](https://github.com/holepunchto/fifofile) — Userland FIFO file *(updated: 2026-01-05)*
+- [filesharing-app-example](https://github.com/holepunchto/filesharing-app-example) — No description. *(updated: 2025-09-01)*
+- [filesharing-react-app-example](https://github.com/holepunchto/filesharing-react-app-example) — No description. *(updated: 2026-02-15)*
+- [framed-stream](https://github.com/holepunchto/framed-stream) — Read/write stream messages prefixed 8, 16, 24 or 32 bit length *(updated: 2025-12-15)*
+- [fs-native-extensions](https://github.com/holepunchto/fs-native-extensions) — Native file system extensions for advanced file operations *(updated: 2026-04-08)*
+- [fs-native-lock](https://github.com/holepunchto/fs-native-lock) — Cross platform lock file *(updated: 2025-11-08)*
+- [fx-native](https://github.com/holepunchto/fx-native) — https://github.com/holepunchto/libfx bindings for JavaScript *(updated: 2026-04-08)*
+- [get-file-format](https://github.com/holepunchto/get-file-format) — Detect the format of a file by looking at its magic number *(updated: 2026-03-11)*
+- [get-mime-type](https://github.com/holepunchto/get-mime-type) — simple extension to mimetype *(updated: 2026-01-21)*
+- [gip-remote](https://github.com/holepunchto/gip-remote) — No description. *(updated: 2026-04-05)*
+- [gip-transport](https://github.com/holepunchto/gip-transport) — No description. *(updated: 2026-04-08)*
+- [git-remote-punch-transport](https://github.com/holepunchto/git-remote-punch-transport) — Git remote helper for Hyperswarm transport  *(updated: 2026-04-05)*
+- [globbie](https://github.com/holepunchto/globbie) — No description. *(updated: 2025-12-15)*
+- [grpc-lnd](https://github.com/holepunchto/grpc-lnd) — No description. *(updated: 2022-10-22)*
+- [hello-pear-electron](https://github.com/holepunchto/hello-pear-electron) — Integrating Pear into a hello world electron desktop app *(updated: 2026-04-06)*
+- [hisect](https://github.com/holepunchto/hisect) — No description. *(updated: 2025-06-19)*
+- [hp-rpc-cli](https://github.com/holepunchto/hp-rpc-cli) — No description. *(updated: 2025-09-13)*
+- [hrpc](https://github.com/holepunchto/hrpc) — Append only API definition and code generation. *(updated: 2026-02-19)*
+- [hrpc-modular-example](https://github.com/holepunchto/hrpc-modular-example) — No description. *(updated: 2025-07-14)*
+- [hrpc-swift](https://github.com/holepunchto/hrpc-swift) — Swift code generation for HRPC  *(updated: 2026-04-02)*
+- [http-forward-host](https://github.com/holepunchto/http-forward-host) — Simple stream proxy that sniffs the HTTP host or x-forwarded-for header and allows you to to forward the stream based on that *(updated: 2025-06-03)*
+- [hyper-cmd-lib-based](https://github.com/holepunchto/hyper-cmd-lib-based) — No description. *(updated: 2023-02-28)*
+- [hyper-cmd-lib-coord](https://github.com/holepunchto/hyper-cmd-lib-coord) — No description. *(updated: 2023-04-11)*
+- [hyper-cmd-lib-keys](https://github.com/holepunchto/hyper-cmd-lib-keys) — No description. *(updated: 2025-07-24)*
+- [hyper-cmd-lib-net](https://github.com/holepunchto/hyper-cmd-lib-net) — No description. *(updated: 2023-02-28)*
+- [hyper-cmd-lib-utils](https://github.com/holepunchto/hyper-cmd-lib-utils) — No description. *(updated: 2023-02-28)*
+- [hyper-cmd-utils](https://github.com/holepunchto/hyper-cmd-utils) — No description. *(updated: 2023-02-28)*
+- [hyper-health-check](https://github.com/holepunchto/hyper-health-check) — Check the health of hypercores and export as prometheus metrics *(updated: 2025-10-09)*
+- [hyper-instrument](https://github.com/holepunchto/hyper-instrument) — Instrument services within the hypercore ecosystem *(updated: 2025-12-11)*
+- [hyper-multisig](https://github.com/holepunchto/hyper-multisig) — multisig hypercore and hyperdrive *(updated: 2026-04-08)*
+- [hyper-multisig-cli](https://github.com/holepunchto/hyper-multisig-cli) — CLI of hyper-multisig *(updated: 2026-04-08)*
+- [hyperbeam](https://github.com/holepunchto/hyperbeam) — A 1-1 end-to-end encrypted internet pipe powered by Hyperswarm *(updated: 2026-04-08)*
+- [hyperblobs](https://github.com/holepunchto/hyperblobs) — A blob store for Hypercore *(updated: 2026-03-28)*
+- [hyperclip-android](https://github.com/holepunchto/hyperclip-android) — No description. *(updated: 2024-08-16)*
+- [hyperclip-desktop](https://github.com/holepunchto/hyperclip-desktop) — Pear desktop app to go with Hyperclip iOS and Android *(updated: 2024-08-16)*
+- [hyperclip-ios](https://github.com/holepunchto/hyperclip-ios) — No description. *(updated: 2024-08-16)*
+- [hyperconf](https://github.com/holepunchto/hyperconf) — Always available, remotely updateable config *(updated: 2026-04-06)*
+- [hyperdb](https://github.com/holepunchto/hyperdb) — P2P first database *(updated: 2026-03-30)*
+- [hyperdb-benchmarking](https://github.com/holepunchto/hyperdb-benchmarking) — Benchmarking HyperDB on Rocks *(updated: 2025-08-05)*
+- [hyperdb-workshop](https://github.com/holepunchto/hyperdb-workshop) — Workshop explaining basic hyperdb usage *(updated: 2025-12-05)*
+- [hyperdispatch](https://github.com/holepunchto/hyperdispatch) — Generate operations/endpoints using Hyperschema *(updated: 2026-03-12)*
+- [hypermetrics](https://github.com/holepunchto/hypermetrics) — Prometheus metrics for Holepunch modules *(updated: 2023-11-06)*
+- [hypermininet](https://github.com/holepunchto/hypermininet) — Mininet, the easy way *(updated: 2026-04-03)*
+- [hyperschema](https://github.com/holepunchto/hyperschema) — Create registries of declarative compact-encoding schemas *(updated: 2026-04-02)*
+- [hyperschema-swift](https://github.com/holepunchto/hyperschema-swift) — Swift code generation for Hyperschema *(updated: 2026-04-02)*
+- [hypershell](https://github.com/holepunchto/hypershell) — Spawn shells anywhere. Fully peer-to-peer, authenticated, and end to end encrypted *(updated: 2026-03-23)*
+- [hyperssh](https://github.com/holepunchto/hyperssh) — Run SSH over hyperswarm! *(updated: 2026-02-13)*
+- [hypertrace](https://github.com/holepunchto/hypertrace) — Add tracing and insights to classes in modules *(updated: 2024-04-04)*
+- [hypertrace-logger](https://github.com/holepunchto/hypertrace-logger) — No description. *(updated: 2024-07-23)*
+- [hypertrace-prometheus](https://github.com/holepunchto/hypertrace-prometheus) — Add support for Prometheus/Grafana to hypertrace *(updated: 2024-03-14)*
+- [iambus](https://github.com/holepunchto/iambus) — minimalist pattern-matching pub-sub message-bus *(updated: 2026-01-31)*
+- [index-encoder](https://github.com/holepunchto/index-encoder) — Encode multiple values into sorted keys *(updated: 2026-03-01)*
+- [index-keys](https://github.com/holepunchto/index-keys) — Generate keys for a kv store for indexing *(updated: 2024-08-30)*
+- [is-text-filetype](https://github.com/holepunchto/is-text-filetype) — Determines whether a file specifier is plain text using heuristics based on extensions, common filenames, and dotfiles *(updated: 2026-01-30)*
+- [jsonrpc-mux](https://github.com/holepunchto/jsonrpc-mux) — Mux JSON-RPC 2.0 *(updated: 2024-02-26)*
+- [key-collection](https://github.com/holepunchto/key-collection) — Hyperdb-based collection of 32-byte keys *(updated: 2025-12-17)*
+- [keypear](https://github.com/holepunchto/keypear) — 🔑🍐 Keychain that derives deterministic Ed25519 keypairs and attestations *(updated: 2025-11-03)*
+- [known-text-files](https://github.com/holepunchto/known-text-files) — Combined list of plain text file extensions, common extensionless files and dotfiles *(updated: 2026-02-06)*
+- [libappling](https://github.com/holepunchto/libappling) — Low-level plumbing for Pear application shells *(updated: 2026-04-08)*
+- [libbase64](https://github.com/holepunchto/libbase64) — Encoder and decoder for base64 in C *(updated: 2026-04-08)*
+- [libbitarray](https://github.com/holepunchto/libbitarray) — Compact and SIMD accelerated bit array data structure in C *(updated: 2026-04-08)*
+- [libcompact](https://github.com/holepunchto/libcompact) — Compact encoding schemes for C with the same ABI as https://github.com/holepunchto/compact-encoding *(updated: 2026-04-08)*
+- [libcrc](https://github.com/holepunchto/libcrc) — Cross-platform implementation of CRC32 with hardware acceleration *(updated: 2026-04-08)*
+- [libdaemon](https://github.com/holepunchto/libdaemon) — Simple daemon spawning and management *(updated: 2026-04-08)*
+- [libdynload](https://github.com/holepunchto/libdynload) — Utilities for loading of versioned dynamic libraries *(updated: 2026-04-08)*
+- [libfs](https://github.com/holepunchto/libfs) — A simple but extensive file system library built on libuv *(updated: 2026-04-08)*
+- [libfx](https://github.com/holepunchto/libfx) — Low-level, cross-platform GUI library for native desktop and mobile *(updated: 2026-04-08)*
+- [libhex](https://github.com/holepunchto/libhex) — Encoder and decoder for hex in C *(updated: 2026-04-08)*
+- [libintrusive](https://github.com/holepunchto/libintrusive) — Allocation-free intrusive data structures for C *(updated: 2026-04-08)*
+- [libjerry](https://github.com/holepunchto/libjerry) — ABI compatible replacement for https://github.com/holepunchto/libjs built on JerryScript *(updated: 2026-04-08)*
+- [libjnitl](https://github.com/holepunchto/libjnitl) — C++ template library for the Java Native Interface (JNI) *(updated: 2026-04-08)*
+- [libjs](https://github.com/holepunchto/libjs) — Simple and ABI stable C bindings to V8 built on libuv *(updated: 2026-04-08)*
+- [libjsc](https://github.com/holepunchto/libjsc) — ABI compatible replacement for https://github.com/holepunchto/libjs built on JavaScriptCore *(updated: 2026-04-08)*
+- [libjsi](https://github.com/holepunchto/libjsi) — React Native JavaScript Interface (JSI) implemented on top of https://github.com/holepunchto/libjs *(updated: 2026-04-08)*
+- [libjson](https://github.com/holepunchto/libjson) — Small and memory efficient library for working with JSON in C *(updated: 2026-04-08)*
+- [libjstl](https://github.com/holepunchto/libjstl) — C++ template library for https://github.com/holepunchto/libjs *(updated: 2026-04-09)*
+- [liblog](https://github.com/holepunchto/liblog) — Simple logging library with a unified interface to os_log, syslog, Logcat, and TraceLogging *(updated: 2026-04-08)*
+- [libmem](https://github.com/holepunchto/libmem) — General purpose memory allocator for C built on https://github.com/microsoft/mimalloc *(updated: 2026-04-08)*
+- [libmqjs](https://github.com/holepunchto/libmqjs) — ABI compatible replacement for https://github.com/holepunchto/libjs built on Micro QuickJS *(updated: 2026-04-08)*
+- [libnapi](https://github.com/holepunchto/libnapi) — Node-API compatibility layer for https://github.com/holepunchto/libjs *(updated: 2026-04-08)*
+- [libparseline](https://github.com/holepunchto/libparseline) — Parse streaming lines in C. *(updated: 2024-02-14)*
+- [libpath](https://github.com/holepunchto/libpath) — Low-level filesystem path manipulation library *(updated: 2026-04-08)*
+- [libpear](https://github.com/holepunchto/libpear) — Native utilities for Pear applications *(updated: 2026-04-08)*
+- [libpearsync](https://github.com/holepunchto/libpearsync) — Simple message passing between a libuv thread and something else *(updated: 2024-02-28)*
+- [libprng](https://github.com/holepunchto/libprng) — Pseudorandom number generators for C based on https://prng.di.unimi.it *(updated: 2026-04-08)*
+- [libqjs](https://github.com/holepunchto/libqjs) — ABI compatible replacement for https://github.com/holepunchto/libjs built on QuickJS *(updated: 2026-04-08)*
+- [libquickbit](https://github.com/holepunchto/libquickbit) — The fastest bit in the West; a library for working with bit fields, accelerated using SIMD on supported hardware *(updated: 2026-04-08)*
+- [librabin](https://github.com/holepunchto/librabin) — Rabin fingerprinting for C based on https://github.com/fd0/rabin-cdc *(updated: 2026-04-08)*
+- [librlimit](https://github.com/holepunchto/librlimit) — Small library for managing process-wide resource limits *(updated: 2026-04-08)*
+- [librocksdb](https://github.com/holepunchto/librocksdb) — Asynchronous C bindings to RocksDB with support for batch operations *(updated: 2026-04-08)*
+- [librpc](https://github.com/holepunchto/librpc) — Low-level RPC codec implemented in C for wide language support *(updated: 2026-04-08)*
+- [libsimdle](https://github.com/holepunchto/libsimdle) — Simple and portable SIMD instructions for 128 bit vectors, inspired by the WASM SIMD specification *(updated: 2026-04-08)*
+- [libsingleset](https://github.com/holepunchto/libsingleset) — Header only fast set implementation for objects that are only in a single set *(updated: 2023-12-22)*
+- [libtls](https://github.com/holepunchto/libtls) — Minimal TLS library for C, based on BoringSSL *(updated: 2026-04-08)*
+- [libtt](https://github.com/holepunchto/libtt) — Virtual console extensions built on libuv *(updated: 2026-04-08)*
+- [liburl](https://github.com/holepunchto/liburl) — WHATWG URL parser in C *(updated: 2026-04-08)*
+- [libutf](https://github.com/holepunchto/libutf) — Small library for working with Unicode in C *(updated: 2026-04-08)*
+- [libz32](https://github.com/holepunchto/libz32) — Encoder and decoder for z-base-32 in C *(updated: 2026-04-08)*
+- [listen-async](https://github.com/holepunchto/listen-async) — Easily listen on a http/net server async *(updated: 2025-12-16)*
+- [localwatch](https://github.com/holepunchto/localwatch) — Watch a directory and get a diff of changes *(updated: 2026-01-14)*
+- [lunte](https://github.com/holepunchto/lunte) — No description. *(updated: 2026-04-07)*
+- [make-pear-app](https://github.com/holepunchto/make-pear-app) — Action for making Pear apps *(updated: 2026-03-23)*
+- [minicron](https://github.com/holepunchto/minicron) — Simple utility for scheduling functions at fixed intervals *(updated: 2025-04-04)*
+- [mininet](https://github.com/holepunchto/mininet) — Spin up and interact with virtual networks using Mininet and Node.js *(updated: 2026-04-06)*
+- [mirror-drive](https://github.com/holepunchto/mirror-drive) — Mirror two drives *(updated: 2026-03-29)*
+- [msix-manager](https://github.com/holepunchto/msix-manager) — Install and update MSIX packages from JavaScript *(updated: 2026-04-08)*
+- [multi-profile-store](https://github.com/holepunchto/multi-profile-store) — Manage multiple corestores easily in a multi profile setup *(updated: 2025-11-30)*
+- [musl-toolchains](https://github.com/holepunchto/musl-toolchains) — Prebuilt musl cross-compilation toolchains *(updated: 2026-04-08)*
+- [nanodebug](https://github.com/holepunchto/nanodebug) — A tiny, zero overhead debugging utility *(updated: 2026-04-08)*
+- [native-pipe](https://github.com/holepunchto/native-pipe) — Native named pipes *(updated: 2023-06-10)*
+- [netpaste](https://github.com/holepunchto/netpaste) — Copy and paste over the DHT *(updated: 2023-06-10)*
+- [network-block-device](https://github.com/holepunchto/network-block-device) — Network block device server for JavaScript *(updated: 2025-09-01)*
+- [ninja-runtime](https://github.com/holepunchto/ninja-runtime) — Prebuilt Ninja binaries for macOS, Linux, and Windows *(updated: 2026-04-08)*
+- [node-bare-bundle](https://github.com/holepunchto/node-bare-bundle) — Run a bare bundle in a Node.js environment *(updated: 2025-10-16)*
+- [noise-curve-ed](https://github.com/holepunchto/noise-curve-ed) — Ed25519 elliptic curve operations for [`noise-handshake`](https://github.com/chm-diederichs/noise-handshake) *(updated: 2026-02-09)*
+- [noise-handshake](https://github.com/holepunchto/noise-handshake) — Simple noise handshake, supporting generic handshake patterns *(updated: 2026-02-09)*
+- [obfuscate-data](https://github.com/holepunchto/obfuscate-data) — Reversibly obfuscate data with a secret key *(updated: 2026-03-06)*
+- [oidc-publishing](https://github.com/holepunchto/oidc-publishing) — OIDC publishing tools for GitHub and npm *(updated: 2026-04-08)*
+- [oidc-publishing-sandbox](https://github.com/holepunchto/oidc-publishing-sandbox) — Sandbox for testing OIDC publishing *(updated: 2026-04-08)*
+- [paparam](https://github.com/holepunchto/paparam) — Strict and fair parameter papa *(updated: 2026-04-08)*
+- [passive-core-watcher](https://github.com/holepunchto/passive-core-watcher) — Run conditional logic on a corestore's hypercores *(updated: 2025-03-18)*
+- [pattern-router](https://github.com/holepunchto/pattern-router) — Object-pattern-matching-based routing *(updated: 2026-01-21)*
+- [pearpass-example](https://github.com/holepunchto/pearpass-example) — No description. *(updated: 2026-03-27)*
+- [planb-summer-school](https://github.com/holepunchto/planb-summer-school) — the workshop stuff *(updated: 2025-09-01)*
+- [prettier-config-holepunch](https://github.com/holepunchto/prettier-config-holepunch) — The Prettier shared configuration used by Holepunch *(updated: 2026-04-08)*
+- [protomux](https://github.com/holepunchto/protomux) — Multiplex multiple message oriented protocols over a stream *(updated: 2026-04-08)*
+- [protomux-rpc](https://github.com/holepunchto/protomux-rpc) — RPC over Protomux channels *(updated: 2026-04-08)*
+- [protomux-rpc-client](https://github.com/holepunchto/protomux-rpc-client) — Connect to protmux-rpc servers  *(updated: 2026-03-10)*
+- [protomux-rpc-client-pool](https://github.com/holepunchto/protomux-rpc-client-pool) — Reliably connect to one of a pool of protomux-rpc servers *(updated: 2026-03-18)*
+- [protomux-rpc-middleware](https://github.com/holepunchto/protomux-rpc-middleware) — No description. *(updated: 2026-01-15)*
+- [protomux-rpc-router](https://github.com/holepunchto/protomux-rpc-router) — No description. *(updated: 2026-03-02)*
+- [protomux-wakeup](https://github.com/holepunchto/protomux-wakeup) — Wakeup protocol over protomux *(updated: 2025-10-31)*
+- [ptnm](https://github.com/holepunchto/ptnm) — Object Pattern Matching *(updated: 2026-01-21)*
+- [punch-connection-encoding](https://github.com/holepunchto/punch-connection-encoding) — Compact encoding for public keys + dht bootstrap *(updated: 2024-05-29)*
+- [pw-to-ek](https://github.com/holepunchto/pw-to-ek) — Derive a secure encryption key from a password using the sodium's scrypt implementation. *(updated: 2025-12-18)*
+- [quickbit-native](https://github.com/holepunchto/quickbit-native) — https://github.com/holepunchto/libquickbit JavaScript bindings for Node.js *(updated: 2026-04-08)*
+- [quickbit-universal](https://github.com/holepunchto/quickbit-universal) — Universal wrapper for https://github.com/holepunchto/libquickbit with a JavaScript fallback *(updated: 2026-04-08)*
+- [rabin-native](https://github.com/holepunchto/rabin-native) — https://github.com/holepunchto/librabin bindings for JavaScript *(updated: 2026-04-08)*
+- [rabin-stream](https://github.com/holepunchto/rabin-stream) — Streaming Rabin chunker *(updated: 2026-02-12)*
+- [rache](https://github.com/holepunchto/rache) — No description. *(updated: 2026-02-09)*
+- [raw-text-display-parser](https://github.com/holepunchto/raw-text-display-parser) — Small state machine to parse chat input state when using raw text *(updated: 2026-03-27)*
+- [react-native-b4a](https://github.com/holepunchto/react-native-b4a) — Bridging the gap between buffers and typed arrays in React Native *(updated: 2026-04-08)*
+- [react-native-bare-kit](https://github.com/holepunchto/react-native-bare-kit) — https://github.com/holepunchto/bare-kit for React Native *(updated: 2026-04-08)*
+- [ready-guard](https://github.com/holepunchto/ready-guard) — Simple signal to do composite resource lifecycles *(updated: 2026-03-10)*
+- [ready-resource](https://github.com/holepunchto/ready-resource) — Modern single resource management *(updated: 2026-02-09)*
+- [refcounter](https://github.com/holepunchto/refcounter) — Simple refcounter *(updated: 2026-02-09)*
+- [repl-swarm](https://github.com/holepunchto/repl-swarm) — Attach to a node repl using Hyperswarm *(updated: 2025-09-01)*
+- [repo-template](https://github.com/holepunchto/repo-template) — No description. *(updated: 2026-03-13)*
+- [require-addon](https://github.com/holepunchto/require-addon) — Import native addons across JavaScript runtimes *(updated: 2026-04-08)*
+- [require-asset](https://github.com/holepunchto/require-asset) — Import assets across JavaScript runtimes *(updated: 2026-04-08)*
+- [rocksdb-blobs](https://github.com/holepunchto/rocksdb-blobs) — Just a blob store on rocks. Aims to be API compatible with Hyperblobs *(updated: 2026-02-09)*
+- [rocksdb-native](https://github.com/holepunchto/rocksdb-native) — https://github.com/holepunchto/librocksdb bindings for JavaScript *(updated: 2026-04-08)*
+- [rpc](https://github.com/holepunchto/rpc) — RPC over the Hyperswarm DHT *(updated: 2026-04-08)*
+- [same-object](https://github.com/holepunchto/same-object) — Determine if two objects are deeply equal *(updated: 2026-01-05)*
+- [scope-lock](https://github.com/holepunchto/scope-lock) — Some concurrency semantics around entering scopes *(updated: 2026-01-05)*
+- [script-linker](https://github.com/holepunchto/script-linker) — ESM/CJS source loader that can preresolve imports/requires *(updated: 2026-01-05)*
+- [secure-key](https://github.com/holepunchto/secure-key) — Password protected ed25519 key pairs *(updated: 2024-02-26)*
+- [secure-prompt](https://github.com/holepunchto/secure-prompt) — Securely prompt stdio using secure buffers *(updated: 2026-03-16)*
+- [seedbee](https://github.com/holepunchto/seedbee) — Bee for seeds *(updated: 2025-09-01)*
+- [seeder-frontend](https://github.com/holepunchto/seeder-frontend) — Simple-seeder holepunch app frontend *(updated: 2024-08-30)*
+- [semifies](https://github.com/holepunchto/semifies) — Slimmed down satisfies from semver *(updated: 2025-03-17)*
+- [sentry-bare](https://github.com/holepunchto/sentry-bare) — Sentry SDK for Bare *(updated: 2026-04-08)*
+- [serve-drive](https://github.com/holepunchto/serve-drive) — HTTP drive server for entries delivery. Auto detects types like video, images, etc *(updated: 2025-11-28)*
+- [simdle-native](https://github.com/holepunchto/simdle-native) — https://github.com/holepunchto/libsimdle JavaScript bindings for Node.js *(updated: 2026-04-08)*
+- [simdle-universal](https://github.com/holepunchto/simdle-universal) — Universal wrapper for https://github.com/holepunchto/libsimdle with a JavaScript fallback *(updated: 2026-04-08)*
+- [simple-lnd](https://github.com/holepunchto/simple-lnd) — Simple LND REST module *(updated: 2023-06-10)*
+- [simple-seeder](https://github.com/holepunchto/simple-seeder) — Dead simple seeder with zero bugs *(updated: 2025-11-09)*
+- [slab-hunter](https://github.com/holepunchto/slab-hunter) — Hunt for Buffer slabs indicative of a memory leak *(updated: 2026-03-16)*
+- [sloppy-module-parser](https://github.com/holepunchto/sloppy-module-parser) — Parse imports/exports/requires with a focus on speed over 100% correctness *(updated: 2026-01-05)*
+- [snake](https://github.com/holepunchto/snake) — Multiplayer P2P Snake Game on Pear *(updated: 2026-01-31)*
+- [speedrun](https://github.com/holepunchto/speedrun) — speedrun demo for pear react app with watch reload and production update flows *(updated: 2026-01-31)*
+- [sqlite3-native](https://github.com/holepunchto/sqlite3-native) — Asynchronous SQLite3 bindings for JavaScript with VFS support *(updated: 2026-04-08)*
+- [sub-encoder](https://github.com/holepunchto/sub-encoder) — Generate sub encodings for key/value stores *(updated: 2026-02-09)*
+- [suspend-resource](https://github.com/holepunchto/suspend-resource) — Ready resource with suspend/resume *(updated: 2025-06-30)*
+- [suspendify](https://github.com/holepunchto/suspendify) — Suspend/resume state machine with linger support *(updated: 2026-04-06)*
+- [tar-drive](https://github.com/holepunchto/tar-drive) — Hyperdrive bindings for tar-stream *(updated: 2026-04-08)*
+- [task-backoff](https://github.com/holepunchto/task-backoff) — Small module to do smart delays in tight loops to maintain a certain event loop delay *(updated: 2025-08-12)*
+- [test-suspend](https://github.com/holepunchto/test-suspend) — Utilities for testing process suspension *(updated: 2026-04-08)*
+- [text-decoder](https://github.com/holepunchto/text-decoder) — Streaming text decoder that preserves multibyte Unicode characters *(updated: 2026-04-08)*
+- [thread-stats](https://github.com/holepunchto/thread-stats) — Get resource usage for individual threads in the current process *(updated: 2026-04-08)*
+- [throwaway-local-cache](https://github.com/holepunchto/throwaway-local-cache) — Maintain a fast local cache when persistance isnt a 100% requirement *(updated: 2025-10-07)*
+- [tiny-buffer-map](https://github.com/holepunchto/tiny-buffer-map) — A very simple Map for Buffers and Uint8Arrays *(updated: 2023-12-16)*
+- [tiny-buffer-rpc](https://github.com/holepunchto/tiny-buffer-rpc) — Lightweight binary bi-directional RPC *(updated: 2026-01-06)*
+- [tiny-fs-native](https://github.com/holepunchto/tiny-fs-native) — Native fs for Javascript *(updated: 2025-11-22)*
+- [tiny-http-native](https://github.com/holepunchto/tiny-http-native) — Tiny HTTP library made purely on libuv and napi *(updated: 2025-02-11)*
+- [tiny-paths](https://github.com/holepunchto/tiny-paths) — path for platforms without path *(updated: 2023-06-10)*
+- [tiny-timers-native](https://github.com/holepunchto/tiny-timers-native) — Native timers for Javascript *(updated: 2023-01-01)*
+- [tt-native](https://github.com/holepunchto/tt-native) — https://github.com/holepunchto/libtt JavaScript bindings for Node.js *(updated: 2026-04-08)*
+- [uncaughts](https://github.com/holepunchto/uncaughts) — Cleanly register uncaughtException and unhandledRejection handlers *(updated: 2025-11-07)*
+- [unicode-to-plain-text](https://github.com/holepunchto/unicode-to-plain-text) — Convert fancy Unicode text to plain ASCII with smart language preservation *(updated: 2026-03-29)*
+- [unslab](https://github.com/holepunchto/unslab) — Unslab some slab'ed buffers *(updated: 2026-02-09)*
+- [updater-service](https://github.com/holepunchto/updater-service) — No description. *(updated: 2025-11-26)*
+- [url-file-url](https://github.com/holepunchto/url-file-url) — Small module that converts from URLs to filenames to URLs *(updated: 2026-01-06)*
+- [utun](https://github.com/holepunchto/utun) — Make TUN devices *(updated: 2026-01-19)*
+- [wakeup](https://github.com/holepunchto/wakeup) — Protocol handler for waking up Pear applications *(updated: 2026-04-08)*
+- [warmup-encoding](https://github.com/holepunchto/warmup-encoding) — Encode/decode sets of random blocks for warmup *(updated: 2023-11-27)*
+- [wasm-tools](https://github.com/holepunchto/wasm-tools) — A collection of useful tools for working with WASM/WAT in JavaScript *(updated: 2026-04-08)*
+- [watch-drive](https://github.com/holepunchto/watch-drive) — Watch a Hyperdrive or a Localdrive and get the diff *(updated: 2026-01-06)*
+- [which-runtime](https://github.com/holepunchto/which-runtime) — Detect if you are in Bare or Node and which os etc *(updated: 2026-01-06)*
+
+## Other / Archived
+
+- [bare-dev](https://github.com/holepunchto/bare-dev) *(archived)* — Development tooling for Bare *(updated: 2026-04-08)*
+- [barely-node](https://github.com/holepunchto/barely-node) *(archived)* — Bare distribution aiming to be mostly Node.js compatible *(updated: 2026-04-08)*
+- [pear-expo-hello-world](https://github.com/holepunchto/pear-expo-hello-world) *(archived)* — No description. *(updated: 2025-09-01)*
+- [pear-stdio](https://github.com/holepunchto/pear-stdio) *(archived)* — Pear STDIO *(updated: 2025-09-02)*
+- [prom-client](https://github.com/holepunchto/prom-client) *(archived)* — Prometheus client for node.js *(updated: 2025-09-30)*
