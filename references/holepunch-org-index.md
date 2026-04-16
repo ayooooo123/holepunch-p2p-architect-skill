@@ -1,17 +1,17 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-04-12
+Generated at: 2026-04-16
 
-Source organization: `holepunchto`
+Source organization: `holepunchto` (589 public repos)
 
 ## Scope
 
 - This is a **filtered, high-signal regrouping** of the public repositories in the `holepunchto` GitHub organization.
-- It is **not an exhaustive dump** of all 587 public repositories.
-- The list prioritizes repositories that are most significant, active, starred, or representative of each use case so the index stays readable and useful for regrouping.
-- Each entry includes the repository name, description, and primary language.
+- It is **not an exhaustive dump** of all 589 public repositories.
+- The list prioritizes repositories that are most significant, active, starred, recently updated, or representative of each use case so the index stays readable and useful for regrouping.
+- Each entry includes the repository name, description, and primary language when available.
 
-## Bare (Runtime/Dev/Tooling)
+## Bare (Runtime / Dev / Tooling)
 
 - **bare** — Small and modular JavaScript runtime for desktop and mobile. *(C)*
 - **bare-runtime** — Prebuilt Bare binaries for macOS, iOS, Linux, Android, and Windows. *(JavaScript)*
@@ -33,8 +33,27 @@ Source organization: `holepunchto`
 - **bare-console** — WHATWG debugging console for JavaScript. *(JavaScript)*
 - **bare-assert** — Assertion library for JavaScript. *(JavaScript)*
 - **bare-utils** — Node.js-compatible utility functions for Bare. *(JavaScript)*
+- **bare-link** — Native addon linker for Bare. *(JavaScript)*
+- **bare-media** — A set of media APIs for Bare. *(JavaScript)*
+- **bare-sidecar** — Start and manage Bare sidecar processes from Node.js and Electron. *(JavaScript)*
+- **bare-fetch** — WHATWG Fetch implementation for Bare. *(JavaScript)*
+- **bare-ws** — WebSocket library for JavaScript. *(JavaScript)*
+- **bare-tcp** — Native TCP sockets for JavaScript. *(JavaScript)*
+- **bare-net** — TCP and IPC servers and clients for JavaScript. *(JavaScript)*
+- **bare-dgram** — Native UDP for JavaScript. *(JavaScript)*
+- **bare-dns** — Domain name resolution for JavaScript. *(C)*
+- **bare-http1** — HTTP/1 library for JavaScript. *(JavaScript)*
+- **bare-https** — HTTPS library for JavaScript. *(JavaScript)*
+- **bare-tls** — Transport Layer Security (TLS) streams for JavaScript. *(JavaScript)*
+- **bare-ipc** — Lightweight pipe-based IPC for Bare. *(JavaScript)*
+- **bare-stream** — Streaming data for JavaScript. *(JavaScript)*
+- **bare-module-lexer** — Heuristic lexer for detecting imports and exports in JavaScript modules. *(C)*
+- **bare-module-resolve** — Low-level module resolution algorithm for Bare. *(JavaScript)*
+- **bare-module-traverse** — Low-level module graph traversal for Bare. *(JavaScript)*
+- **bare-vm** — Isolated JavaScript contexts for Bare. *(JavaScript)*
+- **bare-debug-log** — Simple debug log for JavaScript. *(JavaScript)*
 
-## P2P (Hypercore, Hyperswarm, Dht, Corelibs)
+## P2P (Hypercore, Hyperswarm, DHT, Corelibs)
 
 - **hypercore** — Hypercore is a secure, distributed append-only log. *(JavaScript)*
 - **hyperdrive** — Hyperdrive is a secure, real time distributed file system. *(JavaScript)*
@@ -51,6 +70,10 @@ Source organization: `holepunchto`
 - **hypercore-signing-request** — Generate shareable signing requests for Hypercore. *(JavaScript)*
 - **hypercore-id-encoding** — Convert Hypercore keys to/from z-base32 or hex. *(JavaScript)*
 - **hypercore-stats** — Stats for Hypercores, with Prometheus support. *(JavaScript)*
+- **hypercore-errors** — Hypercore errors. *(JavaScript)*
+- **hypercore-encryption** — Configurable block encryption for Hypercore. *(JavaScript)*
+- **hypercore-audit** — Audit hypercore storage. *(JavaScript)*
+- **hypercore-proof-queue** — Store a bunch of Hypercore proofs to a file and consume them later. *(JavaScript)*
 - **hyperswarm-secret-stream** — Secret stream backed by Noise and libsodium's secretstream. *(JavaScript)*
 - **hyperswarm-doctor** — Debugging tool for the swarm. *(JavaScript)*
 - **hyperswarm-testnet** — Small module to help you spin up a local Hyperswarm testnet. *(JavaScript)*
@@ -60,42 +83,70 @@ Source organization: `holepunchto`
 - **hyperbeam** — A 1-1 end-to-end encrypted internet pipe powered by Hyperswarm. *(JavaScript)*
 - **hyperssh** — Run SSH over hyperswarm! *(JavaScript)*
 - **dht-rpc** — Make RPC calls over a Kademlia based DHT. *(JavaScript)*
+- **rpc** — RPC over the Hyperswarm DHT. *(JavaScript)*
 - **core-coupler** — Couple the peers of cores. *(JavaScript)*
 - **corestore-snapshot** — Make a corestore snapshot for ci. *(JavaScript)*
 - **key-collection** — Hyperdb-based collection of 32-byte keys. *(JavaScript)*
-
-## Networking/Protocols (Udp, Tcp, Muxers, QUIC)
-
+- **hyperdrive-next** — Hyperdrive is a secure, real-time distributed file system. *(JavaScript)*
+- **hyperbee2** — No description set. *(JavaScript)*
+- **mininet** — Spin up and interact with virtual networks using Mininet and Node.js. *(JavaScript)*
+- **localdrive** — File system API that is similar to Hyperdrive. *(JavaScript)*
+- **mirror-drive** — Mirror two drives. *(JavaScript)*
+- **drives** — CLI to download, seed, and mirror a Hyperdrive or Localdrive. *(JavaScript)*
+- **watch-drive** — Watch a Hyperdrive or a Localdrive and get the diff. *(JavaScript)*
+- **hypercore-blob-server** — HTTP server for streaming hypercore blobs. *(JavaScript)*
+- **hypercore-byte-stream** — A Readable stream around a Hypercore that supports reading byte ranges. *(JavaScript)*
+- **hypercore-detector** — Detect the type of your hypercore. *(JavaScript)*
+- **hypercore-e2e-tests** — End-to-end tests for Hypercore replication. *(JavaScript)*
+- **hypercore-scale-tests** — No description set. *(JavaScript)*
+- **hyperdrive-profiler** — Profile hyperdrive download performance. *(JavaScript)*
+- **hyperdrive-swarm-test** — No description set. *(JavaScript)*
+- **hyperinstrument** — Instrument services within the hypercore ecosystem. *(JavaScript)*
+- **hyperswarm-capability** — Produce a stream coupled capability for a key. *(JavaScript)*
+- **hyperswarm-e2e-tests** — Hyperdht end-to-end tests. *(JavaScript)*
+- **hypershell** — Spawn shells anywhere. Fully peer-to-peer, authenticated, and end to end encrypted. *(JavaScript)*
+- **repl-swarm** — Attach to a node repl using Hyperswarm. *(JavaScript)*
+- **simple-seeder** — Dead simple seeder with zero bugs. *(JavaScript)*
+- **seedbee** — Bee for seeds. *(JavaScript)*
+- **autobase-test-helpers** — Helpers when writing tests for an Autobased application. *(JavaScript)*
+- **autobase-light-writer** — Detached autobase writer that is just a single core with no causal info. *(JavaScript)*
+- **autobase-discovery** — Discover RPC services using autobase and protomux-rpc. *(JavaScript)*
+- **autobase-discovery-cli** — CLI for autobase-discovery. *(JavaScript)*
+- **autobase-example** — Just a runnable E2E autobase example. *(JavaScript)*
+- **autopass** — Multiwriter password and note sharing module. *(JavaScript)*
+- **blind-pairing** — Blind pairing using HyperDHT. *(JavaScript)*
+- **blind-pairing-core** — Core module for managing for Keet pairing requests. *(JavaScript)*
+- **blind-peering** — Peer side mirror manager. *(JavaScript)*
+- **blind-peer** — Peer that is blind. *(JavaScript)*
+- **blind-peer-cli** — CLI for running a blind peer. *(JavaScript)*
+- **blind-peer-encodings** — Blind Peer encodings. *(JavaScript)*
+- **blind-peer-muxer** — Protomux channel muxer for blind peers. *(JavaScript)*
+- **blind-peer-router** — No description set. *(JavaScript)*
+- **blind-peer-router** — No description set. *(JavaScript)*
+- **blind-relay** — Blind relay for UDX over Protomux channels. *(JavaScript)*
+- **blind-relay-service** — CLI for running blind relays. *(JavaScript)*
+- **blind-encryption-sodium** — Implementation of encryption encoding for Autobase blind encryption using sodium easy box. *(JavaScript)*
+- **blind-pairing** — Blind pairing using HyperDHT. *(JavaScript)*
+- **framed-stream** — Read/write stream messages prefixed 8, 16, 24 or 32 bit length. *(JavaScript)*
+- **gip-transport** — No description set. *(JavaScript)*
+- **gip-remote** — No description set. *(JavaScript)*
+- **http-forward-host** — Simple stream proxy that sniffs the HTTP host or x-forwarded-for header and allows you to forward the stream based on that. *(JavaScript)*
+- **index-encoder** — Encode multiple values into sorted keys. *(JavaScript)*
+- **network-block-device** — Network block device server for JavaScript. *(JavaScript)*
+- **netpaste** — Copy and paste over the DHT. *(JavaScript)*
+- **noise-handshake** — Simple noise handshake, supporting generic handshake patterns. *(JavaScript)*
 - **protomux** — Multiplex multiple message oriented protocols over a stream. *(JavaScript)*
 - **protomux-rpc** — RPC over Protomux channels. *(JavaScript)*
 - **protomux-rpc-client** — Connect to protmux-rpc servers. *(JavaScript)*
 - **protomux-rpc-client-pool** — Reliably connect to one of a pool of protomux-rpc servers. *(JavaScript)*
-- **protomux-wakeup** — Wakeup protocol over protomux. *(JavaScript)*
 - **protomux-rpc-middleware** — No description set. *(JavaScript)*
 - **protomux-rpc-router** — No description set. *(JavaScript)*
-- **rpc** — RPC over the Hyperswarm DHT. *(JavaScript)*
+- **protomux-wakeup** — Wakeup protocol over protomux. *(JavaScript)*
+- **punch-connection-encoding** — Compact encoding for public keys + dht bootstrap. *(JavaScript)*
 - **tiny-buffer-rpc** — Lightweight binary bi-directional RPC. *(JavaScript)*
-- **libudx** — udx is reliable, multiplexed, and congestion-controlled streams over udp. *(C)*
-- **udx-native** — udx is reliable, multiplexed, and congestion-controlled streams over udp. *(JavaScript)*
-- **bare-dgram** — Native UDP for JavaScript. *(JavaScript)*
-- **bare-tcp** — Native TCP sockets for JavaScript. *(JavaScript)*
-- **bare-net** — TCP and IPC servers and clients for JavaScript. *(JavaScript)*
-- **bare-http1** — HTTP/1 library for JavaScript. *(JavaScript)*
-- **bare-https** — HTTPS library for JavaScript. *(JavaScript)*
-- **bare-ws** — WebSocket library for JavaScript. *(JavaScript)*
-- **bare-tls** — Transport Layer Security (TLS) streams for JavaScript. *(JavaScript)*
-- **bare-ipc** — Lightweight pipe-based IPC for Bare. *(JavaScript)*
-- **bare-dns** — Domain name resolution for JavaScript. *(C)*
-- **network-block-device** — Network block device server for JavaScript. *(JavaScript)*
-- **http-forward-host** — Simple stream proxy that sniffs the HTTP host or x-forwarded-for header and allows you to forward the stream based on that. *(JavaScript)*
-- **framed-stream** — Read/write stream messages prefixed 8, 16, 24 or 32 bit length. *(JavaScript)*
-- **blind-relay** — Blind relay for UDX over Protomux channels. *(JavaScript)*
-- **blind-peer-muxer** — Protomux channel muxer for blind peers. *(JavaScript)*
-- **blind-pairing** — Blind pairing using HyperDHT. *(JavaScript)*
-- **blind-pairing-core** — Core module for managing for Keet pairing requests. *(JavaScript)*
-- **blind-peering** — Peer side mirror manager. *(JavaScript)*
+- **under pressure**
 
-## Pear/Keet/Desktop Apps (Pear, Keet, Desktop runtime)
+## Pear / Keet / Desktop Apps
 
 - **pear** — Combined Peer-to-Peer (P2P) Runtime, Development & Deployment tool. *(JavaScript)*
 - **pear-runtime** — Embeddable Runtime library for Pear with P2P OTA updates, Bare workers and storage APIs. *(JavaScript)*
@@ -116,13 +167,55 @@ Source organization: `holepunchto`
 - **pear-messages** — Receive object messages from a Pear application's processes/threads using object pattern-matching. *(JavaScript)*
 - **pear-terminal** — Pear Terminal User Interface library. *(JavaScript)*
 - **pear-electron** — Pear User-Interface Library for Electron. *(JavaScript)*
+- **pear-updater** — Pear Updater. *(JavaScript)*
+- **pear-ci** — Stateless stage for pear-runtime apps. *(JavaScript)*
+- **pear-ci-multisig** — Specialized subset of pear multisig CLI for CI pipelines. *(JavaScript)*
+- **electron-forge-maker-flatpak** — No description set. *(JavaScript)*
 - **keet-appling** — Keet application shell for macOS, Linux, and Windows. *(CMake)*
 - **keet-appling-next** — Keet application shell. *(JavaScript)*
 - **keet-identity-key** — Hierarchical deterministic key pairs for use in Keet identity system. *(JavaScript)*
 - **keet-prefs** — Keet Preferences. *(JavaScript)*
-- **pear-updater** — Pear Updater. *(JavaScript)*
+- **pear-workshop** — 🍐. *(JavaScript)*
+- **pear-docs** — No description set. *(Language not specified)*
+- **pear-templates** — Templates for Pear - `pear init pear://templates/<name>`. *(JavaScript)*
+- **pear-aliases** — pear://<alias> list. *(JavaScript)*
+- **pear-appdrive** — Pear application drive class, minimal hyperdrive compat, read-only. *(JavaScript)*
+- **pear-rti** — Pear Core Runtime Information. *(JavaScript)*
+- **pear-ref** — Pear core ref counter. *(JavaScript)*
+- **pear-constants** — Pear constants. *(JavaScript)*
+- **pear-info** — View Pear project information by link. *(JavaScript)*
+- **pear-hotmods** — Pear Hot Module / Live Reload integration layer. *(JavaScript)*
+- **pear-gunk** — Pear builtins, overrides, linker mappings. *(JavaScript)*
+- **pear-gracedown** — Pear graceful closer. *(JavaScript)*
+- **pear-shake** — Get the dependency tree of a Pear application bundle from a drive and its entrypoints. *(JavaScript)*
+- **pear-release** — Set application production release version length. *(JavaScript)*
+- **pear-wakeups** — Pear platform and application update notifications. *(JavaScript)*
+- **pear-updates** — Pear platform and application update notifications. *(JavaScript)*
+- **pear-force-update** — pear force update. *(JavaScript)*
+- **pear-reset** — Reset an application to initial state. *(JavaScript)*
+- **pear-drop** — Drop data, including application reset. *(JavaScript)*
+- **pear-prerelease** — Prerelease helper. *(JavaScript)*
+- **pear-init** — Create initial Pear project files. *(JavaScript)*
+- **pear-logger** — Pear logger. *(JavaScript)*
+- **pear-state** — Pear state. *(JavaScript)*
+- **pear-opstream** — Pear operations stream base class. *(JavaScript)*
+- **pear-opwait** — Pear operation stream promise wrapper. *(JavaScript)*
+- **pear-pipe** — Pear parent app connected bare-pipe. *(JavaScript)*
+- **pear-parsing** — No description set. *(JavaScript)*
+- **speedrun** — speedrun demo for pear react app with watch reload and production update flows. *(JavaScript)*
+- **snake** — Multiplayer P2P Snake Game on Pear. *(JavaScript)*
+- **hello-pear-electron** — Integrating Pear into a hello world electron desktop app. *(JavaScript)*
+- **filesharing-app-example** — No description set. *(JavaScript)*
+- **filesharing-react-app-example** — No description set. *(JavaScript)*
+- **pear-pass-example** — No description set. *(JavaScript)*
+- **pearpass-example** — No description set. *(JavaScript)*
+- **pear-ci-example** — how to stage on ci relatively safely. *(JavaScript)*
+- **bare-expo-hrpc-demo** — No description set. *(JavaScript)*
+- **bare-expo** — Example of embedding Bare in an Expo application using `react-native-bare-kit`. *(TypeScript)*
+- **bare-android** — Example of embedding Bare in an Android application using `bare-kit`. *(Kotlin)*
+- **bare-ios** — Example of embedding Bare in an iOS application using `bare-kit`. *(Swift)*
 
-## Native Libs/Build (C/C++, CMake, Build tools)
+## Native Libs / Build (C/C++, CMake, Build Tools)
 
 - **libjs** — Simple and ABI stable C bindings to V8 built on libuv. *(C)*
 - **libqjs** — ABI compatible replacement for `libjs` built on QuickJS. *(C)*
@@ -170,11 +263,43 @@ Source organization: `holepunchto`
 - **cmake-toolchains** — Clang-based CMake toolchain definitions for easy cross compilation. *(CMake)*
 - **cmake-fetch** — Minimal package manager for CMake based on FetchContent. *(CMake)*
 - **cmake-vcpkg** — Opinionated vcpkg integration for CMake. *(CMake)*
+- **cmake-ports** — Simple build recipe manager for CMake based on ExternalProject. *(CMake)*
+- **cmake-npm** — npm utilities for CMake. *(CMake)*
+- **cmake-android** — Android utilities for CMake. *(CMake)*
+- **cmake-java** — Java utilities for CMake. *(CMake)*
+- **cmake-zig** — Zig bridge for CMake. *(CMake)*
+- **cmake-meson** — Meson bridge for CMake. *(CMake)*
+- **cmake-cargo** — Cargo bridge for CMake. *(CMake)*
+- **cmake-ios** — iOS utilities for CMake. *(CMake)*
+- **cmake-macos** — macOS utilities for CMake. *(CMake)*
+- **cmake-windows** — Windows utilities for CMake. *(CMake)*
+- **cmake-msix** — MSIX packaging utilities for CMake. *(CMake)*
+- **cmake-app-image** — AppImage packaging utilities for CMake. *(CMake)*
+- **cmake-harden** — Compiler options hardening for CMake based on the OpenSSF guidelines. *(CMake)*
+- **cmake-drive** — Drive utilities for CMake. *(CMake)*
+- **cmake-gn** — Bridging CMake and GN, the meta-build system from Google. *(CMake)*
+- **cmake-bare-bundle** — Bare bundling utilities for CMake. *(JavaScript)*
+- **cmake-pear** — Pear utilities for CMake. *(CMake)*
 - **prebuild-containers** — Containers for prebuilding native Node.js modules. *(Dockerfile)*
 - **musl-toolchains** — Prebuilt musl cross-compilation toolchains. *(Not specified)*
 - **chromium-prebuilds** — Build definitions for making prebuilds of Chromium modules. *(Python)*
+- **wakeup** — Protocol handler for waking up Pear applications. *(CMake)*
+- **thread-stats** — Get resource usage for individual threads in the current process. *(C)*
+- **libdynload** — Utilities for loading of versioned dynamic libraries. *(C)*
+- **libjerry** — ABI compatible replacement for `libjs` built on JerryScript. *(C)*
+- **libjsc** — ABI compatible replacement for `libjs` built on JavaScriptCore. *(C)*
+- **bare-addon** — Template repository for creating Bare native addons. *(C)*
+- **bare-addon-java** — Template repository for creating Bare native addons using Java via `libjnitl`. *(CMake)*
+- **bare-addon-jstl** — Template repository for creating Bare native addons using C++ via `libjstl`. *(C++)*
+- **bare-addon-rust** — Template repository for creating Bare native addons using `bare-rust`. *(CMake)*
+- **bare-addon-resolve** — Low-level addon resolution algorithm for Bare. *(JavaScript)*
+- **bare-addon-linker** — Native addon linker for Bare. *(JavaScript)*
+- **bare-boot** — Boot drives in Bare. *(JavaScript)*
+- **bare-distributable** — Template repository for creating custom Bare distributables. *(C)*
+- **bare-rust** — Rust and Bare, sitting in a tree. *(Rust)*
+- **bare-sidecar-bundle** — Bare bundler optimised for sidecars to be used in pear-runtime. *(JavaScript)*
 
-## Examples/Documentation/Tests (Demos, Guides, Test suites)
+## Examples / Documentation / Tests (Demos, Guides, Test Suites)
 
 - **examples** — Examples of basic flows for modules in the Holepunch ecosystem. *(JavaScript)*
 - **bare-snippets** — Examples of how Bare makes running Javascript everywhere easy. *(JavaScript)*
