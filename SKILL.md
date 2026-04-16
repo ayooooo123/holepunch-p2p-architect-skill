@@ -1,6 +1,6 @@
 ---
-name: holepunch-p2p-architect
-description: Design, implement, debug, and test production-ready P2P apps using the Holepunch stack with a default Bare worker-first architecture, the module guides, and an auto-updating Holepunch org index. Use for architecture design, one-shot app generation, feature implementation (e.g., comments/feeds), performance and reliability tuning, sync failures, and unit/integration test enablement; also when building multi-platform Pear/BareKit apps with IPC/concurrency (pear-ipc, bare-ipc, bare-atomics, bare-workers, bare-thread) or mining Holepunch/Pear/Bare repos, docs, or pear:// app dumps.
+name: "holepunch-p2p-architect"
+description: "Design, implement, debug, and test production-ready P2P apps using the Holepunch stack with a default Bare worker-first architecture, the module guides, and an auto-updating Holepunch org index. Use for architecture design, one-shot app generation, feature implementation (e.g., comments/feeds), performance and reliability tuning, sync failures, and unit/integration test enablement; also when building multi-platform Pear/BareKit apps with IPC/concurrency (pear-ipc, bare-ipc, bare-atomics, bare-workers, bare-thread) or mining Holepunch/Pear/Bare repos, docs, or pear:// app dumps."
 ---
 
 # Holepunch P2P Architect
