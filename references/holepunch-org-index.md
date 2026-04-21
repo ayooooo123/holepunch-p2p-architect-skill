@@ -1,6 +1,6 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-04-20
+Generated at: 2026-04-21
 Source organization: `holepunchto` with 590 public repositories.
 
 ## Scope
@@ -202,6 +202,7 @@ Source organization: `holepunchto` with 590 public repositories.
 - **bare-lief** — LIEF bindings for Bare. *(C++)*
 - **bare-ndk** — Android NDK runtime and bindings for Bare. *(C++)*
 - **bare-subprocess** — Native process spawning for JavaScript. *(C)*
+- **bare-os** — Operating system utilities for Bare. *(C)*
 - **bare-dns** — Domain name resolution for JavaScript. *(C)*
 - **bare-which** — Find a program in `$PATH`. *(JavaScript)*
 - **bare-env** — Environment variable support for JavaScript. *(JavaScript)*
@@ -579,6 +580,6 @@ Source organization: `holepunchto` with 590 public repositories.
 
 - **prom-client** — Prometheus client for node.js.
 - **bare-dev** — Development tooling for Bare. *(JavaScript)*
-- **pear-expo-hello-world** — Archived Pear + Expo example. *(C++)*
+- **pear-expo-hello-world** — Archived example showing Pear + Expo. *(C++)*
 - **pear-stdio** — Pear STDIO. *(JavaScript)*
 - **barely-node** — Bare distribution aiming to be mostly Node.js compatible. *(CMake)*
