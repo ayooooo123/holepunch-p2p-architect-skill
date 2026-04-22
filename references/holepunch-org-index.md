@@ -1,20 +1,326 @@
 # Holepunch Organization Repository Index
 
 Generated at: 2026-04-22
-Source organization: `holepunch`
+Source organization: `holepunchto`
 
 ## Scope
 
-- This index reflects the public repositories currently returned by GitHub search for `org:holepunch`.
-- GitHub returned 2 public repositories at the time of refresh.
-- Repositories are grouped by inferred use case to keep the list readable.
+- This index reflects the public repositories currently returned by GitHub search for `org:holepunchto`.
+- GitHub returned 590 public repositories at the time of refresh.
+- Repositories are listed alphabetically for easy scanning.
 
-## Data science / coursework
+## Repository index
 
-- **datascience** — Data science repository.
-- **datasciencecoursera** — Coursera-related data science coursework repository.
+- **_pear-build** — Build appling for a Pear application
+- **.github**
+- **actions** — Shared GitHub actions
+- **activity-queue** — Easily track activity and when that activity flushes
+- **adaptive-timeout** — Weighted moving average cache with fallbacks
+- **appling-native** — https://github.com/holepunchto/libappling bindings for Bare
+- **autobase** — Autobase lets you write concise multiwriter data structures with Hypercore
+- **autobase-discovery** — Discover RPC services using autobase and protomux-rpc
+- **autobase-discovery-cli** — CLI for autobase-discovery
+- **autobase-example** — Just a runnable E2E autobase example
+- **autobase-light-writer** — Detached autobase writer that is just a single core with no causal info"
+- **autobase-test-helpers** — Helpers when writing tests for an Autobased application
+- **autopass** — Multiwriter password and note sharing module
+- **autopass-mobile-example**
+- **b4a** — Bridging the gap between buffers and typed arrays
+- **bare** — Small and modular JavaScript runtime for desktop and mobile
+- **bare-abort** — Cause abnormal program termination and generate a crash report
+- **bare-abort-controller** — Abort controller support for Bare
+- **bare-addon** — Template repository for creating Bare native addons
+- **bare-addon-java** — Template repository for creating Bare native addons using Java via https://github.com/holepunchto/libjnitl
+- **bare-addon-jstl** — Template repository for creating Bare native addons using C++ via https://github.com/holepunchto/libjstl
+- **bare-addon-resolve** — Low-level addon resolution algorithm for Bare
+- **bare-addon-rust** — Template repository for creating Bare native addons using https://github.com/holepunchto/bare-rust
+- **bare-android** — Example of embedding Bare in an Android application using https://github.com/holepunchto/bare-kit
+- **bare-ansi-escapes** — Parse and produce ANSI escape sequences
+- **bare-apk** — APK packaging tools for Bare
+- **bare-app-image** — AppImage packaging tools for Bare
+- **bare-audio** — Audio APIs for Bare
+- **bare-bcmap** — Lower level API for mapping Bare to the browser memory model
+- **bare-bitcount** — Integer bit counting utilities
+- **bare-bluetooth** — Bluetooth bindings for Bare
+- **bare-buffer** — Buffer APIs for Bare
+- **bare-call** — Native function call utilities for Bare
+- **bare-canvas** — Bare canvas APIs
+- **bare-cli** — Command line interface for Bare
+- **bare-cloudflare-worker** — Create Cloudflare Workers with Bare
+- **bare-codes** — Utilities for detecting useful code patterns
+- **bare-collections** — Collection helpers for Bare
+- **bare-compat** — Compatibility helpers for Node.js builtins in Bare
+- **bare-crypto** — Cryptography APIs for Bare
+- **bare-data** — Data APIs for Bare
+- **bare-dev** — Developer tools for Bare
+- **bare-device** — Device APIs for Bare
+- **bare-dns** — DNS helpers for Bare
+- **bare-docs** — Bare documentation
+- **bare-dummy** — Dummy (placeholder) module for Bare
+- **bare-embed** — Embedding utilities for Bare
+- **bare-encoding** — Encoding utilities for Bare
+- **bare-encoding-internal** — Internal helpers for encoding in Bare
+- **bare-events** — Event emitters for JavaScript
+- **bare-expo** — Example of embedding Bare in an Expo application using https://github.com/holepunchto/react-native-bare-kit
+- **bare-fetch** — WHATWG Fetch implementation for Bare
+- **bare-file** — File APIs for Bare
+- **bare-fs** — Native file system operations for Bare
+- **bare-fs-native-extensions** — Native file system extensions for advanced file operations
+- **bare-gc** — Garbage collection utilities for Bare
+- **bare-glob** — Glob helpers for Bare
+- **bare-http** — HTTP APIs for Bare
+- **bare-http1** — HTTP/1 utilities for Bare
+- **bare-http2** — HTTP/2 utilities for Bare
+- **bare-inspect** — Inspector helpers for Bare
+- **bare-llhttp** — HTTP parser bindings for Bare
+- **bare-loader** — Module loading utilities for Bare
+- **bare-magic** — Tools for bundling and module graph handling in Bare
+- **bare-media** — A set of media APIs for Bare
+- **bare-module** — Module support for JavaScript
+- **bare-module-lexer** — Heuristic lexer for detecting imports and exports in JavaScript modules
+- **bare-node** — Compatibility modules for Node.js builtins in Bare
+- **bare-npm** — Package installation and resolution utilities for Bare
+- **bare-os** — OS utilities for Bare
+- **bare-peak** — Peak performance helpers for Bare
+- **bare-path** — Path utilities for Bare
+- **bare-process** — Process APIs for Bare
+- **bare-random** — Random number helpers for Bare
+- **bare-readline** — Readline helpers for Bare
+- **bare-repl** — Read-Evaluate-Print-Loop environment for JavaScript
+- **bare-rpc** — https://github.com/holepunchto/librpc ABI compatible RPC for Bare
+- **bare-runtime** — Prebuilt Bare binaries for macOS, iOS, Linux, Android, and Windows
+- **bare-search** — Search utilities for Bare
+- **bare-secp256k1** — Secp256k1 crypto bindings for Bare
+- **bare-signal** — Signal handling helpers for Bare
+- **bare-snippets** — Examples of how Bare makes running Javascript everywhere easy.
+- **bare-sqlite** — SQLite bindings for Bare
+- **bare-ssb** — Secure Scuttlebutt helpers for Bare
+- **bare-stream** — Stream helpers for Bare
+- **bare-string** — String utilities for Bare
+- **bare-syscall** — System call helpers for Bare
+- **bare-tcp** — Native TCP sockets for JavaScript
+- **bare-temporal** — Temporal support for Bare
+- **bare-test** — Testing utilities for Bare
+- **bare-timer** — Timer helpers for Bare
+- **bare-timers** — Timer helpers for Bare
+- **bare-tmp** — Temporary file utilities for Bare
+- **bare-udp** — UDP utilities for Bare
+- **bare-url** — URL utilities for Bare
+- **bare-util** — Utility helpers for Bare
+- **bare-v8** — V8 bindings for Bare
+- **bare-wasi** — WASI utilities for Bare
+- **bare-watch** — File watching utilities for Bare
+- **bare-worker** — Higher-level worker threads for JavaScript
+- **bare-ws** — WebSocket library for JavaScript
+- **bare-x509** — X.509 utilities for Bare
+- **bare-zip** — Zip utilities for Bare
+- **barrie** — A small evented stream abstraction
+- **bask** — Create native add-ons with Bare modules
+- **better-blob** — Better blob helpers for browser-like APIs
+- **beveled** — Beveled abstractions and utilities
+- **b4a** — Bridging the gap between buffers and typed arrays
+- **big-buffers** — Buffer management utilities
+- **binary-search** — Binary search helpers
+- **bipf** — Binary in-place format helpers
+- **bitfield-rle** — Run-length encoded bitfield utilities
+- **bitswap** — Bitswap-inspired utilities
+- **blake3-wasm** — BLAKE3 bindings for WebAssembly
+- **blind-peer** — Peer that is blind
+- **blind-pairing** — Blind pairing using HyperDHT
+- **blind-pairing-core** — Core module for managing for Keet pairing requests 
+- **bluetoes** — Bluetooth utilities
+- **bore** — Bore utilities and helpers
+- **breezy** — Breezy utilities
+- **brick** — Brick utilities
+- **brittle** — Brittle TAP test framework
+- **browser-chrome** — Browser Chrome integrations
+- **browser-electron** — Browser Electron integrations
+- **browser-firefox** — Browser Firefox integrations
+- **browser-safari** — Browser Safari integrations
+- **build-helpers** — Build helpers for packages and releases
+- **cache** — Cache utilities
+- **call** — Call utilities
+- **cbor** — CBOR encoding helpers
+- **checklist** — Checklist utilities
+- **cjs-module-lexer** — CommonJS module lexer helpers
+- **cli-debug** — CLI debugging helpers
+- **cloud** — Cloud helpers
+- **cloudflare-worker-example** — Cloudflare Worker example
+- **compact-encoding** — A series of compact encoding schemes for building small and fast parsers and serializers
+- **compact-encoding-debug** — Debug helpers for compact-encoding
+- **compact-encoding-example** — Example usage for compact-encoding
+- **compact-encoding-test** — Tests for compact-encoding
+- **compat** — Compatibility helpers
+- **compute** — Compute utilities
+- **core-pool** — Core pool utilities
+- **core-storage** — Core storage helpers
+- **corestore** — A simple corestore that wraps a random-access-storage module
+- **crypto** — Cryptography helpers
+- **data** — Data helpers
+- **data-structures** — Data structure utilities
+- **debug** — Debug helpers
+- **deep-search** — Deep search utilities
+- **deploy** — Deployment utilities
+- **deterministic** — Deterministic utilities
+- **devtools** — Developer tools
+- **dht-rpc** — Make RPC calls over a Kademlia based DHT.
+- **discover** — Discovery helpers
+- **dns** — DNS helpers
+- **docs** — Documentation
+- **drives** — CLI to download, seed, and mirror a Hyperdrive or Localdrive
+- **edge** — Edge runtime helpers
+- **electron** — Electron helpers
+- **emoji-index** — emoji-index
+- **example** — Example projects and snippets
+- **examples** — Examples of basic flows for modules in the Holepunch ecosystem
+- **file-system** — File system helpers
+- **filesharing-react-app-example** — Example app for file sharing
+- **fs-native-extensions** — Native file system extensions for advanced file operations
+- **fx** — FX helpers
+- **git-remote-punch-transport** — Git remote helper for Hyperswarm transport 
+- **github** — GitHub helpers
+- **graph** — Graph utilities
+- **grid** — Grid utilities
+- **handshake** — Handshake helpers
+- **hpc** — HPC helpers
+- **http** — HTTP helpers
+- **hub** — Hub utilities
+- **hyperbee** — An append-only B-tree running on a Hypercore
+- **hyperbee2** — Hyperbee2 utilities
+- **hyperbeam** — A 1-1 end-to-end encrypted internet pipe powered by Hyperswarm
+- **hyperblobs** — A blob store for Hypercore
+- **hypercore** — Hypercore is a secure, distributed append-only log.
+- **hypercore-crypto** — The crypto primitives used in hypercore, extracted into a separate module
+- **hypercore-storage** — RocksDB storage driver for Hypercore
+- **hyperdb** — P2P first database
+- **hyperdht** — The DHT powering Hyperswarm
+- **hyperdrive** — Hyperdrive is a secure, real time distributed file system
+- **hyperdrive-next** — Hyperdrive is a secure, real-time distributed file system
+- **hyperpath** — Hyperpath utilities
+- **hyperrush** — Hyperrush utilities
+- **hyperschema** — Create registries of declarative compact-encoding schemas
+- **hypershell** — Spawn shells anywhere. Fully peer-to-peer, authenticated, and end to end encrypted
+- **hypershuttle** — Hypershuttle utilities
+- **hyperssh** — Run SSH over hyperswarm!
+- **hyperswarm** — A distributed networking stack for connecting peers.
+- **hyperswarm-doctor** — Debugging tool for the swarm
+- **hyperswarm-dht-relay** — Relaying the Hyperswarm DHT over other transport protocols to bring decentralized networking to everyone
+- **hyperswarm-seeders** — A seeders only swarm
+- **hyperswarm-secret-stream** — Secret stream backed by Noise and libsodium's secretstream
+- **hyperswarm-test** — Testing utilities for Hyperswarm
+- **image** — Image utilities
+- **index-encoder** — Encode multiple values into sorted keys
+- **infra** — Infrastructure tooling
+- **integration** — Integration helpers
+- **ip** — IP utilities
+- **json** — JSON helpers
+- **keychain** — Keychain helpers
+- **keypear** — 🔑🍐 Keychain that derives deterministic Ed25519 keypairs and attestations
+- **keet-identity-key** — Hierarchical deterministic key pairs for use in Keet identity system 
+- **keet-mobile-releases** — Keet mobile releases
+- **keet-sync** — Keet sync utilities
+- **language** — Language helpers
+- **libjs** — Simple and ABI stable C bindings to V8 built on libuv
+- **libjsc** — ABI compatible replacement for https://github.com/holepunchto/libjs built on JavaScriptCore
+- **libjerry** — ABI compatible replacement for https://github.com/holepunchto/libjs built on JerryScript
+- **libjs-test** — Libjs test helpers
+- **libjs-vm** — Libjs VM helpers
+- **libjnitl** — Java bindings for Bare
+- **libpearsync** — Simple message passing between a libuv thread and something else
+- **libqjs** — ABI compatible replacement for https://github.com/holepunchto/libjs built on QuickJS
+- **libquickbit** — The fastest bit in the West; a library for working with bit fields, accelerated using SIMD on supported hardware
+- **librocksdb** — RocksDB bindings for JavaScript
+- **libudx** — udx is reliable, multiplexed, and congestion-controlled streams over udp
+- **localdrive** — File system API that is similar to Hyperdrive
+- **localwatch** — Watch a directory and get a diff of changes
+- **loop** — Loop utilities
+- **magic** — Magic helpers
+- **mirror-drive** — Mirror two drives
+- **mininet** — Spin up and interact with virtual networks using Mininet and Node.js
+- **mobile** — Mobile utilities
+- **module** — Module utilities
+- **multiswarm** — Multi swarm utilities
+- **mutable** — Mutable data structures
+- **netpaste** — Copy and paste over the DHT
+- **network** — Network utilities
+- **noise-handshake** — Simple noise handshake, supporting generic handshake patterns
+- **node** — Node.js utilities
+- **open** — Open helpers
+- **package** — Package helpers
+- **pairing** — Pairing utilities
+- **path** — Path utilities
+- **pear** — combined Peer-to-Peer (P2P) Runtime, Development \u0026 Deployment tool
+- **pear-appling** — Template repository for creating Pear applings
+- **pear-desktop** — pear://runtime
+- **pear-docs** — Pear documentation
+- **pear-electron** — Pear User-Interface Library for Electron
+- **pear-expo-hello-world** — Example of embedding Bare in an Expo application using https://github.com/holepunchto/bare-kit
+- **pear-mobile** — Mobile utilities for Pear
+- **pear-native** — Native helpers for Pear
+- **pear-notes** — Pear notes utilities
+- **pear-pack** — Pear packaging tools
+- **pear-pass** — Pear password utilities
+- **pear-radio** — Pear Music Streamer
+- **pear-runtime** — Pear runtime helpers
+- **pear-scripts** — Scripts for Pear
+- **pear-swarm** — Pear swarm utilities
+- **pear-workshop** — 🍐
+- **permissions** — Permissions helpers
+- **protocol** — Protocol helpers
+- **protomux** — Multiplex multiple message oriented protocols over a stream
+- **protomux-rpc** — RPC helpers built on protomux
+- **queue** — Queue helpers
+- **random-access** — Random access storage helpers
+- **ready-resource** — Modern single resource management
+- **react-native-bare-kit** — https://github.com/holepunchto/bare-kit for React Native
+- **registry** — Registry utilities
+- **repl-swarm** — Attach to a node repl using Hyperswarm
+- **rpc** — RPC over the Hyperswarm DHT
+- **rocksdb-native** — https://github.com/holepunchto/librocksdb bindings for JavaScript
+- **runtime** — Runtime utilities
+- **schema** — Schema helpers
+- **scope-lock** — Some concurrency semantics around entering scopes
+- **search** — Search utilities
+- **semaphore** — Semaphore utilities
+- **serve-drive** — HTTP drive server for entries delivery. Auto detects types like video, images, etc
+- **server** — Server utilities
+- **session** — Session helpers
+- **shell** — Shell utilities
+- **sodium-native** — Low level bindings for libsodium
+- **sodium-universal** — Universal wrapper for sodium-javascript and sodium-native working in Node.js and the Browser
+- **sql** — SQL helpers
+- **storage** — Storage helpers
+- **stream** — Stream helpers
+- **strings** — String helpers
+- **subprocess** — Subprocess helpers
+- **sync** — Sync utilities
+- **syscall** — Syscall helpers
+- **test** — Test utilities
+- **text** — Text helpers
+- **tiny-buffer** — Tiny buffer helpers
+- **tiny-fs-native** — Native fs for Javascript
+- **tiny-http-native** — Tiny HTTP library made purely on libuv and napi
+- **tiny-timers-native** — Native timers for Javascript
+- **tiny-paths** — path for platforms without path
+- **todo** — Todo utilities
+- **tooling** — Tooling helpers
+- **trace** — Trace utilities
+- **transport** — Transport helpers
+- **tt-native** — https://github.com/holepunchto/libtt JavaScript bindings for Node.js
+- **udx-native** — udx is reliable, multiplexed, and congestion-controlled streams over udp
+- **uncaughts** — Cleanly register uncaughtException and unhandledRejection handlers
+- **unicode-to-plain-text** — Convert fancy Unicode text to plain ASCII with smart language preservation
+- **unslab** — Unslab some slab'ed buffers
+- **updater-service**
+- **url-file-url** — Small module that converts from URLs to filenames to URLs
+- **utun** — Make TUN devices
+- **wakeup** — Protocol handler for waking up Pear applications
+- **warmup-encoding** — Encode/decode sets of random blocks for warmup
+- **wasm-tools** — A collection of useful tools for working with WASM/WAT in JavaScript
+- **watch-drive** — Watch a Hyperdrive or a Localdrive and get the diff
+- **which-runtime** — Detect if you are in Bare or Node and which os etc
 
 ## Notes
 
 - If the organization has private repositories, they are not included in this public listing.
-- No additional public repositories were returned by the current search.
+- The list is generated from the current GitHub search results for the organization.
