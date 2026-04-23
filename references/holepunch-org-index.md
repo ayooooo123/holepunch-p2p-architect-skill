@@ -85,5 +85,9 @@ Representative repos:
 - `fast-meta-tags`, `get-file-format`, `get-mime-type`, `is-text-filetype`, `known-text-files`, `unicode-to-plain-text`, `url-file-url`, `wasm-tools`, `which-runtime`, `rache`
 - `b4a`, `bits-to-bytes`, `unslab`, `tiny-buffer-map`, `tiny-buffer-rpc`, `tiny-fs-native`, `tiny-http-native`, `tiny-paths`, `tiny-timers-native`, `framed-stream`, `fd-pipe`, `emoji-index`
 
-## Notes\n
-- Some repositories may fit more than one group; the taxonomy uses the most likely primary use case.\n- Private repositories are not included in GitHub’s public org search results.\n- Archived repos may still appear in search and are retained here if relevant to the taxonomy.\n- This file is an inferred map for architectural scanning, not a canonical org inventory.\n"}']}},{
+## Notes
+
+- Some repositories may fit more than one group; the taxonomy uses the most likely primary use case.
+- Private repositories are not included in GitHub’s public org search results.
+- Archived repos may still appear in search and are retained here if relevant to the taxonomy.
+- This file is an inferred map for architectural scanning, not a canonical org inventory.
