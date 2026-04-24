@@ -1,6 +1,6 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-04-23
+Generated at: 2026-04-24
 Source organization: `holepunchto`
 
 ## Scope
@@ -11,7 +11,7 @@ Source organization: `holepunchto`
 
 ## Use-case taxonomy
 
-### 1) Bare runtime and platform APIs
+### 1) Bare
 Core runtime, builtins, UI bindings, process primitives, and standard-library-style modules.
 
 Representative repos:
@@ -25,7 +25,7 @@ Representative repos:
 - `bare-bundle`, `bare-bundle-compile`, `bare-bundle-evaluate`, `bare-bundle-id`, `bare-pack`, `bare-unpack`, `bare-sidecar`, `bare-build`, `bare-make`, `bare-run`, `bare-distributable`, `bare-open`
 - `bare-apk`, `bare-app-image`, `bare-boot`, `bare-storage`, `bare-headers`, `bare-dev`, `bare-cov`
 
-### 2) Pear app runtime, deployment, and UX
+### 2) Pear
 App shell, runtime bootstrap, updates, packing, CLI flows, and app lifecycle tools.
 
 Representative repos:
@@ -38,7 +38,7 @@ Representative repos:
 - `pear-appling`, `_pear-build`, `pear-ci`, `pear-ci-example`, `pear-ci-multisig`, `pear-multisig-link`
 - `hello-pear-electron`, `sveltekit-adapter-bare`, `make-pear-app`, `pear-workshop`, `pear-snippets`, `speedrun`
 
-### 3) Hypercore, Hyperdrive, Hyperswarm, and P2P infrastructure
+### 3) P2P/Hypercore
 Distributed logs, file systems, DHT networking, multiplexed protocols, RPC, and swarm tooling.
 
 Representative repos:
@@ -51,7 +51,7 @@ Representative repos:
 - `seedbee`, `simple-seeder`, `hyperswarm-seeders`, `hyperswarm-testnet`, `hyperswarm-doctor`, `hyperswarm-stats`, `hyperswarm-secret-stream`, `hyperswarm-dht-relay`, `hyperbeam`, `repl-swarm`, `netpaste`, `http-dht-proxy`, `http-forward-host`, `git-remote-punch-transport`, `mininet`, `hypermininet`, `hyperdht-stats`, `instrumented-dht-node`, `Grafana-hypercore-stats`, `hyper-health-check`
 - Blind-networking family: `blind-peer`, `blind-peer-cli`, `blind-peer-encodings`, `blind-peer-muxer`, `blind-peer-router`, `blind-peering`, `blind-peering-cli`, `blind-relay`, `blind-relay-service`, `blind-pairing`, `blind-pairing-core`, `blind-encryption-sodium`
 
-### 4) Native libraries and cross-language bindings
+### 4) Native
 Reusable C/C++/Swift/Go/Java/Rust building blocks and ABI shims.
 
 Representative repos:
@@ -60,7 +60,7 @@ Representative repos:
 - Native wrappers: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `crc-universal`, `rabin-native`, `sqlite3-native`, `fx-native`, `tt-native`, `libjsi`, `require-addon`, `require-asset`, `bare-compat-napi`
 - Mobile / desktop bindings: `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-sdl`, `bare-rpc-swift`, `compact-encoding-swift`, `hrpc-swift`, `hyperschema-swift`
 
-### 5) Build, packaging, release, and CI tooling
+### 5) Build/CI
 Cross-platform build helpers, packaging recipes, release automation, and repository ops.
 
 Representative repos:
@@ -69,7 +69,7 @@ Representative repos:
 - `bundlebee`, `bundlebee-cli`, `bare-prebuild`, `bare-runtime`, `electron-runtime`, `pear-runtime-appling`
 - `actions`, `canary-runner`, `slack-build-status`, `oidc-publishing`, `oidc-publishing-sandbox`, `check-npm-maintainers`, `repo-template`, `prettier-config-holepunch`
 
-### 6) Examples, workshops, demos, and reference apps
+### 6) Examples
 Proof-of-concept apps and teaching repos.
 
 Representative repos:
@@ -77,7 +77,7 @@ Representative repos:
 - `bare-android`, `bare-ios`, `bare-expo`, `bare-expo-hrpc-demo`, `hello-pear-electron`, `speedrun`
 - `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `pearpass-example`, `filesharing-app-example`, `filesharing-react-app-example`, `pear-radio`, `snake`
 
-### 7) Utilities, diagnostics, and general-purpose helpers
+### 7) Utilities
 Small focused packages that support the larger stacks.
 
 Representative repos:
