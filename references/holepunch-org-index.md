@@ -1,11 +1,11 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-04-27
+Generated at: 2026-04-28
 Source organization: `holepunchto`
 
 ## Scope
 
-- Public repositories returned by GitHub search for `user:holepunchto`.
+- Public repositories returned by GitHub search for `org:holepunchto`.
 - GitHub returned **593** public repositories at refresh time.
 - Repositories are regrouped by inferred use case for faster scanning.
 
@@ -460,6 +460,71 @@ Small focused packages for scheduling, parsing, crypto, debugging, and metrics.
 - `safe-sodium-buffer` — Safe sodium buffer helpers.
 - `check-npm-maintainers` — Maintainership validation helper.
 - `repo-template` — Repository template.
+
+## Refresh delta since the previous snapshot
+
+The org-wide search surfaced newer repositories that are not yet reflected above or were recently added after the previous refresh. These are grouped here so they can be folded into the main taxonomy on the next regeneration:
+
+### Bare compatibility and runtime shims
+- `bare-async-hooks` — `async_hooks` shim for Bare.
+- `bare-form-data` — Form data support for Bare.
+- `bare-intl` — ECMAScript Internationalization API for Bare.
+- `bare-mime` — MIME type parsing for Bare.
+- `bare-node-runtime` — Compatibility layer for Node.js builtins and globals in Bare.
+- `bare-punycode` — Punycode support for Bare.
+- `bare-querystring` — URL query string utilities.
+- `bare-queue-microtask` — Microtask queuing for Bare.
+- `bare-storage` — Minimal, cross-platform directory locator for Bare.
+- `bare-string-decoder` — `string_decoder` shim for Bare.
+- `bare-thread` — Thread support for Bare.
+- `bare-type` — Cross-realm type predicates for Bare.
+- `bare-which` — Find a program in `$PATH`.
+- `bare-posix` — POSIX-specific bindings for Bare.
+- `bare-stdio` — Standard input/output streams for Bare.
+
+### Networking, RPC, and transport additions
+- `autobase-discovery` — Discover RPC services using autobase and protomux-rpc.
+- `autobase-discovery-cli` — CLI for autobase-discovery.
+- `bot-rpc` — RPC helper.
+- `gip-remote` — Remote transport helper.
+- `gip-transport` — Transport layer for GIP.
+- `hp-rpc-cli` — CLI for RPC over Holepunch transports.
+- `http-dht-proxy` — HTTP proxy over DHT.
+- `hyperbeam` — A 1-1 end-to-end encrypted internet pipe powered by Hyperswarm.
+- `hypercore-blob-server` — HTTP server for streaming hypercore blobs.
+- `hypercore-byte-stream` — Readable byte-range stream around a Hypercore.
+- `hypercore-audit` — Audit hypercore storage.
+- `hyperdht-address` — HyperDHT key parsing with optional DHT node addresses.
+- `hyperssh` — Run SSH over hyperswarm.
+- `pattern-router` — Object-pattern-matching-based routing.
+- `ptnm` — Object Pattern Matching.
+- `iambus` — Minimalist pattern-matching pub-sub message-bus.
+- `raw-text-display-parser` — Small state machine to parse chat input state when using raw text.
+- `protomux-rpc-middleware` — Middleware for protomux-rpc.
+- `protomux-rpc-router` — Router for protomux-rpc.
+
+### Utilities, diagnostics, and logging additions
+- `bare-file-logger` — File system logger for Bare.
+- `bare-performance` — Performance monitoring for Bare.
+- `bare-system-logger` — System logger for Bare.
+- `device-file` — Device only file.
+- `hypercore-logger` — Distributed logger.
+- `slab-hunter` — Hunt for Buffer slabs indicative of a memory leak.
+
+### Packaging, tooling, and examples additions
+- `bare-expo-hrpc-demo` — Bare Expo HRPC demo.
+- `drive-bundler` — Extract bundles from drives.
+- `extract-bare-bundle` — Extract a bare bundle to disk.
+- `node-bare-bundle` — Run a bare bundle in a Node.js environment.
+- `rebuild-git` — Rebuild git repo from objects.
+- `bare-rust` — Rust and Bare, sitting in a tree.
+- `bare-node-fetch` — Cross runtime fetch module.
+- `bare-node` — Compatibility modules for Node.js builtins in Bare.
+- `bare-open` — Cross-platform application launcher for Bare.
+- `bare-runtime-updater` — Listens for OTA Bare updates.
+- `bare-runtime-bootstrap` — Simple unix script to bootstrap the pear runtime.
+- `bare-runtime-bare` — bare binary that bootstraps the platform.
+- `bare-runtime` — Prebuilt Bare binaries for macOS, iOS, Linux, Android, and Windows.
 
 ## Notes
 
