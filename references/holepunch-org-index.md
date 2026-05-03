@@ -1,8 +1,8 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-02  
+Generated at: 2026-05-03  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **594**
+Public repositories discovered by GitHub search: **596**
 
 ## Scope
 
@@ -12,7 +12,7 @@ Public repositories discovered by GitHub search: **594**
 
 ## Delta since previous refresh
 
-- Newly surfaced repos in this refresh include `libflattree`, `bare-crypto`, `gip-transport`, `bare-v8`, `thread-stats`, and several newer packaging/runtime helpers.
+- Newly surfaced repos in this refresh include `libhc`, `libkv`, `libflattree`, `bare-crypto`, `gip-transport`, `bare-v8`, `thread-stats`, and several newer packaging/runtime helpers.
 - The taxonomy below keeps the previous grouping style so the index stays easy to scan, but the repo counts and top-level inventory were refreshed to the latest public search results.
 
 ## 1) Bare runtime & platform
@@ -66,7 +66,7 @@ Blind peer discovery, pairing, relays, and Keet-specific application flows.
 
 Reusable C/C++/Swift/Go/Rust building blocks, ABI compatibility layers, and generated bindings.
 
-- Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`.
+- Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libhc`, `libkv`.
 - Universal / compatibility wrappers: `quickbit-universal`, `crc-universal`, `bitarray-universal`, `simdle-universal`, `sodium-universal`, `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-node-runtime`.
 - JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`.
 - Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`.
@@ -115,4 +115,4 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh surfaced `libflattree` and other recently added runtime/build helpers; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
+- Latest refresh surfaced `libhc`, `libkv`, `libflattree` and other recently added runtime/build helpers; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
