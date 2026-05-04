@@ -1,8 +1,8 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-03  
+Generated at: 2026-05-04  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **596**
+Public repositories discovered by GitHub search: **597**
 
 ## Scope
 
@@ -12,7 +12,7 @@ Public repositories discovered by GitHub search: **596**
 
 ## Delta since previous refresh
 
-- Newly surfaced repos in this refresh include `libhc`, `libkv`, `libflattree`, `bare-crypto`, `gip-transport`, `bare-v8`, `thread-stats`, and several newer packaging/runtime helpers.
+- Newly surfaced repos in this refresh include `libhc`, `libkv`, `libflattree`, `sentry-bare`, `liblexkey`, `rocksdb-blobs`, `bare-readline`, `bare-signals`, `bare-env`, `bare-boot`, `bare-atomics`, `bare-abort`, `bare-gif`, `bare-union-bundle`, `bare-xdiff`, `cross-worker`, `msix-manager`, `bare-tpl`, `compact-encoding-golang`, and `bare-rpc-golang`, plus several newer packaging/runtime helpers.
 - The taxonomy below keeps the previous grouping style so the index stays easy to scan, but the repo counts and top-level inventory were refreshed to the latest public search results.
 
 ## 1) Bare runtime & platform
@@ -41,7 +41,7 @@ Pear runtime plumbing, lifecycle control, IPC, updates, and release tooling.
 Distributed logs, databases, corestores, drive tools, and storage-oriented workflows.
 
 - Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`.
-- Storage, drivers, and persistence: `hypercore-storage`, `hypercore-crypto`, `hypercore-encryption`, `hypercore-errors`, `hypercore-id-encoding`, `hypercore-proof-queue`, `hypercore-byte-stream`, `hypercore-blob-server`, `hypercore-audit`, `hypercore-detector`, `hypercore-messages`, `hypercore-sign`, `hypercore-signing-request`, `hypercore-logger`, `hypercore-stats`, `hypercore-scale-tests`, `hypercore-e2e-tests`, `hyperdrive-profiler`, `hyperdrive-swarm-test`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`.
+- Storage, drivers, and persistence: `hypercore-storage`, `hypercore-crypto`, `hypercore-encryption`, `hypercore-errors`, `hypercore-id-encoding`, `hypercore-proof-queue`, `hypercore-byte-stream`, `hypercore-blob-server`, `hypercore-audit`, `hypercore-detector`, `hypercore-messages`, `hypercore-sign`, `hypercore-signing-request`, `hypercore-logger`, `hypercore-stats`, `hypercore-scale-tests`, `hypercore-e2e-tests`, `hyperdrive-profiler`, `hyperdrive-swarm-test`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`, `rocksdb-blobs`.
 - Drive tools and file sync: `localdrive`, `mirror-drive`, `serve-drive`, `watch-drive`, `drives`, `drive-resolve`, `drive-bundler`, `distributed-drive`, `network-block-device`, `simple-seeder`, `seedbee`, `localwatch`, `throwaway-local-cache`, `corestore-snapshot`, `passive-core-watcher`, `multi-profile-store`, `key-collection`, `index-encoder`, `index-keys`, `emoji-index`.
 - Hypercore-related apps and experiments: `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `autobase-discovery`, `autobase-discovery-cli`, `hypercore-byte-stream`, `hypercore-storage`, `hypercore-logger`, `hypercore-stats`, `hypercore-e2e-tests`, `hypercore-scale-tests`, `hypercore-signing-request`, `hypercore-blob-server`, `drive-analyzer`.
 
@@ -66,7 +66,7 @@ Blind peer discovery, pairing, relays, and Keet-specific application flows.
 
 Reusable C/C++/Swift/Go/Rust building blocks, ABI compatibility layers, and generated bindings.
 
-- Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libhc`, `libkv`.
+- Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libhc`, `libkv`, `liblexkey`.
 - Universal / compatibility wrappers: `quickbit-universal`, `crc-universal`, `bitarray-universal`, `simdle-universal`, `sodium-universal`, `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-node-runtime`.
 - JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`.
 - Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`.
@@ -79,8 +79,8 @@ Cross-platform build helpers, packaging recipes, and release infrastructure.
 
 - Shared org tooling: `actions`, `canary-runner`, `slack-build-status`, `oidc-publishing`, `oidc-publishing-sandbox`, `prettier-config-holepunch`, `repo-template`, `check-npm-maintainers`.
 - Native build helpers: `bare-prebuild`, `prebuild-containers`, `chromium-prebuilds`, `musl-toolchains`, `ninja-runtime`, `bare-headers`, `bare-build`, `bare-make`, `bare-pack`, `bare-pack-drive`, `bare-unpack`, `bare-bundle`, `bare-bundle-compile`, `bare-bundle-evaluate`, `bare-bundle-id`, `bare-sidecar-bundle`, `bare-distributable`, `bare-app-image`, `bare-apk`, `bare-link`.
-- CMake and build-system bridges: `cmake-bare`, `cmake-bare-bundle`, `cmake-drive`, `cmake-pear`, `cmake-runtime`, `cmake-toolchains`, `cmake-vcpkg`, `cmake-android`, `cmake-ios`, `cmake-java`, `cmake-macos`, `cmake-meson`, `cmake-msix`, `cmake-napi`, `cmake-npm`, `cmake-windows`, `cmake-zig`, `cmake-harden`, `cmake-cargo`, `cmake-gn`, `cmake-fetch`, `cmake-ports`, `cmake-app-image`.
-- Packaging and distributable workflows: `bundlebee`, `bundlebee-cli`, `make-pear-app`, `node-bare-bundle`, `extract-bare-bundle`, `drive-bundler`, `rebuild-git`, `electron-runtime`, `electron-forge-maker-snap`, `electron-forge-maker-flatpak`, `pear-runtime-bootstrap`, `pear-runtime-updater`, `pear-distributable-bootstrap`, `pear-installer`, `pear-prefetcher`.
+- CMake and build-system bridges: `cmake-bare`, `cmake-bare-bundle`, `cmake-drive`, `cmake-pear`, `cmake-runtime`, `cmake-toolchains`, `cmake-vcpkg`, `cmake-android`, `cmake-ios`, `cmake-java`, `cmake-macos`, `cmake-meson`, `cmake-msix`, `cmake-napi`, `cmake-npm`, `cmake-windows`, `cmake-zig`, `cmake-harden`, `cmake-cargo`, `cmake-gn`, `cmake-fetch`, `cmake-ports`, `cmake-app-image`, `msix-manager`.
+- Packaging and distributable workflows: `bundlebee`, `bundlebee-cli`, `make-pear-app`, `node-bare-bundle`, `extract-bare-bundle`, `drive-bundler`, `rebuild-git`, `electron-runtime`, `electron-forge-maker-snap`, `electron-forge-maker-flatpak`, `pear-runtime-bootstrap`, `pear-runtime-updater`, `pear-distributable-bootstrap`, `pear-installer`, `pear-prefetcher`, `bare-union-bundle`.
 - Repo / release plumbing and legacy build repos: `bare-sidecar`, `bare-sidecar-bundle`, `bare-dev`, `make-pear-app`, `_pear-build`, `pear-electron`, `pear-runtime-appling`, `pear-shake`.
 
 ## 8) Examples, workshops, demos, and apps
@@ -96,18 +96,18 @@ Runnable examples, teaching repos, and application-level references.
 
 Small focused packages for scheduling, parsing, crypto, debugging, metrics, and operational tooling.
 
-- Coordination, lifecycle, and state: `activity-queue`, `adaptive-timeout`, `bucket-rate-limit`, `delay-pacer`, `task-backoff`, `db-lock`, `scope-lock`, `ready-guard`, `ready-resource`, `refcounter`, `suspendify`, `suspend-resource`, `minicron`, `listen-async`, `uncaughts`, `fd-lock`, `fs-native-lock`, `fifofile`, `fd-pipe`.
+- Coordination, lifecycle, and state: `activity-queue`, `adaptive-timeout`, `bucket-rate-limit`, `delay-pacer`, `task-backoff`, `db-lock`, `scope-lock`, `ready-guard`, `ready-resource`, `refcounter`, `suspendify`, `suspend-resource`, `minicron`, `listen-async`, `uncaughts`, `fd-lock`, `fs-native-lock`, `fifofile`, `fd-pipe`, `cross-worker`, `bare-readline`, `bare-signals`, `bare-env`, `bare-boot`, `bare-atomics`, `bare-abort`, `bare-gif`, `bare-xdiff`, `bare-tpl`.
 - Parsing, formatting, and conversions: `fast-meta-tags`, `get-file-format`, `get-mime-type`, `is-text-filetype`, `known-text-files`, `unicode-to-plain-text`, `text-decoder`, `url-file-url`, `same-object`, `nanodebug`, `bits-to-bytes`, `unslab`, `tiny-buffer-map`, `tiny-paths`, `tiny-timers-native`, `framed-stream`, `bare-inspect`, `bare-structured-clone`.
 - Crypto, identity, and data protection: `sodium-hmac`, `pw-to-ek`, `deterministic-sealed-box`, `broadcast-encryption`, `obfuscate-data`, `noise-curve-ed`, `noise-handshake`, `secure-key`, `secure-prompt`, `safe-sodium-buffer`, `bip39-mnemonic`.
-- Observability and metrics: `hypertrace`, `hypertrace-logger`, `hypertrace-prometheus`, `hypermetrics`, `hyper-instrument`, `hyper-health-check`, `hypercore-logger`, `hypercore-stats`, `hyperdht-stats`, `Grafana-hypercore-stats`, `prom-client`, `slab-hunter`, `device-file`.
+- Observability and metrics: `hypertrace`, `hypertrace-logger`, `hypertrace-prometheus`, `hypermetrics`, `hyper-instrument`, `hyper-health-check`, `hypercore-logger`, `hypercore-stats`, `hyperdht-stats`, `Grafana-hypercore-stats`, `prom-client`, `slab-hunter`, `device-file`, `sentry-bare`.
 - Testing and developer experience: `brittle`, `brittle-snapshot`, `bare-tap`, `test-suspend`, `check-npm-maintainers`, `bare-cov`, `bare-v8-to-istanbul`, `globbie`, `semifies`, `same-object`.
 - Miscellaneous helpers: `fast-meta-tags`, `get-mime-type`, `known-text-files`, `is-text-filetype`, `raw-text-display-parser`, `simple-lnd`, `jsonrpc-mux`.
 
 ## 10) Org infrastructure and misc
 
 - Org / repository scaffolding: `.github`, `repo-template`, `prettier-config-holepunch`, `actions`.
-- Packaging / maintenance one-offs: `slack-build-status`, `canary-runner`, `oidc-publishing`, `oidc-publishing-sandbox`, `check-npm-maintainers`.
-- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`.
+- Packaging / maintenance one-offs: `slack-build-status`, `canary-runner`, `oidc-publishing`, `oidc-publishing-sandbox`, `check-npm-maintainers`, `bare-union-bundle`.
+- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`.
 
 ## Notes
 
