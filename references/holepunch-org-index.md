@@ -1,8 +1,8 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-04  
+Generated at: 2026-05-05  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **597**
+Public repositories discovered by GitHub search: **598**
 
 ## Scope
 
