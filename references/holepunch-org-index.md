@@ -1,6 +1,6 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-05  
+Generated at: 2026-05-06  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **598**
 
@@ -12,8 +12,9 @@ Public repositories discovered by GitHub search: **598**
 
 ## Delta since previous refresh
 
-- Newly surfaced repos in this refresh include `libhc`, `libkv`, `libflattree`, `sentry-bare`, `liblexkey`, `rocksdb-blobs`, `bare-readline`, `bare-signals`, `bare-env`, `bare-boot`, `bare-atomics`, `bare-abort`, `bare-gif`, `bare-union-bundle`, `bare-xdiff`, `cross-worker`, `msix-manager`, `bare-tpl`, `compact-encoding-golang`, and `bare-rpc-golang`, plus several newer packaging/runtime helpers.
-- The taxonomy below keeps the previous grouping style so the index stays easy to scan, but the repo counts and top-level inventory were refreshed to the latest public search results.
+- Current GitHub search still returns **598** public repositories for `holepunchto`, so the overall inventory size is unchanged from the last pass.
+- This refresh revalidated the newest/most recently active repositories, including `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-ndk`, `bare-rust`, `bare-apk`, `bare-app-image`, `bundlebee`, `bundlebee-cli`, `bundlebee-import`, `libhc`, `libkv`, `libflattree`, `liblexkey`, `sentry-bare`, `bare-rpc-golang`, and `compact-encoding-golang`.
+- The taxonomy below keeps the previous grouping style so the index stays easy to scan, but the repo counts and top-level inventory were refreshed against the latest public search results.
 
 ## 1) Bare runtime & platform
 
@@ -115,4 +116,4 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh surfaced `libhc`, `libkv`, `libflattree` and other recently added runtime/build helpers; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
+- Latest refresh revalidated the newer runtime/platform helpers and build helpers; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
