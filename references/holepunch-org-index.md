@@ -1,8 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-06  
+Generated at: 2026-05-07  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **598**
+Public repositories discovered by GitHub search: **599**
+
+## Summary
+
+- As of 2026-05-07, the `holepunchto` organization has **599** public repositories.
 
 ## Scope
 
@@ -12,7 +16,7 @@ Public repositories discovered by GitHub search: **598**
 
 ## Delta since previous refresh
 
-- Current GitHub search still returns **598** public repositories for `holepunchto`, so the overall inventory size is unchanged from the last pass.
+- Current GitHub search now returns **599** public repositories for `holepunchto`, up one from the previous refresh.
 - This refresh revalidated the newest/most recently active repositories, including `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-ndk`, `bare-rust`, `bare-apk`, `bare-app-image`, `bundlebee`, `bundlebee-cli`, `bundlebee-import`, `libhc`, `libkv`, `libflattree`, `liblexkey`, `sentry-bare`, `bare-rpc-golang`, and `compact-encoding-golang`.
 - The taxonomy below keeps the previous grouping style so the index stays easy to scan, but the repo counts and top-level inventory were refreshed against the latest public search results.
 
