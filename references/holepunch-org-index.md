@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-07  
+Generated at: 2026-05-08  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **599**
+Public repositories discovered by GitHub search: **603**
 
 ## Summary
 
-- As of 2026-05-07, the `holepunchto` organization has **599** public repositories.
+- As of 2026-05-08, the `holepunchto` organization has **603** public repositories.
 
 ## Scope
 
@@ -16,8 +16,8 @@ Public repositories discovered by GitHub search: **599**
 
 ## Delta since previous refresh
 
-- Current GitHub search now returns **599** public repositories for `holepunchto`, up one from the previous refresh.
-- This refresh revalidated the newest/most recently active repositories, including `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-ndk`, `bare-rust`, `bare-apk`, `bare-app-image`, `bundlebee`, `bundlebee-cli`, `bundlebee-import`, `libhc`, `libkv`, `libflattree`, `liblexkey`, `sentry-bare`, `bare-rpc-golang`, and `compact-encoding-golang`.
+- Current GitHub search now returns **603** public repositories for `holepunchto`, up four from the previous refresh.
+- This refresh revalidated the newest/most recently active repositories, including `cross-worker-bare-kit`, `cross-worker-pear`, `http-dht-proxy`, and `sveltekit-adapter-bare`.
 - The taxonomy below keeps the previous grouping style so the index stays easy to scan, but the repo counts and top-level inventory were refreshed against the latest public search results.
 
 ## 1) Bare runtime & platform
@@ -101,7 +101,7 @@ Runnable examples, teaching repos, and application-level references.
 
 Small focused packages for scheduling, parsing, crypto, debugging, metrics, and operational tooling.
 
-- Coordination, lifecycle, and state: `activity-queue`, `adaptive-timeout`, `bucket-rate-limit`, `delay-pacer`, `task-backoff`, `db-lock`, `scope-lock`, `ready-guard`, `ready-resource`, `refcounter`, `suspendify`, `suspend-resource`, `minicron`, `listen-async`, `uncaughts`, `fd-lock`, `fs-native-lock`, `fifofile`, `fd-pipe`, `cross-worker`, `bare-readline`, `bare-signals`, `bare-env`, `bare-boot`, `bare-atomics`, `bare-abort`, `bare-gif`, `bare-xdiff`, `bare-tpl`.
+- Coordination, lifecycle, and state: `activity-queue`, `adaptive-timeout`, `bucket-rate-limit`, `delay-pacer`, `task-backoff`, `db-lock`, `scope-lock`, `ready-guard`, `ready-resource`, `refcounter`, `suspendify`, `suspend-resource`, `minicron`, `listen-async`, `uncaughts`, `fd-lock`, `fs-native-lock`, `fifofile`, `fd-pipe`, `cross-worker`, `cross-worker-bare-kit`, `cross-worker-pear`, `bare-readline`, `bare-signals`, `bare-env`, `bare-boot`, `bare-atomics`, `bare-abort`, `bare-gif`, `bare-xdiff`, `bare-tpl`.
 - Parsing, formatting, and conversions: `fast-meta-tags`, `get-file-format`, `get-mime-type`, `is-text-filetype`, `known-text-files`, `unicode-to-plain-text`, `text-decoder`, `url-file-url`, `same-object`, `nanodebug`, `bits-to-bytes`, `unslab`, `tiny-buffer-map`, `tiny-paths`, `tiny-timers-native`, `framed-stream`, `bare-inspect`, `bare-structured-clone`.
 - Crypto, identity, and data protection: `sodium-hmac`, `pw-to-ek`, `deterministic-sealed-box`, `broadcast-encryption`, `obfuscate-data`, `noise-curve-ed`, `noise-handshake`, `secure-key`, `secure-prompt`, `safe-sodium-buffer`, `bip39-mnemonic`.
 - Observability and metrics: `hypertrace`, `hypertrace-logger`, `hypertrace-prometheus`, `hypermetrics`, `hyper-instrument`, `hyper-health-check`, `hypercore-logger`, `hypercore-stats`, `hyperdht-stats`, `Grafana-hypercore-stats`, `prom-client`, `slab-hunter`, `device-file`, `sentry-bare`.
