@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-08  
+Generated at: 2026-05-09  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **603**
+Public repositories discovered by GitHub search: **605**
 
 ## Summary
 
-- As of 2026-05-08, the `holepunchto` organization has **603** public repositories.
+- As of 2026-05-09, the `holepunchto` organization has **605** public repositories.
 
 ## Scope
 
@@ -16,9 +16,8 @@ Public repositories discovered by GitHub search: **603**
 
 ## Delta since previous refresh
 
-- Current GitHub search now returns **603** public repositories for `holepunchto`, up four from the previous refresh.
-- This refresh revalidated the newest/most recently active repositories, including `cross-worker-bare-kit`, `cross-worker-pear`, `http-dht-proxy`, and `sveltekit-adapter-bare`.
-- The taxonomy below keeps the previous grouping style so the index stays easy to scan, but the repo counts and top-level inventory were refreshed against the latest public search results.
+- Current GitHub search now returns 605 public repositories for holepunchto, up two from the previous refresh.
+- This refresh added `hyperschema-c`, `hyperschema-test`, and `autobee-wakeup` to the inventory.
 
 ## 1) Bare runtime & platform
 
@@ -45,7 +44,7 @@ Pear runtime plumbing, lifecycle control, IPC, updates, and release tooling.
 
 Distributed logs, databases, corestores, drive tools, and storage-oriented workflows.
 
-- Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`.
+- Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`, `autobee-wakeup`.
 - Storage, drivers, and persistence: `hypercore-storage`, `hypercore-crypto`, `hypercore-encryption`, `hypercore-errors`, `hypercore-id-encoding`, `hypercore-proof-queue`, `hypercore-byte-stream`, `hypercore-blob-server`, `hypercore-audit`, `hypercore-detector`, `hypercore-messages`, `hypercore-sign`, `hypercore-signing-request`, `hypercore-logger`, `hypercore-stats`, `hypercore-scale-tests`, `hypercore-e2e-tests`, `hyperdrive-profiler`, `hyperdrive-swarm-test`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`, `rocksdb-blobs`.
 - Drive tools and file sync: `localdrive`, `mirror-drive`, `serve-drive`, `watch-drive`, `drives`, `drive-resolve`, `drive-bundler`, `distributed-drive`, `network-block-device`, `simple-seeder`, `seedbee`, `localwatch`, `throwaway-local-cache`, `corestore-snapshot`, `passive-core-watcher`, `multi-profile-store`, `key-collection`, `index-encoder`, `index-keys`, `emoji-index`.
 - Hypercore-related apps and experiments: `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `autobase-discovery`, `autobase-discovery-cli`, `hypercore-byte-stream`, `hypercore-storage`, `hypercore-logger`, `hypercore-stats`, `hypercore-e2e-tests`, `hypercore-scale-tests`, `hypercore-signing-request`, `hypercore-blob-server`, `drive-analyzer`.
@@ -74,7 +73,7 @@ Reusable C/C++/Swift/Go/Rust building blocks, ABI compatibility layers, and gene
 - Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libhc`, `libkv`, `liblexkey`.
 - Universal / compatibility wrappers: `quickbit-universal`, `crc-universal`, `bitarray-universal`, `simdle-universal`, `sodium-universal`, `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-node-runtime`.
 - JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`.
-- Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`.
+- Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-c`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`.
 - Encoding and schema libraries: `compact-encoding`, `compact-encoding-struct`, `compact-encoding-bitfield`, `compact-encoding-variant`, `compact-encoding-net`, `libcompact`, `punch-connection-encoding`, `bare-ffmpeg-encodings`.
 - Native utilities for app shells / UI / packaging: `bare-kit-swift`, `react-native-bare-kit`, `bare-app-kit`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-sdl`, `bare-ndk`, `bare-rust`.
 
@@ -92,7 +91,7 @@ Cross-platform build helpers, packaging recipes, and release infrastructure.
 
 Runnable examples, teaching repos, and application-level references.
 
-- General examples and workshops: `examples`, `bare-snippets`, `pear-workshop`, `planb-summer-school`, `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`.
+- General examples and workshops: `examples`, `bare-snippets`, `pear-workshop`, `planb-summer-school`, `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`, `hyperschema-test`.
 - App demos and reference apps: `filesharing-app-example`, `filesharing-react-app-example`, `hello-pear-electron`, `pear-radio`, `pear-radio-backend`, `pearpass-example`, `autopass-mobile-example`, `bare-android`, `bare-ios`, `bare-expo`, `bare-expo-hrpc-demo`, `expo-bare-kit`, `expo-file-stream`, `hyperclip-ios`, `hyperclip-android`, `hyperclip-desktop`, `snake`, `cellery`, `cellery-html`, `sveltekit-adapter-bare`, `lunte`, `speedrun`.
 - Runtime / platform demos: `bare-runtime`, `bare-kit`, `bare-native`, `bare-run`, `bare-repl`, `bare-node`, `bare-node-runtime`, `bare-sidecar`, `bare-open`, `bare-storage`.
 - Pear demos and app flows: `pear-ci`, `pear-ci-example`, `pear-ci-multisig`, `pear-docs`, `pear-templates`, `pear-prefs`, `pear-user-dirs`, `pear-messages`, `pear-message`, `pear-hyperdb`, `pear-appdrive`.
