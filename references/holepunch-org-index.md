@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-13  
+Generated at: 2026-05-14  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **605**
+Public repositories discovered by GitHub search: **606**
 
 ## Summary
 
-- As of 2026-05-13, the `holepunchto` organization has **605** public repositories.
+- As of 2026-05-14, the `holepunchto` organization has **606** public repositories.
 
 ## Scope
 
@@ -16,8 +16,7 @@ Public repositories discovered by GitHub search: **605**
 
 ## Delta since previous refresh
 
-- Current GitHub search still returns 605 public repositories for holepunchto.
-- This refresh revalidated the inventory against the 2026-05-13 search snapshot; no net change in public repo count since the previous refresh.
+- Current GitHub search returns 606 public repositories for holepunchto (1 new repo discovered: ops-dummy-test-repo). This refresh added ops-dummy-test-repo to Section 10.
 
 ## 1) Bare runtime & platform
 
@@ -111,7 +110,7 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 
 - Org / repository scaffolding: `.github`, `repo-template`, `prettier-config-holepunch`, `actions`.
 - Packaging / maintenance one-offs: `slack-build-status`, `canary-runner`, `oidc-publishing`, `oidc-publishing-sandbox`, `check-npm-maintainers`, `bare-union-bundle`.
-- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`.
+- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`, `ops-dummy-test-repo`.
 
 ## Notes
 
