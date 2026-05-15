@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-14  
+Generated at: 2026-05-15  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **606**
+Public repositories discovered by GitHub search: **611**
 
 ## Summary
 
-- As of 2026-05-14, the `holepunchto` organization has **606** public repositories.
+- As of 2026-05-15, the `holepunchto` organization has **611** public repositories.
 
 ## Scope
 
@@ -16,7 +16,7 @@ Public repositories discovered by GitHub search: **606**
 
 ## Delta since previous refresh
 
-- Current GitHub search returns 606 public repositories for holepunchto (1 new repo discovered: ops-dummy-test-repo). This refresh added ops-dummy-test-repo to Section 10.
+- Current GitHub search returns 611 public repositories for holepunchto (up from 606 in the previous snapshot). This refresh adds newly surfaced repos including `tar-drive`, `hyperschema`, `pear-install`, `blind-push`, `blind-push-gateway`, `ip-ban-list`, and `ip-ban-list-cli`.
 
 ## 1) Bare runtime & platform
 
@@ -34,7 +34,7 @@ Core runtime, process primitives, worker model, and platform abstractions.
 Pear runtime plumbing, lifecycle control, IPC, updates, and release tooling.
 
 - Core Pear runtime / CLI: `pear`, `pear-runtime`, `pear-runtime-bare`, `pear-runtime-bootstrap`, `pear-runtime-updater`, `pear-runtime-legacy-storage`, `pear-desktop`, `pear-electron`, `pear-cli`, `pear-cmd`, `pear-api`, `pear-interface`, `pear-info`, `pear-link`, `pear-terminal`.
-- App lifecycle and packaging: `boot-drive`, `pear-build`, `pear-bundle`, `pear-pack`, `pear-stage`, `pear-seed`, `pear-init`, `pear-installer`, `pear-distributable-bootstrap`, `pear-prefetcher`, `pear-updater`, `pear-updater-bootstrap`, `pear-force-update`, `pear-restart`, `pear-reset`, `pear-drop`, `pear-gracedown`, `pear-crasher`, `pear-tryboot`, `pear-release`, `pear-prerelease`, `pear-changelog`, `pear-md`, `pear-prefs`, `pear-user-dirs`, `pear-aliases`, `pear-wakeups`, `pear-updates`, `pear-runtime-updater`, `updater-service`, `wakeup`.
+- App lifecycle and packaging: `boot-drive`, `pear-build`, `pear-bundle`, `pear-pack`, `pear-stage`, `pear-seed`, `pear-init`, `pear-installer`, `pear-distributable-bootstrap`, `pear-prefetcher`, `pear-updater`, `pear-updater-bootstrap`, `pear-force-update`, `pear-restart`, `pear-reset`, `pear-drop`, `pear-gracedown`, `pear-crasher`, `pear-tryboot`, `pear-release`, `pear-prerelease`, `pear-changelog`, `pear-md`, `pear-prefs`, `pear-user-dirs`, `pear-aliases`, `pear-wakeups`, `pear-updates`, `pear-runtime-updater`, `updater-service`, `wakeup`, `pear-install`.
 - IPC, messaging, and process coordination: `pear-ipc`, `pear-ipc-client`, `pear-message`, `pear-messages`, `pear-opstream`, `pear-opwait`, `pear-state`, `pear-rti`, `pear-constants`, `pear-errors`, `pear-gunk`, `pear-logger`, `pear-appling`, `pear-pipe`, `pear-hyperdb`, `pear-appdrive`, `pear-hyperdb`.
 - Documentation, templates, and ecosystem apps: `pear-docs`, `pear-templates`, `pear-workshop`, `pear-radio`, `pear-radio-backend`, `pear-ci`, `pear-ci-example`, `pear-ci-multisig`, `hello-pear-electron`, `pearpass-example`, `autopass-mobile-example`, `speedrun`.
 - Legacy / archived Pear utilities: `pear-runtime-appling`, `pear-stdio`, `pear-doctor`, `pear-bridge`, `pear-hotmods`, `pear-run`, `pear-shake`.
@@ -45,7 +45,7 @@ Distributed logs, databases, corestores, drive tools, and storage-oriented workf
 
 - Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`, `autobee-wakeup`.
 - Storage, drivers, and persistence: `hypercore-storage`, `hypercore-crypto`, `hypercore-encryption`, `hypercore-errors`, `hypercore-id-encoding`, `hypercore-proof-queue`, `hypercore-byte-stream`, `hypercore-blob-server`, `hypercore-audit`, `hypercore-detector`, `hypercore-messages`, `hypercore-sign`, `hypercore-signing-request`, `hypercore-logger`, `hypercore-stats`, `hypercore-scale-tests`, `hypercore-e2e-tests`, `hyperdrive-profiler`, `hyperdrive-swarm-test`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`, `rocksdb-blobs`, `hyperbee-diff-stream`, `hypercoreify`.
-- Drive tools and file sync: `localdrive`, `mirror-drive`, `serve-drive`, `watch-drive`, `drives`, `drive-resolve`, `drive-bundler`, `distributed-drive`, `network-block-device`, `simple-seeder`, `seedbee`, `localwatch`, `throwaway-local-cache`, `corestore-snapshot`, `passive-core-watcher`, `multi-profile-store`, `key-collection`, `index-encoder`, `index-keys`, `emoji-index`, `sub-encoder`, `warmup-encoding`.
+- Drive tools and file sync: `localdrive`, `mirror-drive`, `serve-drive`, `watch-drive`, `drives`, `drive-resolve`, `drive-bundler`, `distributed-drive`, `network-block-device`, `simple-seeder`, `seedbee`, `localwatch`, `throwaway-local-cache`, `corestore-snapshot`, `passive-core-watcher`, `multi-profile-store`, `key-collection`, `index-encoder`, `index-keys`, `emoji-index`, `sub-encoder`, `warmup-encoding`, `tar-drive`.
 - Hypercore-related apps and experiments: `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `autobase-discovery`, `autobase-discovery-cli`, `hypercore-byte-stream`, `hypercore-storage`, `hypercore-logger`, `hypercore-stats`, `hypercore-e2e-tests`, `hypercore-scale-tests`, `hypercore-signing-request`, `hypercore-blob-server`, `drive-analyzer`, `autobee-encryption`, `hypercore-messages`, `hyperdrive-profiler`.
 
 ## 4) Networking, DHT, RPC, and transport
@@ -55,13 +55,13 @@ Peer discovery, swarming, multiplexing, and transport layers.
 - DHT and swarm stack: `hyperdht`, `hyperswarm`, `hyperswarm-secret-stream`, `hyperswarm-dht-relay`, `hyperswarm-testnet`, `hyperswarm-doctor`, `hyperswarm-seeders`, `hyperswarm-stats`, `hyperdht-stats`, `hyperswarm-capability`, `hyperswarm-e2e-tests`, `hyperbeam`, `hypermininet`, `instrumented-dht-node`.
 - RPC and protocol muxing: `dht-rpc`, `rpc`, `protomux`, `protomux-rpc`, `protomux-rpc-client`, `protomux-rpc-client-pool`, `protomux-rpc-router`, `protomux-rpc-middleware`, `protomux-wakeup`, `jsonrpc-mux`, `hrpc`, `hrpc-swift`, `hrpc-modular-example`, `bare-rpc`, `bare-rpc-swift`, `bare-rpc-golang`, `bot-rpc`, `hp-rpc-cli`, `grpc-lnd`, `hyper-cmd-lib-based`, `hyper-cmd-lib-coord`, `hyper-cmd-lib-keys`, `hyper-cmd-lib-net`, `hyper-cmd-lib-utils`, `hyper-cmd-utils`, `simple-lnd`.
 - Transports and network helpers: `bare-net`, `bare-tcp`, `bare-dgram`, `bare-tls`, `bare-ws`, `bare-http1`, `bare-http-parser`, `bare-https`, `bare-dns`, `http-forward-host`, `http-dht-proxy`, `netpaste`, `repl-swarm`, `hyperssh`, `git-remote-punch-transport`, `gip-remote`, `gip-transport`, `punch-connection-encoding`, `pattern-router`, `ptnm`, `iambus`, `raw-text-display-parser`, `listen-async`, `framed-stream`, `tiny-buffer-rpc`, `tiny-http-native`, `tiny-fs-native`, `tiny-paths`, `tiny-timers-native`, `mininet`.
-- Network control, scheduling, and coordination: `adaptive-timeout`, `bucket-rate-limit`, `delay-pacer`, `task-backoff`, `db-lock`, `scope-lock`, `fd-lock`, `fs-native-lock`, `fifofile`, `fd-pipe`, `activity-queue`.
+- Network control, scheduling, and coordination: `adaptive-timeout`, `bucket-rate-limit`, `delay-pacer`, `task-backoff`, `db-lock`, `scope-lock`, `fd-lock`, `fs-native-lock`, `fifofile`, `fd-pipe`, `activity-queue`, `ip-ban-list`, `ip-ban-list-cli`.
 
 ## 5) Blind networking, Keet, and identity flows
 
 Blind peer discovery, pairing, relays, and Keet-specific application flows.
 
-- Blind peer stack: `blind-peer`, `blind-peer-cli`, `blind-peer-encodings`, `blind-peer-muxer`, `blind-peer-router`, `blind-peering`, `blind-peering-cli`, `blind-relay`, `blind-relay-service`, `blind-pairing`, `blind-pairing-core`, `blind-encryption-sodium`.
+- Blind peer stack: `blind-peer`, `blind-peer-cli`, `blind-peer-encodings`, `blind-peer-muxer`, `blind-peer-router`, `blind-peering`, `blind-peering-cli`, `blind-relay`, `blind-relay-service`, `blind-pairing`, `blind-pairing-core`, `blind-encryption-sodium`, `blind-push`, `blind-push-gateway`.
 - Identity and key management: `keypear`, `keet-identity-key`, `secure-key`, `pw-to-ek`, `sodium-hmac`, `deterministic-sealed-box`, `broadcast-encryption`, `obfuscate-data`.
 - Keet application tooling and shells: `keet-appling`, `keet-appling-next`, `keet-identity-key`, `keet-mobile-releases`, `pear-multisig-link`.
 
@@ -72,8 +72,8 @@ Reusable C/C++/Swift/Go/Rust building blocks, ABI compatibility layers, and gene
 - Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libhc`, `libkv`, `liblexkey`.
 - Universal / compatibility wrappers: `quickbit-universal`, `crc-universal`, `bitarray-universal`, `simdle-universal`, `sodium-universal`, `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-node-runtime`.
 - JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`.
-- Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-c`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`.
-- Encoding and schema libraries: `compact-encoding`, `compact-encoding-struct`, `compact-encoding-bitfield`, `compact-encoding-variant`, `compact-encoding-net`, `libcompact`, `punch-connection-encoding`, `bare-ffmpeg-encodings`.
+- Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-c`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`, `hyperschema`.
+- Encoding and schema libraries: `compact-encoding`, `compact-encoding-struct`, `compact-encoding-bitfield`, `compact-encoding-variant`, `compact-encoding-net`, `libcompact`, `punch-connection-encoding`, `bare-ffmpeg-encodings`, `hyperschema`.
 - Native utilities for app shells / UI / packaging: `bare-kit-swift`, `react-native-bare-kit`, `bare-app-kit`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-sdl`, `bare-ndk`, `bare-rust`.
 
 ## 7) Build, packaging, release, and CI automation
@@ -118,4 +118,13 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-13 search snapshot; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
+- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-15 search snapshot; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
+
+## 11) Newly surfaced repositories since the previous snapshot
+
+Grouped here by the same inferred primary use case taxonomy as the rest of the index.
+
+- Drive / storage tooling: `tar-drive`.
+- Schema / encoding tooling: `hyperschema`.
+- Pear application install / bootstrap: `pear-install`.
+- Blind networking / access control: `blind-push`, `blind-push-gateway`, `ip-ban-list`, `ip-ban-list-cli`.
