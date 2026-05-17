@@ -1,6 +1,6 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-16  
+Generated at: 2026-05-17  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **611**
 
@@ -16,7 +16,7 @@ Public repositories discovered by GitHub search: **611**
 
 ## Delta since previous refresh
 
-- Current GitHub search returns 611 public repositories for holepunchto (up from 606 in the previous snapshot). This refresh adds newly surfaced repos including `tar-drive`, `hyperschema`, `pear-install`, `blind-push`, `blind-push-gateway`, `ip-ban-list`, and `ip-ban-list-cli`, and reclassifies `bare-tty`, `pear-dump`, `pear-ref`, `pear-stamp`, `utun`, `dependency-stream`, `autopass`, `keet-prefs`, `hyperdispatch`, `hypershell`, `rabin-stream`, and `sodium-native` into their appropriate taxonomy sections.
+- Inventory confirmed at 611 repositories. This refresh integrates previously surfaced repositories into their primary taxonomy sections and adds newly discovered repos: `autobee` and `hypercore-sign`.
 
 ## 1) Bare runtime & platform
 
@@ -43,7 +43,7 @@ Pear runtime plumbing, lifecycle control, IPC, updates, and release tooling.
 
 Distributed logs, databases, corestores, drive tools, and storage-oriented workflows.
 
-- Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`, `autobee-wakeup`.
+- Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `autobee`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`, `autobee-wakeup`, `hypercore-sign`.
 - Storage, drivers, and persistence: `hypercore-storage`, `hypercore-crypto`, `hypercore-encryption`, `hypercore-errors`, `hypercore-id-encoding`, `hypercore-proof-queue`, `hypercore-byte-stream`, `hypercore-blob-server`, `hypercore-audit`, `hypercore-detector`, `hypercore-messages`, `hypercore-sign`, `hypercore-signing-request`, `hypercore-logger`, `hypercore-stats`, `hypercore-scale-tests`, `hypercore-e2e-tests`, `hyperdrive-profiler`, `hyperdrive-swarm-test`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`, `rocksdb-blobs`, `hyperbee-diff-stream`, `hypercoreify`.
 - Drive tools and file sync: `localdrive`, `mirror-drive`, `serve-drive`, `watch-drive`, `drives`, `drive-resolve`, `drive-bundler`, `distributed-drive`, `network-block-device`, `simple-seeder`, `seedbee`, `localwatch`, `throwaway-local-cache`, `corestore-snapshot`, `passive-core-watcher`, `multi-profile-store`, `key-collection`, `index-encoder`, `index-keys`, `emoji-index`, `sub-encoder`, `warmup-encoding`, `tar-drive`.
 - Hypercore-related apps and experiments: `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `autobase-discovery`, `autobase-discovery-cli`, `hypercore-byte-stream`, `hypercore-storage`, `hypercore-logger`, `hypercore-stats`, `hypercore-e2e-tests`, `hypercore-scale-tests`, `hypercore-signing-request`, `hypercore-blob-server`, `drive-analyzer`, `autobee-encryption`, `hypercore-messages`, `hyperdrive-profiler`.
@@ -119,17 +119,3 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
 - Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-16 search snapshot; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
-
-## 11) Newly surfaced repositories since the previous snapshot
-
-Grouped here by the same inferred primary use case taxonomy as the rest of the index.
-
-- Bare runtime & platform: `bare-tty`.
-- Pear runtime, application lifecycle, and CLI flows: `pear-dump`, `pear-ref`, `pear-stamp`.
-- Networking, DHT, RPC, and transport: `utun`.
-- Hypercore, storage, drives, and data plane: `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`.
-- Blind networking, Keet, and identity flows: `autopass`.
-- Native libraries, ABI, and bindings: `hyperdispatch`, `sodium-native`.
-- Examples, workshops, demos, and apps: `hypershell`.
-- Utilities, observability, security, and dev tools: `dependency-stream`, `rabin-stream`.
-- Keet application tooling and shells: `keet-prefs`.
