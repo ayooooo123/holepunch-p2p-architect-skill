@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-19  
+Generated at: 2026-05-20  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **611**
 
 ## Summary
 
-- As of 2026-05-19, the `holepunchto` organization has **611** public repositories.
+- As of 2026-05-20, the `holepunchto` organization has **611** public repositories.
 
 ## Scope
 
@@ -16,7 +16,7 @@ Public repositories discovered by GitHub search: **611**
 
 ## Delta since previous refresh
 
-- Inventory confirmed at 611 repositories. This refresh integrates previously surfaced repositories into their primary taxonomy sections and adds newly discovered repos: `autobee` and `hypercore-sign`.
+- Inventory confirmed at 611 repositories. This refresh revalidated the taxonomy against the 2026-05-20 GitHub search snapshot; no repo-count change was detected.
 
 ## 1) Bare runtime & platform
 
@@ -118,4 +118,4 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-19 search snapshot; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
+- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-20 search snapshot; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
