@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-20  
+Generated at: 2026-05-21  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **611**
+Public repositories discovered by GitHub search: **613**
 
 ## Summary
 
-- As of 2026-05-20, the `holepunchto` organization has **611** public repositories.
+- As of 2026-05-21, the `holepunchto` organization has **613** public repositories.
 
 ## Scope
 
@@ -16,7 +16,7 @@ Public repositories discovered by GitHub search: **611**
 
 ## Delta since previous refresh
 
-- Inventory confirmed at 611 repositories. This refresh revalidated the taxonomy against the 2026-05-20 GitHub search snapshot; no repo-count change was detected.
+- Inventory confirmed at 613 repositories. This refresh revalidated the taxonomy against the 2026-05-21 GitHub search snapshot and incorporated newly surfaced repositories.
 
 ## 1) Bare runtime & platform
 
@@ -34,7 +34,7 @@ Core runtime, process primitives, worker model, and platform abstractions.
 Pear runtime plumbing, lifecycle control, IPC, updates, and release tooling.
 
 - Core Pear runtime / CLI: `pear`, `pear-runtime`, `pear-runtime-bare`, `pear-runtime-bootstrap`, `pear-runtime-updater`, `pear-runtime-legacy-storage`, `pear-desktop`, `pear-electron`, `pear-cli`, `pear-cmd`, `pear-api`, `pear-interface`, `pear-info`, `pear-link`, `pear-terminal`.
-- App lifecycle and packaging: `boot-drive`, `pear-build`, `pear-bundle`, `pear-pack`, `pear-stage`, `pear-seed`, `pear-init`, `pear-installer`, `pear-distributable-bootstrap`, `pear-prefetcher`, `pear-updater`, `pear-updater-bootstrap`, `pear-force-update`, `pear-restart`, `pear-reset`, `pear-drop`, `pear-gracedown`, `pear-crasher`, `pear-tryboot`, `pear-release`, `pear-prerelease`, `pear-changelog`, `pear-md`, `pear-prefs`, `pear-user-dirs`, `pear-aliases`, `pear-wakeups`, `pear-updates`, `pear-runtime-updater`, `updater-service`, `wakeup`, `pear-install`, `pear-dump`.
+- App lifecycle and packaging: `boot-drive`, `pear-build`, `pear-bundle`, `pear-pack`, `pear-stage`, `pear-seed`, `pear-init`, `pear-installer`, `pear-distributable-bootstrap`, `pear-prefetcher`, `pear-updater`, `pear-updater-bootstrap`, `pear-force-update`, `pear-restart`, `pear-reset`, `pear-drop`, `pear-gracedown`, `pear-crasher`, `pear-tryboot`, `pear-release`, `pear-prerelease`, `pear-changelog`, `pear-md`, `pear-prefs`, `pear-user-dirs`, `pear-aliases`, `pear-wakeups`, `pear-updates`, `pear-runtime-updater`, `updater-service`, `wakeup`, `pear-install`, `pear-provision-recover`, `pear-dump`.
 - IPC, messaging, and process coordination: `pear-ipc`, `pear-ipc-client`, `pear-message`, `pear-messages`, `pear-opstream`, `pear-opwait`, `pear-state`, `pear-rti`, `pear-constants`, `pear-errors`, `pear-gunk`, `pear-logger`, `pear-appling`, `pear-pipe`, `pear-hyperdb`, `pear-appdrive`, `pear-hyperdb`, `pear-ref`.
 - Documentation, templates, and ecosystem apps: `pear-docs`, `pear-templates`, `pear-workshop`, `pear-radio`, `pear-radio-backend`, `pear-ci`, `pear-ci-example`, `pear-ci-multisig`, `hello-pear-electron`, `pearpass-example`, `autopass-mobile-example`, `speedrun`, `pear-stamp`.
 - Legacy / archived Pear utilities: `pear-runtime-appling`, `pear-stdio`, `pear-doctor`, `pear-bridge`, `pear-hotmods`, `pear-run`, `pear-shake`.
@@ -43,7 +43,7 @@ Pear runtime plumbing, lifecycle control, IPC, updates, and release tooling.
 
 Distributed logs, databases, corestores, drive tools, and storage-oriented workflows.
 
-- Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `autobee`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`, `autobee-wakeup`, `hypercore-sign`.
+- Core data structures: `hypercore`, `hyperbee`, `hyperbee2`, `hyperdb`, `hyperdrive`, `hyperdrive-next`, `autobase`, `autobee`, `autobee-encryption`, `corestore`, `hyperblobs`, `hyperconf`, `core-coupler`, `hyper-multisig`, `hyper-multisig-cli`, `autobee-wakeup`, `hypercore-sign`.
 - Storage, drivers, and persistence: `hypercore-storage`, `hypercore-crypto`, `hypercore-encryption`, `hypercore-errors`, `hypercore-id-encoding`, `hypercore-proof-queue`, `hypercore-byte-stream`, `hypercore-blob-server`, `hypercore-audit`, `hypercore-detector`, `hypercore-messages`, `hypercore-sign`, `hypercore-signing-request`, `hypercore-logger`, `hypercore-stats`, `hypercore-scale-tests`, `hypercore-e2e-tests`, `hyperdrive-profiler`, `hyperdrive-swarm-test`, `hyperdb-workshop`, `hyperdb-autobase-workshop`, `hyperdb-benchmarking`, `rocksdb-blobs`, `hyperbee-diff-stream`, `hypercoreify`.
 - Drive tools and file sync: `localdrive`, `mirror-drive`, `serve-drive`, `watch-drive`, `drives`, `drive-resolve`, `drive-bundler`, `distributed-drive`, `network-block-device`, `simple-seeder`, `seedbee`, `localwatch`, `throwaway-local-cache`, `corestore-snapshot`, `passive-core-watcher`, `multi-profile-store`, `key-collection`, `index-encoder`, `index-keys`, `emoji-index`, `sub-encoder`, `warmup-encoding`, `tar-drive`.
 - Hypercore-related apps and experiments: `autobase-example`, `autobase-test-helpers`, `autobase-light-writer`, `autobase-discovery`, `autobase-discovery-cli`, `hypercore-byte-stream`, `hypercore-storage`, `hypercore-logger`, `hypercore-stats`, `hypercore-e2e-tests`, `hypercore-scale-tests`, `hypercore-signing-request`, `hypercore-blob-server`, `drive-analyzer`, `autobee-encryption`, `hypercore-messages`, `hyperdrive-profiler`.
@@ -71,7 +71,7 @@ Reusable C/C++/Swift/Go/Rust building blocks, ABI compatibility layers, and gene
 
 - Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libhc`, `libkv`, `liblexkey`.
 - Universal / compatibility wrappers: `quickbit-universal`, `crc-universal`, `bitarray-universal`, `simdle-universal`, `sodium-universal`, `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-node-runtime`.
-- JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`, `sodium-native`.
+- JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `bare-sqlite`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`, `sodium-native`.
 - Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-c`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`, `hyperschema`, `hyperdispatch`.
 - Encoding and schema libraries: `compact-encoding`, `compact-encoding-struct`, `compact-encoding-bitfield`, `compact-encoding-variant`, `compact-encoding-net`, `libcompact`, `punch-connection-encoding`, `bare-ffmpeg-encodings`, `hyperschema`.
 - Native utilities for app shells / UI / packaging: `bare-kit-swift`, `react-native-bare-kit`, `bare-app-kit`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-sdl`, `bare-ndk`, `bare-rust`.
@@ -118,4 +118,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-20 search snapshot; if you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
+- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-21 search snapshot; newly surfaced repositories such as `autobee-encryption`, `bare-sqlite`, and `pear-provision-recover` were folded into the taxonomy.
+- If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
