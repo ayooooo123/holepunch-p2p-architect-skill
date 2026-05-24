@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-23  
+Generated at: 2026-05-24  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **615**
 
 ## Summary
 
-- As of 2026-05-23, the `holepunchto` organization has **615** public repositories.
+- As of 2026-05-24, the `holepunchto` organization has **615** public repositories.
 
 ## Scope
 
@@ -16,7 +16,7 @@ Public repositories discovered by GitHub search: **615**
 
 ## Delta since previous refresh
 
-- Inventory confirmed at 615 repositories. This refresh revalidated the taxonomy against the 2026-05-23 GitHub search snapshot and incorporated newly surfaced repositories such as `bare-collabora` and `bare-sqlite-vector`.
+- Inventory revalidated against the 2026-05-24 GitHub search snapshot. Repository count remained at 615 and the taxonomy was kept aligned with the latest public inventory, including recently surfaced or confirmed repos such as `libhc`, `bare-sqlite`, `bare-sqlite-vector`, and `hello-pear-electron`.
 
 ## 1) Bare runtime & platform
 
@@ -118,5 +118,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-23 search snapshot; newly surfaced repositories such as `bare-collabora` and `bare-sqlite-vector` were folded into the taxonomy.
+- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-24 search snapshot; newly surfaced repositories such as `bare-collabora` and `bare-sqlite-vector` were folded into the taxonomy.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
