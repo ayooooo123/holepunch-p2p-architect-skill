@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-24  
+Generated at: 2026-05-25  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **615**
 
 ## Summary
 
-- As of 2026-05-24, the `holepunchto` organization has **615** public repositories.
+- As of 2026-05-25, the `holepunchto` organization has **615** public repositories.
 
 ## Scope
 
@@ -16,7 +16,7 @@ Public repositories discovered by GitHub search: **615**
 
 ## Delta since previous refresh
 
-- Inventory revalidated against the 2026-05-24 GitHub search snapshot. Repository count remained at 615 and the taxonomy was kept aligned with the latest public inventory, including recently surfaced or confirmed repos such as `libhc`, `bare-sqlite`, `bare-sqlite-vector`, and `hello-pear-electron`.
+- Inventory revalidated against the 2026-05-25 GitHub search snapshot. Repository count remained at 615 and the taxonomy was kept aligned with the latest public inventory, including recently surfaced or confirmed repos such as `bare-collabora`, `libhc`, `bare-sqlite`, `bare-sqlite-vector`, and `hello-pear-electron`.
 
 ## 1) Bare runtime & platform
 
@@ -25,7 +25,7 @@ Core runtime, process primitives, worker model, and platform abstractions.
 - Runtime / process core: `bare`, `bare-runtime`, `bare-kit`, `bare-native`, `bare-worker`, `bare-vm`, `bare-channel`, `bare-process`, `bare-subprocess`, `bare-daemon`, `bare-sidecar`, `bare-open`, `bare-os`, `bare-thread`, `bare-realm`, `bare-inspector`, `bare-inspector-gc`, `bare-performance`, `bare-hrtime`, `bare-walk-handles`, `bare-storage`, `bare-node-runtime`, `bare-node`, `bare-async-hooks`, `bare-queue-microtask`, `bare-stdio`, `bare-tty`, `bare-run`, `bare-repl`, `bare-pipe`, `bare-timers`, `bare-which`, `barely-node`, `native-pipe`.
 - Standard-library style shims: `b4a`, `bare-buffer`, `bare-events`, `bare-console`, `bare-fs`, `bare-net`, `bare-tcp`, `bare-dgram`, `bare-tls`, `bare-http1`, `bare-http-parser`, `bare-https`, `bare-fetch`, `bare-ws`, `bare-url`, `bare-path`, `bare-querystring`, `bare-mime`, `bare-encoding`, `bare-intl`, `bare-string-decoder`, `bare-punycode`, `bare-form-data`, `bare-abort-controller`, `bare-structured-clone`, `bare-diagnostics-channel`, `bare-type`, `bare-utils`, `bare-semver`, `bare-format`, `bare-ansi-escapes`, `bare-assert`, `bare-inspect`, `bare-stream`, `bare-crypto`.
 - Runtime helpers and module tooling: `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-module`, `bare-module-lexer`, `bare-module-resolve`, `bare-module-traverse`, `bare-addon-resolve`, `bare-link`, `gip-transport`.
-- Native platform integrations: `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-sdl`, `bare-bmp`, `bare-png`, `bare-jpeg`, `bare-heif`, `bare-webp`, `bare-svg`, `bare-ico`, `bare-tiff`, `bare-exif`, `bare-image-resample`, `bare-ffmpeg`, `bare-md4c`, `bare-media`, `bare-delta`, `bare-posix`, `bare-ndk`, `bare-lief`, `bare-zmq`, `fs-native-extensions`.
+- Native platform integrations: `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-collabora`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-sdl`, `bare-bmp`, `bare-png`, `bare-jpeg`, `bare-heif`, `bare-webp`, `bare-svg`, `bare-ico`, `bare-tiff`, `bare-exif`, `bare-image-resample`, `bare-ffmpeg`, `bare-md4c`, `bare-media`, `bare-delta`, `bare-posix`, `bare-ndk`, `bare-lief`, `bare-zmq`, `fs-native-extensions`.
 - Bare utilities and runtime diagnostics: `bare-file-logger`, `bare-system-logger`, `bare-logger`, `bare-debug-log`, `bare-compat-napi`, `bare-v8`, `bare-v8-to-istanbul`, `bare-addon`, `bare-addon-rust`, `bare-addon-java`, `bare-addon-jstl`, `bare-rust`, `thread-stats`.
 - Runtime-adjacent UI and cross-runtime support: `react-native-bare-kit`, `react-native-b4a`, `expo-bare-kit`, `expo-file-stream`, `sveltekit-adapter-bare`, `bare-app-kit`, `bare-crypto`.
 
@@ -118,5 +118,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-24 search snapshot; newly surfaced repositories such as `bare-collabora` and `bare-sqlite-vector` were folded into the taxonomy.
+- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-25 search snapshot; newly surfaced repositories such as `bare-collabora` were folded into the taxonomy.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
