@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-25  
+Generated at: 2026-05-26  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **615**
+Public repositories discovered by GitHub search: **620**
 
 ## Summary
 
-- As of 2026-05-25, the `holepunchto` organization has **615** public repositories.
+- As of 2026-05-26, the `holepunchto` organization has **620** public repositories.
 
 ## Scope
 
@@ -16,7 +16,8 @@ Public repositories discovered by GitHub search: **615**
 
 ## Delta since previous refresh
 
-- Inventory revalidated against the 2026-05-25 GitHub search snapshot. Repository count remained at 615 and the taxonomy was kept aligned with the latest public inventory, including recently surfaced or confirmed repos such as `bare-collabora`, `libhc`, `bare-sqlite`, `bare-sqlite-vector`, and `hello-pear-electron`.
+- Inventory revalidated against the 2026-05-26 GitHub search snapshot. Repository count increased from 615 to 620.
+- New public repositories surfaced since the previous refresh: `bare-hc`, `bare-mdns-discovery`, `bare-navigation-android`, `bare-native-awesome`, and `bare-wifi-android`.
 
 ## 1) Bare runtime & platform
 
@@ -25,7 +26,7 @@ Core runtime, process primitives, worker model, and platform abstractions.
 - Runtime / process core: `bare`, `bare-runtime`, `bare-kit`, `bare-native`, `bare-worker`, `bare-vm`, `bare-channel`, `bare-process`, `bare-subprocess`, `bare-daemon`, `bare-sidecar`, `bare-open`, `bare-os`, `bare-thread`, `bare-realm`, `bare-inspector`, `bare-inspector-gc`, `bare-performance`, `bare-hrtime`, `bare-walk-handles`, `bare-storage`, `bare-node-runtime`, `bare-node`, `bare-async-hooks`, `bare-queue-microtask`, `bare-stdio`, `bare-tty`, `bare-run`, `bare-repl`, `bare-pipe`, `bare-timers`, `bare-which`, `barely-node`, `native-pipe`.
 - Standard-library style shims: `b4a`, `bare-buffer`, `bare-events`, `bare-console`, `bare-fs`, `bare-net`, `bare-tcp`, `bare-dgram`, `bare-tls`, `bare-http1`, `bare-http-parser`, `bare-https`, `bare-fetch`, `bare-ws`, `bare-url`, `bare-path`, `bare-querystring`, `bare-mime`, `bare-encoding`, `bare-intl`, `bare-string-decoder`, `bare-punycode`, `bare-form-data`, `bare-abort-controller`, `bare-structured-clone`, `bare-diagnostics-channel`, `bare-type`, `bare-utils`, `bare-semver`, `bare-format`, `bare-ansi-escapes`, `bare-assert`, `bare-inspect`, `bare-stream`, `bare-crypto`.
 - Runtime helpers and module tooling: `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-module`, `bare-module-lexer`, `bare-module-resolve`, `bare-module-traverse`, `bare-addon-resolve`, `bare-link`, `gip-transport`.
-- Native platform integrations: `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-collabora`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-sdl`, `bare-bmp`, `bare-png`, `bare-jpeg`, `bare-heif`, `bare-webp`, `bare-svg`, `bare-ico`, `bare-tiff`, `bare-exif`, `bare-image-resample`, `bare-ffmpeg`, `bare-md4c`, `bare-media`, `bare-delta`, `bare-posix`, `bare-ndk`, `bare-lief`, `bare-zmq`, `fs-native-extensions`.
+- Native platform integrations: `bare-bluetooth-apple`, `bare-bluetooth-android`, `bare-navigation-android`, `bare-wifi-android`, `bare-collabora`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-sdl`, `bare-bmp`, `bare-png`, `bare-jpeg`, `bare-heif`, `bare-webp`, `bare-svg`, `bare-ico`, `bare-tiff`, `bare-exif`, `bare-image-resample`, `bare-ffmpeg`, `bare-md4c`, `bare-media`, `bare-delta`, `bare-posix`, `bare-ndk`, `bare-lief`, `bare-zmq`, `fs-native-extensions`.
 - Bare utilities and runtime diagnostics: `bare-file-logger`, `bare-system-logger`, `bare-logger`, `bare-debug-log`, `bare-compat-napi`, `bare-v8`, `bare-v8-to-istanbul`, `bare-addon`, `bare-addon-rust`, `bare-addon-java`, `bare-addon-jstl`, `bare-rust`, `thread-stats`.
 - Runtime-adjacent UI and cross-runtime support: `react-native-bare-kit`, `react-native-b4a`, `expo-bare-kit`, `expo-file-stream`, `sveltekit-adapter-bare`, `bare-app-kit`, `bare-crypto`.
 
@@ -54,7 +55,7 @@ Peer discovery, swarming, multiplexing, and transport layers.
 
 - DHT and swarm stack: `hyperdht`, `hyperswarm`, `hyperswarm-secret-stream`, `hyperswarm-dht-relay`, `hyperswarm-testnet`, `hyperswarm-doctor`, `hyperswarm-seeders`, `hyperswarm-stats`, `hyperdht-stats`, `hyperswarm-capability`, `hyperswarm-e2e-tests`, `hyperbeam`, `hypermininet`, `instrumented-dht-node`.
 - RPC and protocol muxing: `dht-rpc`, `rpc`, `protomux`, `protomux-rpc`, `protomux-rpc-client`, `protomux-rpc-client-pool`, `protomux-rpc-router`, `protomux-rpc-middleware`, `protomux-wakeup`, `jsonrpc-mux`, `hrpc`, `hrpc-swift`, `hrpc-modular-example`, `bare-rpc`, `bare-rpc-swift`, `bare-rpc-golang`, `bot-rpc`, `hp-rpc-cli`, `grpc-lnd`, `hyper-cmd-lib-based`, `hyper-cmd-lib-coord`, `hyper-cmd-lib-keys`, `hyper-cmd-lib-net`, `hyper-cmd-lib-utils`, `hyper-cmd-utils`, `simple-lnd`.
-- Transports and network helpers: `bare-net`, `bare-tcp`, `bare-dgram`, `bare-tls`, `bare-ws`, `bare-http1`, `bare-http-parser`, `bare-https`, `bare-dns`, `http-forward-host`, `http-dht-proxy`, `netpaste`, `repl-swarm`, `hyperssh`, `git-remote-punch-transport`, `gip-remote`, `gip-transport`, `punch-connection-encoding`, `pattern-router`, `ptnm`, `iambus`, `raw-text-display-parser`, `listen-async`, `framed-stream`, `tiny-buffer-rpc`, `tiny-http-native`, `tiny-fs-native`, `tiny-paths`, `tiny-timers-native`, `mininet`, `utun`.
+- Transports and network helpers: `bare-net`, `bare-tcp`, `bare-dgram`, `bare-tls`, `bare-ws`, `bare-http1`, `bare-http-parser`, `bare-https`, `bare-dns`, `bare-mdns-discovery`, `http-forward-host`, `http-dht-proxy`, `netpaste`, `repl-swarm`, `hyperssh`, `git-remote-punch-transport`, `gip-remote`, `gip-transport`, `punch-connection-encoding`, `pattern-router`, `ptnm`, `iambus`, `raw-text-display-parser`, `listen-async`, `framed-stream`, `tiny-buffer-rpc`, `tiny-http-native`, `tiny-fs-native`, `tiny-paths`, `tiny-timers-native`, `mininet`, `utun`.
 - Network control, scheduling, and coordination: `adaptive-timeout`, `bucket-rate-limit`, `delay-pacer`, `task-backoff`, `db-lock`, `scope-lock`, `fd-lock`, `fs-native-lock`, `fifofile`, `fd-pipe`, `activity-queue`, `ip-ban-list`, `ip-ban-list-cli`.
 
 ## 5) Blind networking, Keet, and identity flows
@@ -69,9 +70,9 @@ Blind peer discovery, pairing, relays, and Keet-specific application flows.
 
 Reusable C/C++/Swift/Go/Rust building blocks, ABI compatibility layers, and generated bindings.
 
-- Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libhc`, `libkv`, `liblexkey`.
+- Core native libraries: `libjs`, `libqjs`, `libjsc`, `libjerry`, `libmqjs`, `libnapi`, `libjsi`, `libjstl`, `libjnitl`, `libpear`, `libhc`, `libappling`, `libpearsync`, `libdynload`, `libmem`, `liblog`, `libdaemon`, `librlimit`, `libjson`, `libpath`, `libutf`, `liburl`, `libbase64`, `libhex`, `libz32`, `libcrc`, `libprng`, `libquickbit`, `libsimdle`, `libbitarray`, `libcompact`, `libintrusive`, `libparseline`, `libtls`, `librabin`, `librpc`, `librocksdb`, `libfs`, `libfx`, `libtt`, `libudx`, `libsingleset`, `libflattree`, `libkv`, `liblexkey`.
 - Universal / compatibility wrappers: `quickbit-universal`, `crc-universal`, `bitarray-universal`, `simdle-universal`, `sodium-universal`, `events-universal`, `require-addon`, `require-asset`, `which-runtime`, `bare-node-fetch`, `bare-node-runtime`.
-- JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `bare-sqlite`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`, `sodium-native`, `bare-collabora`, `bare-sqlite-vector`.
+- JavaScript/C/C++ bindings: `quickbit-native`, `bitarray-native`, `simdle-native`, `crc-native`, `rabin-native`, `sqlite3-native`, `bare-sqlite`, `rocksdb-native`, `udx-native`, `fx-native`, `tt-native`, `appling-native`, `libjsi`, `sodium-native`, `bare-collabora`, `bare-sqlite-vector`, `bare-hc`.
 - Cross-language bindings and codegen: `compact-encoding-swift`, `compact-encoding-golang`, `bare-rpc-golang`, `hrpc-swift`, `hyperschema-c`, `hyperschema-swift`, `compact-encoding-net`, `hyperdht-address`, `hyperschema`, `hyperdispatch`.
 - Encoding and schema libraries: `compact-encoding`, `compact-encoding-struct`, `compact-encoding-bitfield`, `compact-encoding-variant`, `compact-encoding-net`, `libcompact`, `punch-connection-encoding`, `bare-ffmpeg-encodings`, `hyperschema`.
 - Native utilities for app shells / UI / packaging: `bare-kit-swift`, `react-native-bare-kit`, `bare-app-kit`, `bare-ui-kit`, `bare-win-ui`, `bare-gtk`, `bare-web-kit`, `bare-web-kit-gtk`, `bare-sdl`, `bare-ndk`, `bare-rust`.
@@ -110,7 +111,7 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 
 - Org / repository scaffolding: `.github`, `repo-template`, `prettier-config-holepunch`, `actions`.
 - Packaging / maintenance one-offs: `slack-build-status`, `canary-runner`, `oidc-publishing`, `oidc-publishing-sandbox`, `check-npm-maintainers`, `bare-union-bundle`.
-- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`, `ops-dummy-test-repo`.
+- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`, `ops-dummy-test-repo`, `bare-native-awesome`.
 
 ## Notes
 
@@ -118,5 +119,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-25 search snapshot; newly surfaced repositories such as `bare-collabora` were folded into the taxonomy.
+- Latest refresh revalidated the newer runtime/platform helpers and build helpers against the 2026-05-26 search snapshot; newly surfaced repositories such as `bare-hc`, `bare-mdns-discovery`, `bare-navigation-android`, `bare-native-awesome`, and `bare-wifi-android` were folded into the taxonomy.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
