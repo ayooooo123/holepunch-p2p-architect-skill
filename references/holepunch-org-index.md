@@ -1,12 +1,13 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-28  
+Generated at: 2026-05-28 09:10 AM PDT  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **620**
 
 ## Summary
 
 - As of 2026-05-28, the `holepunchto` organization has **620** public repositories.
+- Repo descriptions were used to validate category placement during this refresh; the index remains compact and name-oriented for readability.
 
 ## Scope
 
@@ -17,7 +18,7 @@ Public repositories discovered by GitHub search: **620**
 ## Delta since previous refresh
 
 - Inventory revalidated against the 2026-05-28 GitHub search snapshot. Repository count remains 620.
-- No additional public repositories surfaced since the previous refresh.
+- No net change in public repository count since the previous refresh.
 
 ## 1) Bare runtime & platform
 
