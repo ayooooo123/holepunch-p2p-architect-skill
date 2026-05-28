@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-27  
+Generated at: 2026-05-28  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **620**
 
 ## Summary
 
-- As of 2026-05-27, the `holepunchto` organization has **620** public repositories.
+- As of 2026-05-28, the `holepunchto` organization has **620** public repositories.
 
 ## Scope
 
@@ -16,7 +16,7 @@ Public repositories discovered by GitHub search: **620**
 
 ## Delta since previous refresh
 
-- Inventory revalidated against the 2026-05-27 GitHub search snapshot. Repository count remains 620.
+- Inventory revalidated against the 2026-05-28 GitHub search snapshot. Repository count remains 620.
 - No additional public repositories surfaced since the previous refresh.
 
 ## 1) Bare runtime & platform
@@ -119,5 +119,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the inventory against the 2026-05-27 search snapshot; the previously surfaced repositories such as `bare-hc`, `bare-mdns-discovery`, `bare-navigation-android`, `bare-native-awesome`, and `bare-wifi-android` remain folded into the taxonomy.
+- Latest refresh revalidated the inventory against the 2026-05-28 search snapshot; the previously surfaced repositories such as `bare-hc`, `bare-mdns-discovery`, `bare-navigation-android`, `bare-native-awesome`, and `bare-wifi-android` remain folded into the taxonomy.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
