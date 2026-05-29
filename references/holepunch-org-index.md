@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-28 09:10 AM PDT  
+Generated at: 2026-05-29 09:02 AM PDT  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **620**
+Public repositories discovered by GitHub search: **621**
 
 ## Summary
 
-- As of 2026-05-28, the `holepunchto` organization has **620** public repositories.
+- As of 2026-05-29, the `holepunchto` organization has **621** public repositories.
 - Repo descriptions were used to validate category placement during this refresh; the index remains compact and name-oriented for readability.
 
 ## Scope
@@ -17,8 +17,8 @@ Public repositories discovered by GitHub search: **620**
 
 ## Delta since previous refresh
 
-- Inventory revalidated against the 2026-05-28 GitHub search snapshot. Repository count remains 620.
-- No net change in public repository count since the previous refresh.
+- Inventory revalidated against the 2026-05-29 GitHub search snapshot. Repository count increased by 1 since the previous refresh.
+- Newly surfaced repo since the previous refresh: `senior-software-architect-exercise`.
 
 ## 1) Bare runtime & platform
 
@@ -112,7 +112,7 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 
 - Org / repository scaffolding: `.github`, `repo-template`, `prettier-config-holepunch`, `actions`.
 - Packaging / maintenance one-offs: `slack-build-status`, `canary-runner`, `oidc-publishing`, `oidc-publishing-sandbox`, `check-npm-maintainers`, `bare-union-bundle`.
-- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`, `ops-dummy-test-repo`, `bare-native-awesome`.
+- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`, `ops-dummy-test-repo`, `bare-native-awesome`, `senior-software-architect-exercise`.
 
 ## Notes
 
@@ -120,5 +120,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the inventory against the 2026-05-28 search snapshot; the previously surfaced repositories such as `bare-hc`, `bare-mdns-discovery`, `bare-navigation-android`, `bare-native-awesome`, and `bare-wifi-android` remain folded into the taxonomy.
+- Latest refresh revalidated the inventory against the 2026-05-29 search snapshot; the previously surfaced repositories such as `bare-hc`, `bare-mdns-discovery`, `bare-navigation-android`, `bare-native-awesome`, and `bare-wifi-android` remain folded into the taxonomy.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
