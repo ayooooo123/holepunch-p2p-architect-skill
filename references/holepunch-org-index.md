@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-05-31 09:00 AM PDT  
+Generated at: 2026-06-01 09:00 AM PDT  
 Source organization: `holepunchto`  
 Public repositories discovered by GitHub search: **621**
 
 ## Summary
 
-- As of 2026-05-31, the `holepunchto` organization has **621** public repositories.
+- As of 2026-06-01, the `holepunchto` organization has **621** public repositories.
 - Repo descriptions were used to validate category placement during this refresh; the index remains compact and name-oriented for readability.
 
 ## Scope
@@ -17,7 +17,7 @@ Public repositories discovered by GitHub search: **621**
 
 ## Delta since previous refresh
 
-- Inventory revalidated against the 2026-05-31 GitHub search snapshot. Repository count remained at 621.
+- Inventory revalidated against the 2026-06-01 GitHub search snapshot. Repository count remained at 621.
 - No net-new public repositories were identified in this pass.
 
 ## 1) Bare runtime & platform
@@ -120,5 +120,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the inventory against the 2026-05-31 search snapshot; no new public repositories were added, and the total count remained 621.
+- Latest refresh revalidated the inventory against the 2026-06-01 search snapshot; no new public repositories were added, and the total count remained 621.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
