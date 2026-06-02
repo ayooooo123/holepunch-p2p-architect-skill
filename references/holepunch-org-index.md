@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-06-01 09:00 AM PDT  
+Generated at: 2026-06-02 09:02 AM PDT  
 Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **621**
+Public repositories discovered by GitHub search: **622**
 
 ## Summary
 
-- As of 2026-06-01, the `holepunchto` organization has **621** public repositories.
+- As of 2026-06-02, the `holepunchto` organization has **622** public repositories.
 - Repo descriptions were used to validate category placement during this refresh; the index remains compact and name-oriented for readability.
 
 ## Scope
@@ -17,8 +17,8 @@ Public repositories discovered by GitHub search: **621**
 
 ## Delta since previous refresh
 
-- Inventory revalidated against the 2026-06-01 GitHub search snapshot. Repository count remained at 621.
-- No net-new public repositories were identified in this pass.
+- Inventory revalidated against the 2026-06-02 GitHub search snapshot. Repository count increased to 622.
+- One net-new public repository was identified in this pass: `cmake-fuzz`, categorized under build tooling.
 
 ## 1) Bare runtime & platform
 
@@ -84,7 +84,7 @@ Cross-platform build helpers, packaging recipes, and release infrastructure.
 
 - Shared org tooling: `actions`, `canary-runner`, `slack-build-status`, `oidc-publishing`, `oidc-publishing-sandbox`, `prettier-config-holepunch`, `repo-template`, `check-npm-maintainers`.
 - Native build helpers: `bare-prebuild`, `prebuild-containers`, `chromium-prebuilds`, `musl-toolchains`, `ninja-runtime`, `bare-headers`, `bare-build`, `bare-make`, `bare-pack`, `bare-pack-drive`, `bare-unpack`, `bare-bundle`, `bare-bundle-compile`, `bare-bundle-evaluate`, `bare-bundle-id`, `bare-sidecar-bundle`, `bare-distributable`, `bare-app-image`, `bare-apk`, `bare-link`.
-- CMake and build-system bridges: `cmake-bare`, `cmake-bare-bundle`, `cmake-drive`, `cmake-pear`, `cmake-runtime`, `cmake-toolchains`, `cmake-vcpkg`, `cmake-android`, `cmake-ios`, `cmake-java`, `cmake-macos`, `cmake-meson`, `cmake-msix`, `cmake-napi`, `cmake-npm`, `cmake-windows`, `cmake-zig`, `cmake-harden`, `cmake-cargo`, `cmake-gn`, `cmake-fetch`, `cmake-ports`, `cmake-app-image`, `msix-manager`.
+- CMake and build-system bridges: `cmake-bare`, `cmake-bare-bundle`, `cmake-drive`, `cmake-pear`, `cmake-runtime`, `cmake-toolchains`, `cmake-vcpkg`, `cmake-android`, `cmake-ios`, `cmake-java`, `cmake-macos`, `cmake-meson`, `cmake-msix`, `cmake-napi`, `cmake-npm`, `cmake-windows`, `cmake-zig`, `cmake-harden`, `cmake-cargo`, `cmake-gn`, `cmake-fetch`, `cmake-fuzz`, `cmake-app-image`, `msix-manager`.
 - Packaging and distributable workflows: `bundlebee`, `bundlebee-cli`, `bundlebee-import`, `make-pear-app`, `node-bare-bundle`, `extract-bare-bundle`, `drive-bundler`, `rebuild-git`, `electron-runtime`, `electron-forge-maker-snap`, `electron-forge-maker-flatpak`, `pear-runtime-bootstrap`, `pear-runtime-updater`, `pear-distributable-bootstrap`, `pear-installer`, `pear-prefetcher`, `bare-union-bundle`.
 - Repo / release plumbing and legacy build repos: `bare-sidecar`, `bare-sidecar-bundle`, `bare-dev`, `make-pear-app`, `_pear-build`, `pear-electron`, `pear-runtime-appling`, `pear-shake`.
 
@@ -120,5 +120,5 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the inventory against the 2026-06-01 search snapshot; no new public repositories were added, and the total count remained 621.
+- Latest refresh revalidated the inventory against the 2026-06-02 search snapshot; the total count increased to 622 and `cmake-fuzz` was added to the build tooling section.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
