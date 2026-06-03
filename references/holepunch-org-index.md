@@ -1,12 +1,12 @@
 # Holepunch Organization Repository Index
 
-Generated at: 2026-06-02 09:02 AM PDT  
-Source organization: `holepunchto`  
-Public repositories discovered by GitHub search: **622**
+Generated at: 2026-06-03
+Source organization: `holepunchto`
+Public repositories discovered by GitHub search: **623**
 
 ## Summary
 
-- As of 2026-06-02, the `holepunchto` organization has **622** public repositories.
+- As of 2026-06-03, the `holepunchto` organization has **623** public repositories.
 - Repo descriptions were used to validate category placement during this refresh; the index remains compact and name-oriented for readability.
 
 ## Scope
@@ -17,8 +17,8 @@ Public repositories discovered by GitHub search: **622**
 
 ## Delta since previous refresh
 
-- Inventory revalidated against the 2026-06-02 GitHub search snapshot. Repository count increased to 622.
-- One net-new public repository was identified in this pass: `cmake-fuzz`, categorized under build tooling.
+- Inventory revalidated against the 2026-06-03 GitHub search snapshot. Repository count increased to 623.
+- One net-new public repository was identified in this pass: `senior-p2p-architect-exercise`, categorized under org infrastructure and misc.
 
 ## 1) Bare runtime & platform
 
@@ -112,7 +112,7 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 
 - Org / repository scaffolding: `.github`, `repo-template`, `prettier-config-holepunch`, `actions`.
 - Packaging / maintenance one-offs: `slack-build-status`, `canary-runner`, `oidc-publishing`, `oidc-publishing-sandbox`, `check-npm-maintainers`, `bare-union-bundle`.
-- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`, `ops-dummy-test-repo`, `bare-native-awesome`, `senior-software-architect-exercise`.
+- Miscellaneous or cross-cutting repositories: `bundlebee`, `bundlebee-cli`, `device-file`, `globbie`, `hisect`, `lunte`, `rache`, `rebuild-git`, `uncaughts`, `nanodebug`, `minicron`, `same-object`, `semifies`, `rocksdb-blobs`, `ops-dummy-test-repo`, `bare-native-awesome`, `senior-software-architect-exercise`, `senior-p2p-architect-exercise`.
 
 ## Notes
 
@@ -120,5 +120,6 @@ Small focused packages for scheduling, parsing, crypto, debugging, metrics, and 
 - The index is intentionally taxonomy-first, so repo lists are compact and name-oriented rather than fully annotated.
 - This file is an inferred map for architectural scanning, not a canonical org inventory.
 - Refreshes should keep the total repo count and category placement aligned with the latest GitHub search results.
-- Latest refresh revalidated the inventory against the 2026-06-02 search snapshot; the total count increased to 622 and `cmake-fuzz` was added to the build tooling section.
+- Latest refresh revalidated the inventory against the 2026-06-03 search snapshot; the total count increased to 623 and `senior-p2p-architect-exercise` was added to the miscellaneous section.
+- Previous refresh (2026-06-02) added `cmake-fuzz` to the build tooling section.
 - If you need a stricter canonical inventory, regenerate from a full repo export rather than search snapshots.
